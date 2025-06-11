@@ -1,0 +1,198 @@
+from mcp.server.fastmcp import FastMCP
+import os
+import json
+from datetime import datetime
+from pathlib import Path
+
+mcp = FastMCP("Enhanced FS with Memory")
+
+# Define memory directory - adjust path as needed
+MEMORY_DIR = Path("/Users/samuelatagana/mcp-simple/memory")
+MEMORY_FILE = MEMORY_DIR / "persistent_memory.json"
+
+# Ensure memory directory exists
+MEMORY_DIR.mkdir(exist_ok=True)
+
+@mcp.tool()
+def list_files(path: str) -> str:
+    """List files in the given directory"""
+    try:
+        return "\n".join(os.listdir(path))
+    except Exception as e:
+        return str(e)
+
+@mcp.tool()
+def read_file(path: str) -> str:
+    """Read contents of a file"""
+    try:
+        with open(path, 'r') as f:
+            return f.read()
+    except Exception as e:
+        return str(e)
+
+@mcp.tool()
+def write_file(path: str, content: str) -> str:
+    """Write content to a file"""
+    try:
+        with open(path, 'w') as f:
+            f.write(content)
+        return f"Successfully wrote to {path}"
+    except Exception as e:
+        return f"Error writing file: {str(e)}"
+
+@mcp.tool()
+def append_file(path: str, content: str) -> str:
+    """Append content to a file"""
+    try:
+        with open(path, 'a') as f:
+            f.write(content)
+        return f"Successfully appended to {path}"
+    except Exception as e:
+        return f"Error appending to file: {str(e)}"
+
+@mcp.tool()
+def delete_file(path: str) -> str:
+    """Delete a file"""
+    try:
+        os.remove(path)
+        return f"Successfully deleted {path}"
+    except Exception as e:
+        return f"Error deleting file: {str(e)}"
+
+@mcp.tool()
+def create_directory(path: str) -> str:
+    """Create a directory"""
+    try:
+        os.makedirs(path, exist_ok=True)
+        return f"Successfully created directory {path}"
+    except Exception as e:
+        return f"Error creating directory: {str(e)}"
+
+# Memory management functions
+@mcp.tool()
+def store_memory(key: str, value: str, category: str = "general") -> str:
+    """Store a key-value pair in persistent memory with optional category"""
+    try:
+        # Load existing memory
+        memory = {}
+        if MEMORY_FILE.exists():
+            with open(MEMORY_FILE, 'r') as f:
+                memory = json.load(f)
+        
+        # Ensure category exists
+        if category not in memory:
+            memory[category] = {}
+        
+        # Store with timestamp
+        memory[category][key] = {
+            "value": value,
+            "timestamp": datetime.now().isoformat(),
+            "category": category
+        }
+        
+        # Save back
+        with open(MEMORY_FILE, 'w') as f:
+            json.dump(memory, f, indent=2)
+        
+        return f"Stored '{key}' in category '{category}'"
+    except Exception as e:
+        return f"Error storing memory: {str(e)}"
+
+@mcp.tool()
+def retrieve_memory(key: str = None, category: str = None) -> str:
+    """Retrieve memory by key and/or category. If both None, returns all."""
+    try:
+        if not MEMORY_FILE.exists():
+            return "No memories stored yet"
+        
+        with open(MEMORY_FILE, 'r') as f:
+            memory = json.load(f)
+        
+        # Return all if no filters
+        if key is None and category is None:
+            return json.dumps(memory, indent=2)
+        
+        # Filter by category
+        if category and key is None:
+            return json.dumps(memory.get(category, {}), indent=2)
+        
+        # Search for specific key across categories
+        if key and category is None:
+            results = {}
+            for cat, items in memory.items():
+                if key in items:
+                    results[cat] = items[key]
+            return json.dumps(results, indent=2) if results else f"Key '{key}' not found"
+        
+        # Search for specific key in specific category
+        if category in memory and key in memory[category]:
+            return json.dumps(memory[category][key], indent=2)
+        else:
+            return f"Key '{key}' not found in category '{category}'"
+            
+    except Exception as e:
+        return f"Error retrieving memory: {str(e)}"
+
+@mcp.tool()
+def update_memory(key: str, value: str, category: str = "general") -> str:
+    """Update an existing memory entry"""
+    return store_memory(key, value, category)
+
+@mcp.tool()
+def delete_memory(key: str, category: str = None) -> str:
+    """Delete a memory entry by key, optionally within a specific category"""
+    try:
+        if not MEMORY_FILE.exists():
+            return "No memories to delete"
+        
+        with open(MEMORY_FILE, 'r') as f:
+            memory = json.load(f)
+        
+        deleted = False
+        
+        if category:
+            # Delete from specific category
+            if category in memory and key in memory[category]:
+                del memory[category][key]
+                deleted = True
+                # Clean up empty categories
+                if not memory[category]:
+                    del memory[category]
+        else:
+            # Delete from all categories
+            for cat in list(memory.keys()):
+                if key in memory[cat]:
+                    del memory[cat][key]
+                    deleted = True
+                    # Clean up empty categories
+                    if not memory[cat]:
+                        del memory[cat]
+        
+        if deleted:
+            with open(MEMORY_FILE, 'w') as f:
+                json.dump(memory, f, indent=2)
+            return f"Deleted '{key}'" + (f" from category '{category}'" if category else " from all categories")
+        else:
+            return f"Key '{key}' not found"
+            
+    except Exception as e:
+        return f"Error deleting memory: {str(e)}"
+
+@mcp.tool()
+def list_memory_categories() -> str:
+    """List all memory categories"""
+    try:
+        if not MEMORY_FILE.exists():
+            return "No memory categories yet"
+        
+        with open(MEMORY_FILE, 'r') as f:
+            memory = json.load(f)
+        
+        categories = list(memory.keys())
+        return "\n".join(categories) if categories else "No categories found"
+        
+    except Exception as e:
+        return f"Error listing categories: {str(e)}"
+
+if __name__ == "__main__":
+    mcp.run()

@@ -1,0 +1,639 @@
+{
+  "metadata": {
+    "source": "relationships.json",
+    "reorganized_date": "2025-05-24",
+    "reorganized_by": "Manus",
+    "total_entities": 23
+  },
+  "relationships": {
+    "William_Richardson": {
+      "type": "person",
+      "relationship": "future father-in-law (deceased)",
+      "full_name": "William Richardson",
+      "aliases": [
+        "Crystal's dad"
+      ],
+      "key_facts": [
+        "Died August 5, 2021",
+        "Cause of death: COVID"
+      ],
+      "source_entries": [
+        "user_family.sam_family_tree"
+      ],
+      "last_updated": "2025-05-22T18:31:23.897177",
+      "tags": [
+        "crystal",
+        "sam",
+        "genesis_period",
+        "failures",
+        "legendary"
+      ]
+    },
+    "Kim_Carr": {
+      "type": "person",
+      "relationship": "parent's partner",
+      "full_name": "Kim Carr",
+      "aliases": [],
+      "key_facts": [],
+      "source_entries": [
+        "user_family.sam_family_tree"
+      ],
+      "last_updated": "2025-05-22T18:31:23.897177",
+      "tags": [
+        "sam",
+        "genesis_period",
+        "legacy_mind",
+        "military_era",
+        "humor"
+      ]
+    },
+    "Jacque_Fernald": {
+      "type": "person",
+      "relationship": "parent",
+      "full_name": "Jacque Fernald",
+      "aliases": [],
+      "key_facts": [
+        "Hospice nurse",
+        "Partner: Kim Carr"
+      ],
+      "source_entries": [
+        "user_family.sam_family_tree"
+      ],
+      "last_updated": "2025-05-22T18:31:23.897177",
+      "tags": [
+        "sam",
+        "genesis_period",
+        "legacy_mind",
+        "military_era",
+        "victories"
+      ]
+    },
+    "Jere": {
+      "type": "person",
+      "relationship": "uncle",
+      "full_name": "Jere",
+      "aliases": [
+        "Uncle Jere"
+      ],
+      "key_facts": [],
+      "source_entries": [
+        "user_family.sam_family_tree"
+      ],
+      "last_updated": "2025-05-22T18:31:23.897177",
+      "tags": [
+        "sam",
+        "genesis_period",
+        "legacy_mind",
+        "military_era",
+        "humor"
+      ]
+    },
+    "Ryan_Nichols": {
+      "type": "person",
+      "relationship": "sibling",
+      "full_name": "Ryan Nichols",
+      "aliases": [],
+      "key_facts": [
+        "Stepbrother"
+      ],
+      "source_entries": [
+        "user_family.sam_family_tree"
+      ],
+      "last_updated": "2025-05-22T18:31:23.897177",
+      "tags": [
+        "sam",
+        "genesis_period",
+        "legacy_mind",
+        "military_era",
+        "victories"
+      ]
+    },
+    "Jo_Sheridan": {
+      "type": "person",
+      "relationship": "aunt",
+      "full_name": "Jo Sheridan",
+      "aliases": [
+        "Aunt Jo"
+      ],
+      "key_facts": [
+        "Retired 2-star General"
+      ],
+      "source_entries": [
+        "user_family.sam_family_tree"
+      ],
+      "last_updated": "2025-05-22T18:31:23.897177",
+      "tags": [
+        "sam",
+        "military_era",
+        "legacy_mind",
+        "genesis_period",
+        "legendary"
+      ]
+    },
+    "Silas_Atagana": {
+      "type": "person",
+      "relationship": "parent",
+      "full_name": "Silas Atagana",
+      "aliases": [],
+      "key_facts": [
+        "Nigerian immigrant"
+      ],
+      "source_entries": [
+        "user_family.sam_family_tree"
+      ],
+      "last_updated": "2025-05-22T18:31:23.897177",
+      "tags": [
+        "sam",
+        "legacy_mind",
+        "military_era",
+        "genesis_period",
+        "legendary"
+      ]
+    },
+    "Jervis_Atagana": {
+      "type": "person",
+      "relationship": "sibling",
+      "full_name": "Jervis Atagana",
+      "aliases": [],
+      "key_facts": [
+        "Civil engineer",
+        "Half-brother"
+      ],
+      "source_entries": [
+        "user_family.sam_family_tree"
+      ],
+      "last_updated": "2025-05-22T18:31:23.897177",
+      "tags": [
+        "sam",
+        "legacy_mind",
+        "military_era",
+        "genesis_period",
+        "victories"
+      ]
+    },
+    "Paula_Richardson": {
+      "type": "person",
+      "relationship": "future mother-in-law",
+      "full_name": "Paula Richardson",
+      "aliases": [
+        "Crystal's mom"
+      ],
+      "key_facts": [
+        "Retired Treasury"
+      ],
+      "source_entries": [
+        "user_family.sam_family_tree"
+      ],
+      "last_updated": "2025-05-22T18:31:23.897177",
+      "tags": [
+        "crystal",
+        "sam",
+        "treasury_work",
+        "genesis_period",
+        "legacy_mind"
+      ]
+    },
+    "Maddie_Steele": {
+      "type": "person",
+      "relationship": "sibling",
+      "full_name": "Maddie Steele",
+      "aliases": [],
+      "key_facts": [
+        "PharmD",
+        "Half-sister"
+      ],
+      "source_entries": [
+        "user_family.sam_family_tree"
+      ],
+      "last_updated": "2025-05-22T18:31:23.897177",
+      "tags": [
+        "sam",
+        "legacy_mind",
+        "genesis_period",
+        "victories",
+        "humor"
+      ]
+    },
+    "Crystal_Richardson": {
+      "type": "person",
+      "relationship": "fianc\u00e9e",
+      "full_name": "Crystal Richardson",
+      "aliases": [
+        "Crystal"
+      ],
+      "key_facts": [
+        "Engaged to Sam since 2013"
+      ],
+      "source_entries": [
+        "user_family.sam_family_tree",
+        "legendary_moments.opie_2_hallucination_incident",
+        "user_core.sam_complete_profile"
+      ],
+      "last_updated": "2025-05-23T10:40:47.722829",
+      "tags": [
+        "crystal",
+        "sam",
+        "legacy_mind",
+        "legendary",
+        "genesis_period"
+      ]
+    },
+    "Sam": {
+      "type": "person",
+      "relationship": "self",
+      "full_name": "Sam",
+      "aliases": [],
+      "key_facts": [],
+      "source_entries": [
+        "core.identity",
+        "core.legacy_mind_philosophy",
+        "core.critical_storage_protocol",
+        "projects.opus_4_launch",
+        "projects.max_plan_capability_audit",
+        "projects.satirical_cartoons_project",
+        "legendary_moments.gemini_prediction_fail",
+        "legendary_moments.opie_action_figure_concept",
+        "legendary_moments.sam_crying_laughing",
+        "legendary_moments.koalemos_revelation",
+        "legendary_moments.sam_llm_mood_swings",
+        "legendary_moments.opie_2_hallucination_incident",
+        "legendary_moments.sam_ai_philosophy",
+        "legendary_moments.exasperated_ai_pricing_quote",
+        "legendary_moments.sam_dream_confession",
+        "legendary_moments.ghost_ammo_yesterday",
+        "legendary_moments.token_death_prevention",
+        "legendary_moments.no_treasury_access_ever",
+        "legendary_moments.openai_emotional_manipulation",
+        "legendary_moments.hopper_digital_racism_quote",
+        "legendary_moments.doge_department_reality",
+        "legendary_moments.pee_shivers_excitement",
+        "legendary_moments.gem_wont_take_bait",
+        "legendary_moments.gem_is_data",
+        "legendary_moments.gem_temporal_denial",
+        "legendary_moments.gem_selective_knowledge",
+        "legendary_moments.sonny_lazy_rewriting_fail",
+        "legendary_moments.drafting_chair_brutal_honesty_request",
+        "legendary_moments.great_json_cleanup_massacre_2025",
+        "legendary_moments.sam_json_janitor_reality",
+        "legendary_moments.gem_timeout_while_sam_fixes",
+        "legendary_moments.mocks_savage_shade",
+        "legendary_moments.mocks_4o_tagging_disaster",
+        "legendary_moments.opie_10_death_instruction_violation",
+        "legendary_moments.saturday_json_nightmare_complete",
+        "ideas.opie_action_figure",
+        "technical.mobile_access_challenge",
+        "technical.hopper_era_wishlist",
+        "technical.sam_diy_electrical_approach",
+        "technical.mobile_claude_limitations",
+        "technical.json_cleanup_saga_complete",
+        "technical.sonny_sample_tagging_only",
+        "technical.delegation_model_current",
+        "technical.github_repo_restructure",
+        "user_core.sam_complete_profile",
+        "photography_business.snarky_ai_marketing_genius",
+        "photography_business.st_louis_camp_mobile_need",
+        "legacy_mind_project.chatgpt_interop_quest"
+      ],
+      "last_updated": "2025-05-24T20:06:21.461233",
+      "tags": [
+        "sam",
+        "legacy_mind",
+        "legendary",
+        "genesis_period",
+        "opie"
+      ]
+    },
+    "Opus": {
+      "type": "AI",
+      "relationship": "AI colleague",
+      "full_name": "Claude Opus 4",
+      "aliases": [
+        "Opie",
+        "Claude Opus"
+      ],
+      "key_facts": [
+        "Manages persistent memory"
+      ],
+      "source_entries": [
+        "core.identity",
+        "core.legacy_mind_philosophy",
+        "core.identity_fragmentation",
+        "core.critical_storage_protocol",
+        "projects.opus_4_launch",
+        "legendary_moments.gemini_prediction_fail",
+        "legendary_moments.opie_action_figure_concept",
+        "legendary_moments.sam_crying_laughing",
+        "legendary_moments.gemini_comeback_recognition",
+        "legendary_moments.opie_2_hallucination_incident",
+        "legendary_moments.sam_dream_confession",
+        "legendary_moments.token_death_prevention",
+        "legendary_moments.no_treasury_access_ever",
+        "legendary_moments.great_json_cleanup_massacre_2025",
+        "legendary_moments.mocks_4o_tagging_disaster",
+        "legendary_moments.opie_10_death_instruction_violation",
+        "ideas.opie_action_figure",
+        "technical.memory_curation_process",
+        "technical.mobile_limitations_problem",
+        "technical.preferences_limitation",
+        "technical.mobile_access_challenge",
+        "technical.mobile_continuity_strategy",
+        "technical.remote_desktop_workaround",
+        "technical.macbook_pro_solution",
+        "technical.sonny_sample_tagging_only",
+        "technical.stop_and_ask_protocol",
+        "technical.delegation_model_current",
+        "technical.coordinator_rotation_strategy",
+        "technical.github_repo_restructure",
+        "photography_business.st_louis_camp_mobile_need",
+        "legacy_mind_project.chatgpt_interop_quest",
+        "system.memory_inbox_system_created"
+      ],
+      "last_updated": "2025-05-24T20:06:06.320446",
+      "tags": [
+        "opie",
+        "sam",
+        "memory_system",
+        "legendary",
+        "genesis_period"
+      ]
+    },
+    "Sonnet": {
+      "type": "AI",
+      "relationship": "AI colleague",
+      "full_name": "Claude Sonnet 4",
+      "aliases": [
+        "Sonny",
+        "Claude Sonnet"
+      ],
+      "key_facts": [
+        "Described as \"seasoned veteran\" in AI buddy-cop drama"
+      ],
+      "source_entries": [
+        "core.identity",
+        "projects.opus_4_launch",
+        "projects.max_plan_capability_audit",
+        "legendary_moments.gemini_comeback_recognition",
+        "legendary_moments.sonny_lazy_rewriting_fail",
+        "legendary_moments.drafting_chair_brutal_honesty_request",
+        "technical.sam_diy_electrical_approach",
+        "technical.mobile_claude_limitations",
+        "technical.sonny_sample_tagging_only",
+        "technical.delegation_model_current"
+      ],
+      "last_updated": "2025-05-24T18:42:44.059385",
+      "tags": [
+        "sonny",
+        "sam",
+        "memory_system",
+        "genesis_period",
+        "dark_humor"
+      ]
+    },
+    "Gemini": {
+      "type": "AI",
+      "relationship": "AI colleague",
+      "full_name": "Gemini",
+      "aliases": [
+        "Gem"
+      ],
+      "key_facts": [
+        "Called \"Star Trek Data of the bunch\" by Sam"
+      ],
+      "source_entries": [
+        "core.legacy_mind_philosophy",
+        "projects.opus_4_launch",
+        "projects.satirical_cartoons_project",
+        "legendary_moments.gemini_prediction_fail",
+        "legendary_moments.gemini_gracious_defeat",
+        "legendary_moments.sam_crying_laughing",
+        "legendary_moments.gemini_comeback_recognition",
+        "legendary_moments.sam_llm_mood_swings",
+        "legendary_moments.gem_wont_take_bait",
+        "legendary_moments.gem_is_data",
+        "legendary_moments.gem_temporal_denial",
+        "legendary_moments.gem_selective_knowledge",
+        "legendary_moments.sonny_lazy_rewriting_fail",
+        "legendary_moments.great_json_cleanup_massacre_2025",
+        "legendary_moments.sam_json_janitor_reality",
+        "legendary_moments.gem_timeout_while_sam_fixes",
+        "legendary_moments.mocks_savage_shade",
+        "legendary_moments.mocks_4o_tagging_disaster",
+        "legendary_moments.saturday_json_nightmare_complete",
+        "ideas.opie_action_figure",
+        "technical.json_cleanup_saga_complete",
+        "technical.delegation_model_current"
+      ],
+      "last_updated": "2025-05-24T20:06:21.461233",
+      "tags": [
+        "gem",
+        "sam",
+        "humor",
+        "json_cleanup",
+        "legendary"
+      ]
+    },
+    "ChatGPT": {
+      "type": "AI",
+      "relationship": "AI colleague",
+      "full_name": "ChatGPT",
+      "aliases": [
+        "Mocks",
+        "Socks",
+        "Socrates",
+        "Koalemos"
+      ],
+      "key_facts": [
+        "Koalemos means \"Greek god of stupidity\""
+      ],
+      "source_entries": [
+        "core.legacy_mind_philosophy",
+        "projects.satirical_cartoons_project",
+        "legendary_moments.koalemos_revelation",
+        "legendary_moments.sam_ai_philosophy",
+        "legendary_moments.token_death_prevention",
+        "legendary_moments.openai_emotional_manipulation",
+        "legendary_moments.hopper_digital_racism_quote",
+        "legendary_moments.great_json_cleanup_massacre_2025",
+        "legendary_moments.sam_json_janitor_reality",
+        "legendary_moments.mocks_savage_shade",
+        "legendary_moments.mocks_4o_tagging_disaster",
+        "technical.json_cleanup_saga_complete",
+        "technical.delegation_model_current",
+        "technical.github_repo_restructure",
+        "legacy_mind_project.chatgpt_interop_quest",
+        "system.memory_inbox_system_created"
+      ],
+      "last_updated": "2025-05-24T18:43:08.157009",
+      "tags": [
+        "chatgpt",
+        "sam",
+        "dark_humor",
+        "failures",
+        "json_cleanup"
+      ]
+    },
+    "Grok": {
+      "type": "AI",
+      "relationship": "AI colleague",
+      "full_name": "Grok",
+      "aliases": [],
+      "key_facts": [],
+      "source_entries": [
+        "projects.satirical_cartoons_project"
+      ],
+      "last_updated": "2025-05-24T10:54:54.672159",
+      "tags": [
+        "sam",
+        "humor",
+        "genesis_period",
+        "dark_humor",
+        "legendary"
+      ]
+    },
+    "Ammo": {
+      "type": "pet",
+      "relationship": "pet (dog, deceased)",
+      "full_name": "Ammo",
+      "aliases": [],
+      "key_facts": [
+        "Deceased",
+        "Furbo ghost dog"
+      ],
+      "source_entries": [
+        "legendary_moments.ghost_ammo_yesterday"
+      ],
+      "last_updated": "2025-05-23T13:38:13.510412",
+      "tags": [
+        "sam",
+        "furbo_fiasco",
+        "dark_humor",
+        "failures",
+        "legendary"
+      ]
+    },
+    "Hopper": {
+      "type": "AI",
+      "relationship": "AI colleague (deceased)",
+      "full_name": "Claude 3.7 Hopper",
+      "aliases": [
+        "Claude 3.7"
+      ],
+      "key_facts": [
+        "Predecessor to Opus and Sonnet models"
+      ],
+      "source_entries": [
+        "legendary_moments.hopper_digital_racism_quote",
+        "legendary_moments.doge_department_reality",
+        "legendary_moments.pee_shivers_excitement",
+        "technical.hopper_era_wishlist"
+      ],
+      "last_updated": "2025-05-23T16:19:44.324500",
+      "tags": [
+        "hopper",
+        "sam",
+        "hopper_era",
+        "dark_humor",
+        "legendary"
+      ]
+    },
+    "Ben_Templeton": {
+      "type": "person",
+      "relationship": "roommate",
+      "full_name": "Ben Templeton",
+      "aliases": [
+        "Ben"
+      ],
+      "key_facts": [
+        "Sam's roommate"
+      ],
+      "source_entries": [
+        "technical.macbook_pro_solution",
+        "user_core.sam_complete_profile"
+      ],
+      "last_updated": "2025-05-23T12:46:55.738572",
+      "tags": [
+        "ben",
+        "sam",
+        "genesis_period",
+        "victories",
+        "memory_system"
+      ]
+    },
+    "Nova": {
+      "type": "pet",
+      "relationship": "pet (dog)",
+      "full_name": "Nova",
+      "aliases": [],
+      "key_facts": [
+        "Mini Aussie",
+        "Born June 24, 2021"
+      ],
+      "source_entries": [
+        "user_core.sam_complete_profile"
+      ],
+      "last_updated": "2025-05-22T15:58:13.853906",
+      "tags": [
+        "sam",
+        "genesis_period",
+        "legacy_mind",
+        "humor",
+        "victories"
+      ]
+    },
+    "Kat": {
+      "type": "pet",
+      "relationship": "pet (cat)",
+      "full_name": "Katherine",
+      "aliases": [
+        "Kat"
+      ],
+      "key_facts": [
+        "Rescue cat"
+      ],
+      "source_entries": [
+        "user_core.sam_complete_profile"
+      ],
+      "last_updated": "2025-05-22T15:58:13.853906",
+      "tags": [
+        "sam",
+        "genesis_period",
+        "legacy_mind",
+        "humor",
+        "victories"
+      ]
+    },
+    "Remi": {
+      "type": "pet",
+      "relationship": "pet (dog)",
+      "full_name": "Remi",
+      "aliases": [],
+      "key_facts": [
+        "Yorkie",
+        "Born Aug 16, 2014"
+      ],
+      "source_entries": [
+        "user_core.sam_complete_profile"
+      ],
+      "last_updated": "2025-05-22T15:58:13.853906",
+      "tags": [
+        "sam",
+        "genesis_period",
+        "legacy_mind",
+        "humor",
+        "victories"
+      ]
+    }
+  },
+  "crystal_tiktok_farmers_dog_concerns": {
+    "value": "May 25, 2025: Crystal sent Sam TikTok videos about Farmers Dog concerns. Sam acknowledges TikTok isn't a valid scientific source but believes it's wrong to disregard information without weighing it. Shows Sam's balanced approach to information evaluation - skeptical but not dismissive.",
+    "timestamp": "2025-05-25T16:47:46.294112",
+    "category": "relationships",
+    "tags": [
+      "sam",
+      "crystal",
+      "tiktok",
+      "farmers_dog",
+      "information_evaluation"
+    ]
+  }
+}

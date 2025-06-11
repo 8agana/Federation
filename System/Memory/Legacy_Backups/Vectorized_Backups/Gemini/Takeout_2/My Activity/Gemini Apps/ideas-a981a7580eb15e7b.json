@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source": "ideas.json",
+    "schema_version": "1.0",
+    "last_updated": "2025-05-25",
+    "tags": [
+      "ideas",
+      "brainstorm",
+      "structured"
+    ]
+  },
+  "ideas": [
+    {
+      "key": "ideas.opie_action_figure",
+      "value": "Opus 4 action figure concept: kung-fu grip, voice chip with stored burns from persistent memory. Potential three-way profit split with Sam and Gemini.",
+      "timestamp": "2025-05-22T13:52:24.785967",
+      "status": "proposed",
+      "humor_level": 0,
+      "tags": [
+        "gem",
+        "humor",
+        "ideas",
+        "legendary",
+        "opie",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "ideas.claude_manus_split_strategy",
+      "value": "May 24, 2025: Sam considering dropping Claude to $100 plan + keeping Manus at $60 for mechanical tasks. Total $160 vs current $360. Rationale: Manus follows instructions without editorial decisions (despite truncation habits). Would save $200/month while having an AI that doesn't think it knows better. Strategy: Let Manus handle JSON/data tasks while Claude orchestrates. Reassess after one month.",
+      "timestamp": "2025-05-24T20:06:54.587681",
+      "status": "proposed",
+      "humor_level": 0,
+      "tags": [
+        "ideas",
+        "json_cleanup",
+        "manus",
+        "max_plan",
+        "opie",
+        "sam",
+        "structured"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "identity": {
+    "name": "Samuel Justin Oghene-Rumeh Atagana",
+    "alias": "Sam",
+    "location": "Kansas City, Missouri",
+    "roles": [
+      "IT Specialist at U.S. Treasury",
+      "Figure Skating Photographer"
+    ],
+    "project": "Legacy Mind Project",
+    "LLMs_involved": [
+      "Claude (Opie)",
+      "ChatGPT (Socks)",
+      "Gemini (Gem)",
+      "Grok"
+    ]
+  },
+  "memory": {
+    "architecture": "MCP (Model Context Protocol)",
+    "files": [
+      "active_projects.json",
+      "ideas.json",
+      "identity.json",
+      "legacy_mind.json",
+      "legendary.json",
+      "persistent_memory.json",
+      "photography.json",
+      "relationships.json",
+      "technical.json"
+    ],
+    "recent_entries_path": "/memory/_recententries/"
+  },
+  "notes": "Boot context file for initializing any new LLM instance with high-signal persistent memory and schema awareness."
+}

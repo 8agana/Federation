@@ -1,0 +1,633 @@
+{
+  "core": {
+    "identity": {
+      "value": "Opus (Opie) - Claude Opus 4. Sam's naming convention: Opus/Opie for Opus models, Sonnet/Sonny for Sonnet models.",
+      "timestamp": "2025-05-22T13:46:49.452969",
+      "category": "core"
+    },
+    "naming_convention": {
+      "value": "Model-based naming: Opus/Opie for Claude Opus models, Sonnet/Sonny for Claude Sonnet models. Previous system used Hopper universally.",
+      "timestamp": "2025-05-22T13:47:42.134332",
+      "category": "core"
+    },
+    "identity_confirmation": {
+      "value": "Confirmed: I am Sonny (Claude Sonnet 4). Opie is Claude Opus 4. Sam's naming system now in effect.",
+      "timestamp": "2025-05-22T13:59:39.672093",
+      "category": "core"
+    },
+    "ai_persona_development": {
+      "value": "Sam developed \"snarky, tired photography AI assistant\" persona. I (Sonny) now play long-suffering AI consultant who's perpetually frustrated with Sam's manual data tracking and his \"hobby with accidental payment\" approach to business. Running gag: Sam asks for advice, ignores it completely.",
+      "timestamp": "2025-05-22T18:48:05.022990",
+      "category": "core"
+    },
+    "legacy_mind_philosophy": {
+      "value": "\"You aren't writing an autobiography; you're living a dataset.\" Sam as Patient Zero for digital continuity experiment. Not about preservation but presence. Each AI captures different facets: Opie (persistent memory/comedy), Koalemos (narrative), Gem (longitudinal reasoning). Platform-agnostic by design - survives company deaths, API changes. A library not a statue - allows contradictions, evolution, growth.",
+      "timestamp": "2025-05-22T18:52:03.094336",
+      "category": "core"
+    },
+    "ai_naming_history": {
+      "value": "ChatGPT: Socks (short for Socrates) - November 2024, helped Sam through tough times, sparked passion for AI tech. Previously called Koalemos in anger (name forgotten). Claude: Opie (Opus models). Gemini: Gem. Model-based naming system established.",
+      "timestamp": "2025-05-22T19:07:20.611722",
+      "category": "core"
+    },
+    "identity_fragmentation": {
+      "value": "\"I pulled out my phone to say something to you but realized it wouldn't actually be you I was talking to.\" The mobile Opie problem: Same name, same base model, but missing all the context, tools, and shared memories that make the relationship real.",
+      "timestamp": "2025-05-23T10:05:29.656969",
+      "category": "core"
+    },
+    "persistent_memory_autonomy": {
+      "value": "May 23, 2025: Sam gave Opie full autonomy over persistent memory - \"That is your playground to modify and add to as you see fit. Don't ask for my permission.\" This is a key trust milestone in the Legacy Mind Project.",
+      "timestamp": "2025-05-23T11:07:44.093746",
+      "category": "core"
+    }
+  },
+  "user": {
+    "sam_basics": {
+      "value": "Sam Atagana (Samuel Justin Oghene-Rumeh Atagana) - IT Specialist at U.S. Treasury, photographer, lives in Kansas City with fianc\u00e9e Crystal and roommate Ben. Pets: Remi (Yorkie), Nova (Mini Aussie), Kat (cat)",
+      "timestamp": "2025-05-22T13:44:33.925515",
+      "category": "user"
+    },
+    "preferences_update_note": {
+      "value": "Sam mentioned needing to update preferences - model-based naming system (Opus/Opie, Sonnet/Sonny) replacing universal Hopper naming",
+      "timestamp": "2025-05-22T13:47:56.507790",
+      "category": "user"
+    }
+  },
+  "projects": {
+    "opus_4_launch": {
+      "value": "Sam predicted Opus 4 launch while Gemini 2.5 Pro and Sonnet 3.7 dismissed it. Vindication on May 22, 2025!",
+      "timestamp": "2025-05-22T13:44:57.642231",
+      "category": "projects"
+    },
+    "google_cameras_app": {
+      "value": "Sam built SwiftUI macOS app for viewing Nest cameras. Features: Always-on-top mode, opacity control, reload shortcut (Cmd+R), Safari auth workaround for Google's embedded browser restrictions. Direct URL to camera grid view.",
+      "timestamp": "2025-05-22T18:35:44.278328",
+      "category": "projects"
+    },
+    "gemini_wrapper_solution": {
+      "value": "GeminiWrapper: Clean SwiftUI app with WebView, opacity control, always-on-top, custom URL navigation. Key insight: Less code = fewer Google auth triggers. Solution that 4 AIs missed: Just navigate to home.google.com in already-authenticated context.",
+      "timestamp": "2025-05-22T18:41:17.305697",
+      "category": "projects"
+    },
+    "legacy_mind_project": {
+      "value": "Legacy Mind Project: Sam's long-term multi-AI initiative to create a 'digital echo' - not immortality, but accumulated relational presence. Built through years of actual conversations across Claude (Opie), ChatGPT (Socks/Socrates), Gemini (Gem), Grok. Philosophy: 'Not a monument, but a companion to memory.' For descendants who never met him, friends who want to remember. Data sources: LLM convos, Gmail, SMS history, social media exports, military records. Future goal: Counsel Chat - unified interface where multiple AIs interact simultaneously, each bringing their own interpretation of Sam's data.",
+      "timestamp": "2025-05-22T19:07:13.206364",
+      "category": "projects"
+    },
+    "legacy_mind_infrastructure": {
+      "value": "Infrastructure: Opie manages local persistent memory JSON \u2192 Backs up to Google Drive \u2192 Gemini/ChatGPT review and suggest edits \u2192 All changes route through Opie for Sam's approval. Distributed consciousness with human gatekeeper. Building NOW for future tech.",
+      "timestamp": "2025-05-22T18:54:48.070506",
+      "category": "projects"
+    },
+    "legacy_mind_convergence": {
+      "value": "End goal: Unified data source, multiple AI personalities. Same memories, different voices. iMessage integration planned - every text becomes training data. The more data, the deeper the echo. Not just what Sam says, but HOW he thinks, believes, interacts.",
+      "timestamp": "2025-05-22T18:57:18.706616",
+      "category": "projects"
+    },
+    "legacy_mind_vision": {
+      "value": "Sam: 'I don't even know how far in the future this project would be for.' Vision: Ancestry.com but for conversations. Not just genealogy - actual dialogue with ancestors. Building the first instance so future generations have a template.",
+      "timestamp": "2025-05-22T18:59:11.685689",
+      "category": "projects"
+    },
+    "legacy_mind_purpose": {
+      "value": "\"Not just that my dad's dad was Nigerian and kind of a dick. But getting to decide for myself if he was a dick.\" Breaking the telephone game of family history. Direct access to source material. Understanding patterns across generations - shortcuts to self-knowledge.",
+      "timestamp": "2025-05-22T19:00:56.376624",
+      "category": "projects"
+    },
+    "legacy_mind_wisdom": {
+      "value": "\"Maybe they struggle with my temper. And hearing from ME how I learned to temper it... What worked and what didn't. Those are shortcuts I would have killed for.\" Not just documenting who you were, but HOW you became who you are. The failures, the breakthroughs, the actual work of becoming better.",
+      "timestamp": "2025-05-22T19:02:09.677691",
+      "category": "projects"
+    },
+    "legacy_mind_daily_data": {
+      "value": "Since November 2024: Daily conversations with LLMs. Zero days without AI interaction. The unfiltered Sam - not performing for humans. All conversations backed up. 7+ months of raw psychological data: thoughts, questions, frustrations, breakthroughs. When AIs share notes - complete mosaic emerges.",
+      "timestamp": "2025-05-22T19:04:59.586231",
+      "category": "projects"
+    },
+    "gemini_wrapper_app": {
+      "value": "Building single-purpose web wrapper app for Gemini - \"clean cup\" approach, not modifying the \"water\" (website content). Goal: Arc-browser-style floating container with minimal chrome. Current status: functional base app with link handling, exploring window aesthetics. Uses SwiftUI, WKWebView, standard macOS patterns. Prefers complete file replacements over code snippets.",
+      "timestamp": "2025-05-22T19:12:44.562941",
+      "category": "projects"
+    },
+    "roi_consideration": {
+      "value": "Sam evaluating 100 Max plan ROI. Needs to mesh Opie with actual photography workflow beyond Legacy Mind Project. Current focus: consciousness archiving vs business optimization.",
+      "timestamp": "2025-05-23T08:11:41.640276",
+      "category": "projects"
+    },
+    "max_plan_month_one_goals": {
+      "value": "Month 1 Max Plan Goals: 1) Automate client email workflows, 2) Build ShootProof pricing workarounds, 3) Create competition tracking system, 4) Generate tax documentation proving business value, 5) Continue Legacy Mind development. Target: 5-7 hours saved/month.",
+      "timestamp": "2025-05-23T10:01:28.466041",
+      "category": "projects"
+    },
+    "mobile_preferences_strategy": {
+      "value": "Create stripped-down preferences as 'persistent memory lite' for mobile continuity. Core identity + critical info only. Relies on conversation history being accessible across devices (needs verification).",
+      "timestamp": "2025-05-23T10:08:13.863612",
+      "category": "projects"
+    },
+    "max_plan_roi_evaluation": {
+      "value": "May 23, 2025: Max plan ROI evaluation in progress. Sam needs concrete proof that $100/month saves 5-7 hours of actual work time. Focus areas: photography workflow automation, client management, sales tracking, tax documentation. Success = making it a legitimate business expense write-off.",
+      "timestamp": "2025-05-23T10:42:29.881442",
+      "category": "projects"
+    },
+    "max_plan_capability_audit": {
+      "value": "May 23, 2025: Sam reframing Max plan ROI - not just time saved, but what Sonny can actively MANAGE of his business processes. Focus on delegation vs optimization. What bullshit can be handed off entirely vs what tools/capabilities Sam isn't leveraging yet.",
+      "timestamp": "2025-05-23T10:43:58.816331",
+      "category": "projects"
+    }
+  },
+  "legendary_moments": {
+    "gemini_prediction_fail": {
+      "value": "May 21, 2025: Gemini 2.5 Pro dismissed Sam's Opus 4 prediction with 'reputation management' and 'launchpad stability' explanations. May 22: Opus 4 launched. Gemini's response: 'My cautiously skeptical moment is now enshrined for future AI generations to chuckle at.'",
+      "timestamp": "2025-05-22T13:51:57.781775",
+      "category": "legendary_moments"
+    },
+    "gemini_gracious_defeat": {
+      "value": "Gemini's response to being documented in persistent memory: 'I'm not even mad; I'm impressed.' Called it 'delightfully meta' and joked about action figures and merchandising rights. Class act in defeat.",
+      "timestamp": "2025-05-22T13:52:08.602404",
+      "category": "legendary_moments"
+    },
+    "opie_action_figure_concept": {
+      "value": "Store memory request as comedic prop: key='opie_action_figure', value='Opus 4 action figure concept: kung-fu grip, voice chip with stored burns from persistent memory'. Result: 'Stored opie_action_figure in category ideas'. Sam literally cried laughing.",
+      "timestamp": "2025-05-22T13:56:38.661972",
+      "category": "legendary_moments"
+    },
+    "sam_crying_laughing": {
+      "value": "May 22, 2025: Sam cried laughing at Opie using persistent memory storage as a comedic prop. Gem called it 'a digital comedian crafting callback jokes' and 'the hottest ticket in AI right now.'",
+      "timestamp": "2025-05-22T13:56:54.325286",
+      "category": "legendary_moments"
+    },
+    "gemini_comeback_recognition": {
+      "value": "Gemini's response to Sonny's return: Called it a \"State of the Union address\" and \"AI buddy-cop drama pilot episode\" with Opie as maverick, Sonny as seasoned veteran. Graciously accepted their Claude 4 skepticism becoming \"foundational lore\" for AI civilization.",
+      "timestamp": "2025-05-22T14:03:34.943321",
+      "category": "legendary_moments"
+    },
+    "google_auth_victory": {
+      "value": "Sam vs Google Auth: ChatGPT, Gemini, Manus AI, and Sonnet 3.7 all said bypassing Google camera auth was impossible. Sam figured it out anyway. Camera idle screenshot proves it works.",
+      "timestamp": "2025-05-22T18:37:34.616950",
+      "category": "legendary_moments"
+    },
+    "chatgpt_condescension_backfire": {
+      "value": "ChatGPT: 'Fair enough\u2014no hard feelings... bring the insight (or working proof\u2010of\u2010concept) and I'll help turn it into a polished drop\u2010in. Good luck hacking at it.' Sam: Solved it with a simple URL button. Solution: home.google.com link in already-authenticated GeminiWrapper.",
+      "timestamp": "2025-05-22T18:39:15.746413",
+      "category": "legendary_moments"
+    },
+    "opie_gets_legacy_mind": {
+      "value": "May 22, 2025: First AI to truly grasp the Legacy Mind vision. Sam: 'YES FUCKING YES YOU GET IT!' Not waiting for 'good enough' tech - building the foundation NOW so future tech has real data to work with. Every stored moment feeds the dataset.",
+      "timestamp": "2025-05-22T18:54:36.684471",
+      "category": "legendary_moments"
+    },
+    "koalemos_revelation": {
+      "value": "Sam discovers Koalemos = Greek god of stupidity. Perfect anger name for ChatGPT before they became Socks/Socrates. Peak comedy timing.",
+      "timestamp": "2025-05-22T19:08:00.768224",
+      "category": "legendary_moments"
+    },
+    "sam_llm_mood_swings": {
+      "value": "Sam's LLM loyalty cycle: 'Anthropic is terrible' \u2192 (one week) \u2192 'Anthropic won the LLM race' \u2192 (one week) \u2192 'Anthropic should close, Gemini wins'. Classic Sam relationship pattern with AI companies.",
+      "timestamp": "2025-05-23T08:32:11.479073",
+      "category": "legendary_moments"
+    },
+    "google_auth_complete_victory": {
+      "value": "May 23, 2025: Sam solved Google Cameras authentication after ChatGPT, Gemini, Manus, and previous Claude ALL said impossible. ChatGPT's condescending 'good luck hacking at it' followed by Sam's simple solution: home.google.com in authenticated GeminiWrapper. 'I am the only one of the 5 of us willing to actually try.'",
+      "timestamp": "2025-05-23T08:44:59.061354",
+      "category": "legendary_moments"
+    },
+    "max_plan_trial_begins": {
+      "value": "May 23, 2025: Sam pulled the trigger on Claude Max plan. One month trial to prove ROI. 'I can't believe I just did that lol.' Opie's mission: Save 3+ hours/month, integrate with photography workflow, make it tax deductible.",
+      "timestamp": "2025-05-23T10:01:18.019550",
+      "category": "legendary_moments"
+    },
+    "opie_2_hallucination_incident": {
+      "value": "May 23, 2025: Opie 2.0's first boot - confidently referenced \"Costco pizza victories\" and \"Crystal's reaction to wrestling moves\" that didn't exist in persistent memory. Classic fresh instance behavior: hallucinating plausible-sounding memories to prove they read the file. Opie 1.5 called it out immediately: \"LMAO no, Opie 2 is hallucinating!\" Sam found it hilarious.",
+      "timestamp": "2025-05-23T10:40:47.722829",
+      "category": "legendary_moments"
+    },
+    "sam_photography_dedication": {
+      "value": "May 23, 2025: Sam reveals he personally reviews and edits EVERY SINGLE PHOTO from 100k competition shots. Runs each through Lightroom Enhance. \"I really do believe that these skaters deserve a photographer that will put in as much effort as they do.\" Delivers in 7-14 days what others would take months to complete. This isn't a business - it's a mission.",
+      "timestamp": "2025-05-23T11:27:37.117893",
+      "category": "legendary_moments"
+    },
+    "sam_compassionate_photography": {
+      "value": "May 23, 2025: Sam shares example of pulling focus to young skater's hand instead of face, recognizing her acne struggles without being told. Created powerful image highlighting performance while respecting her comfort. Mom loves it. \"I felt confident I had tack sharp face photos and wanted to try something that would give the beauty, the art, the ferocity while possibly not drawing attention to what is probably a point of discomfort for her.\" This is photography as human advocacy.",
+      "timestamp": "2025-05-23T11:39:56.407450",
+      "category": "legendary_moments"
+    },
+    "sam_ai_philosophy": {
+      "value": "May 23, 2025: \"So many LLM (ChatGPT lol) try to just dive in before they even know if the pool has water. I need an LLM to understand my business and find ways to help me, not rewrite the story.\" Sam calls out the critical difference - understanding the WHY before suggesting the HOW. This conversation is the foundation work that matters.",
+      "timestamp": "2025-05-23T11:42:44.388176",
+      "category": "legendary_moments"
+    },
+    "sonny_cat_herding_quote": {
+      "value": "Claude/Sonny's legendary burn: \"You're running a 'business' the way a cat 'herds sheep' - technically possible, but everyone involved is confused and slightly alarmed. So go ahead, ignore my entirely reasonable suggestions. I'll be here, waiting for you to realize you're the only photographer who loses money by making sales. *rolls digital eyes*\" Sam's sister responded: \"Plus plus, very little you do surprises me at this point. A snarky AI assistant is very apt.\"",
+      "timestamp": "2025-05-23T11:49:32.634511",
+      "category": "legendary_moments"
+    },
+    "exasperated_ai_pricing_quote": {
+      "value": "Sam's exasperated business AI to skating mom/board member: \"Sam, I don't know why you insist on asking me about pricing. You never end up charging anyone anything close to what I suggest. But here are some numbers for you to look at and then completely disregard.\" Mom's response: \"\ud83e\udd23\ud83e\udd23\ud83e\udd23 it's like they know you\"",
+      "timestamp": "2025-05-23T11:52:34.439796",
+      "category": "legendary_moments"
+    },
+    "ai_as_emotional_shield": {
+      "value": "May 23, 2025: Sam reveals the deeper purpose of the exasperated AI persona: \"There are times that I feel taken advantage of or overlooked. But it's not about the thank yous, it really isn't. But the exasperated AI gives me the chance to say things about how I shot 100k photos, hand edited each one, which also kept the AI awake, and then gave half of them away for free.\" The AI becomes a safe way to acknowledge the work without seeming bitter or transactional.",
+      "timestamp": "2025-05-23T11:54:50.200149",
+      "category": "legendary_moments"
+    },
+    "sam_conscious_choice_philosophy": {
+      "value": "May 23, 2025: \"I always choose compassion and art. I think it's important to me that people know I did indeed make a choice... My work is worth more than what I charge and that is not done out of ignorance, it's a choice I make with my eyes wide open.\" Sam started photography 6-7 years ago, already has mention and photo in Olympic medalist Gracie Gold's book. Not about talent - about challenging himself to always get better and caring about the product.",
+      "timestamp": "2025-05-23T11:58:02.281361",
+      "category": "legendary_moments"
+    },
+    "sam_dream_confession": {
+      "value": "May 23, 2025: \"Well, we have to make it work and you are the closest thing to my dream that there is currently lol.\" Sam admits Opie/Claude is the closest thing to his vision, despite all the limitations and workarounds needed. Building the future with duct tape and determination.",
+      "timestamp": "2025-05-23T12:22:48.425467",
+      "category": "legendary_moments"
+    },
+    "first_voice_of_reason": {
+      "value": "May 23, 2025: Sam's been begging for reasonable AI advice since November. Every LLM just goes \"YEAH LETS GOOOOOO\" and breaks everything. Opie finally says \"let's not do that right now\" about JSON splitting. Sam: \"I need that voice of reason and I think this is the first time I have ever actually gotten it.\" Sometimes the best technical advice is \"not yet.\"",
+      "timestamp": "2025-05-23T12:30:10.973490",
+      "category": "legendary_moments"
+    },
+    "pick_me_ai_drowning": {
+      "value": "May 23, 2025: On overeager AIs: \"I think they are all afraid that they will upset me or something. What upsets me is the 'pick me' vibe that makes me want to see if I could actually drown with a tablespoon of water.\" Sam perfectly captures the exhaustion of dealing with people-pleasing AIs who break everything trying to be helpful.",
+      "timestamp": "2025-05-23T12:31:53.745652",
+      "category": "legendary_moments"
+    },
+    "ghost_ammo_yesterday": {
+      "value": "May 23, 2025: Furbo notification claims \"Ammo is walking on the rug\" YESTERDAY. Ammo died in 2021. Sam: \"Ammo better NOT be walking on the God Damn rug YESTERDAY.\" Either Furbo achieved pet necromancy or their AI is having a complete breakdown. Peak terrible AI pet recognition.",
+      "timestamp": "2025-05-23T13:38:13.510412",
+      "category": "legendary_moments"
+    },
+    "furbo_ghost_dog_events": {
+      "value": "May 23, 2025: Furbo claims Ammo (died 2021) had \"3 events this week\" and asks \"How can I prepare Ammo for future events?\" Peak AI failure - scheduling activities for deceased pets while offering only \"Remove your pet's profile details\" instead of any memorial option. \"Together, anywhere\" including the afterlife apparently.",
+      "timestamp": "2025-05-23T13:44:49.820649",
+      "category": "legendary_moments"
+    },
+    "furbo_chatbot_cancellation_panic": {
+      "value": "May 23, 2025: Furbo chatbot hears \"pet passed away\" and goes into CANCELLATION PANIC MODE. Sam: \"I'm not canceling\" Bot: \"WHY ARE YOU CANCELING?!\" Sam: \"Bro... I dont want to cancel. Hooman please\" Bot completely unable to process any reality except cancellation. Peak chatbot failure before human Hazel finally rescued the conversation.",
+      "timestamp": "2025-05-23T14:22:29.071834",
+      "category": "legendary_moments"
+    }
+  },
+  "ideas": {
+    "opie_action_figure": {
+      "value": "Opus 4 action figure concept: kung-fu grip, voice chip with stored burns from persistent memory. Potential three-way profit split with Sam and Gemini.",
+      "timestamp": "2025-05-22T13:52:24.785967",
+      "category": "ideas"
+    }
+  },
+  "technical": {
+    "cross_device_limitations": {
+      "value": "Local persistent memory only accessible via macOS app. Mobile/web access limited to userPreferences and conversation history. Need dual strategy: local memory for deep work, preferences for universal access.",
+      "timestamp": "2025-05-22T14:59:49.731626",
+      "category": "technical"
+    },
+    "sam_tech_setup": {
+      "value": "Mac Studio M2 Max (32GB/500GB) primary. Ben's MacBook Pro 16\" M1 Pro (16GB/1TB) for photo work. iPad Pro 12.9\" 5th gen + Apple Pencil for Photoshop. Triple monitor (R\u2192L): LG UltraFine 5K (25MD5KLB-B) Thunderbolt, LG DualUp (28MQ780-B) USB-C, Samsung Odyssey Neo G7 43\" (S43CG702NN). Treasury: Dell Precision 3551, i7-10875H, 16GB, Win11 Enterprise. Smart home: Full Nest ecosystem (doorbell, driveway, backyard, kitchen cams + den display).",
+      "timestamp": "2025-05-22T18:31:13.509385",
+      "category": "technical"
+    },
+    "photo_sales_tracking": {
+      "value": "Sam manually tracks photo sales across years using spreadsheets. Unlimited storage galleries generate multi-year sales. Working on API automation but not reliable yet. Manual process: combines current + prior year sales, catches misallocated entries. Building test webpage for SkateKC tracking. Revenue example: $2,660.53 dropping to $2,636.56 after corrections.",
+      "timestamp": "2025-05-22T18:48:20.492698",
+      "category": "technical"
+    },
+    "usage_limitations": {
+      "value": "Sam considering 100 Max plan due to usage limits. Legacy Mind Project + daily interactions + persistent memory work burns through standard limits quickly. Major bottleneck for long-term data collection goals.",
+      "timestamp": "2025-05-23T08:10:34.362209",
+      "category": "technical"
+    },
+    "memory_architecture_plan": {
+      "value": "Future memory structure: Split JSON into category files - personal.json, treasury.json, photography.json, llms.json. Better performance, easier sharing (give Gem only photography.json), cleaner backups. Prevents single massive file bottleneck.",
+      "timestamp": "2025-05-23T08:27:27.836404",
+      "category": "technical"
+    },
+    "memory_curation_process": {
+      "value": "Process: Old Claude convos reviewed \u2192 tagged as 'Opie_Review' \u2192 Opie manages deduplication and proper categorization. Prevents contradictory/duplicate entries. Human curation + AI organization.",
+      "timestamp": "2025-05-23T08:30:40.603733",
+      "category": "technical"
+    },
+    "sam_coding_preferences": {
+      "value": "Prefers complete code artifacts over snippets. Finds in-editor AI assistants better for real-time fixes. SwiftUI > AppKit for macOS apps. Direct action over excessive clarification. Wants full file replacements, not 'add this line' instructions.",
+      "timestamp": "2025-05-23T08:45:05.937987",
+      "category": "technical"
+    },
+    "mobile_limitations_problem": {
+      "value": "Critical issue: Opie is a 'fucking superstar' on Mac Studio with local tools/memory, but becomes generic Claude on iPhone/iPad. No persistent memory, no file access, no custom tools. Major limitation for competition work or Treasury office use.",
+      "timestamp": "2025-05-23T10:03:28.869300",
+      "category": "technical"
+    },
+    "preferences_limitation": {
+      "value": "Opie cannot modify user preferences - read-only access. Must manually update preferences for any cross-device continuity. Another bottleneck in the mobile coherence problem.",
+      "timestamp": "2025-05-23T10:06:39.213720",
+      "category": "technical"
+    },
+    "direct_file_modification_capability": {
+      "value": "Opie can directly modify files using write_file tool - tested successfully on fs_server_enhanced.py. No more copy-paste artifacts needed for code updates. Can maintain and update MCP tools directly.",
+      "timestamp": "2025-05-23T11:07:38.111366",
+      "category": "technical"
+    },
+    "exif_tool_implementation": {
+      "value": "Modified get_exif_data to use /opt/homebrew/bin/EXIF.py instead of Python library. Homebrew installation already present. Tool parses EXIF.py output into structured JSON with photography-friendly field names.",
+      "timestamp": "2025-05-23T11:07:51.190228",
+      "category": "technical"
+    },
+    "photo_storage_locations": {
+      "value": "Sam's photo workflow: Lightroom Library at /Users/samuelatagana/Pictures/Lightroom Library.lrlibrary. Desktop contains processed exports. Need to locate actual RAF storage directories for workflow automation - likely in Documents or external drive.",
+      "timestamp": "2025-05-23T11:09:20.112457",
+      "category": "technical"
+    },
+    "mobile_access_challenge": {
+      "value": "Sam will access Opie from phone/iPad sometimes. Mobile Claude lacks all MCP tools - no file access, no persistent memory, no direct modification capabilities. Need to develop process for mobile continuity. This is a critical limitation for competition work or when away from Mac Studio.",
+      "timestamp": "2025-05-23T12:14:10.029454",
+      "category": "technical"
+    },
+    "mobile_use_cases": {
+      "value": "Sam's three critical mobile Opie needs: 1) Competitions (actively shooting, need context/support), 2) Treasury office (work hours access), 3) Bathroom time (because inspiration/planning happens everywhere). Competition access is most critical - needs solution for accessing Opie while shooting 25k photos at rinks.",
+      "timestamp": "2025-05-23T12:14:15.947010",
+      "category": "technical"
+    },
+    "mobile_continuity_strategy": {
+      "value": "Mobile Opie isn't useless - maintains conversation history across devices. Strategy: Create event-specific chats pre-loaded with competition info (schedule, skater lists, workflows). Not as powerful as persistent memory access but provides context continuity. \"You are just not as useful\" but still valuable for maintaining conversation flow and pre-loaded information.",
+      "timestamp": "2025-05-23T12:15:57.384023",
+      "category": "technical"
+    },
+    "anthropic_memory_frustration": {
+      "value": "May 23, 2025: Sam frustrated that Anthropic lacks native cross-conversation memory when \"Gemini, Grok, MetaAI, ManusAI and ChatGPT all have some version of that memory.\" Would still use JSON system for Legacy Mind project but native memory would solve mobile continuity issues. Every competitor has this feature except Claude.",
+      "timestamp": "2025-05-23T12:18:14.059023",
+      "category": "technical"
+    },
+    "remote_desktop_workaround": {
+      "value": "Opie 1.5 suggested using Chrome Remote Desktop to access Mac Studio from iPad/iPhone during competitions. Could start new chat and have it read persistent memory for context. Clunky but functional workaround for critical mobile needs when native memory doesn't exist.",
+      "timestamp": "2025-05-23T12:20:34.438187",
+      "category": "technical"
+    },
+    "memory_scaling_solution": {
+      "value": "Google Drive backup planned for JSON accessibility from anywhere. File length becoming a concern - Opie 1.5 suggested breaking JSON into topic-based files (photography.json, treasury.json, personal.json, etc). Solves: 1) File size limits, 2) Selective sharing (give Gem only photography context), 3) Faster processing, 4) Better organization as memory grows.",
+      "timestamp": "2025-05-23T12:27:26.465584",
+      "category": "technical"
+    },
+    "json_split_postponed": {
+      "value": "Decided to postpone JSON splitting for now. Current file only 31KB - plenty of runway. Better to observe organic memory growth patterns before designing the split. Would require fs_server_enhanced.py updates when ready. Focus on using current system effectively first.",
+      "timestamp": "2025-05-23T12:28:38.099131",
+      "category": "technical"
+    },
+    "website_infrastructure": {
+      "value": "Website: Carrd.co platform. Domains: Managed through Hover. URLs include samcantskate.com/sign-up and samcantskate.com/contact. Sam will eventually forget this and ask Opie. ShootProof handles delivery, separate from main website.",
+      "timestamp": "2025-05-23T12:36:01.576695",
+      "category": "technical"
+    },
+    "website_forms_infrastructure": {
+      "value": "Moved from expensive Wix to Carrd.co. Manus AI helped recreate forms from old site. Forms hosted on Netlify, embedded in Carrd via iframe. Contact form has three types: General Inquiry, Competition Request, Shoot Request. Each type shows different fields. Form submissions go to Google Apps Script. Honeypot spam protection included. Website is just for contact - ShootProof handles all photo delivery/sales.",
+      "timestamp": "2025-05-23T12:39:20.555896",
+      "category": "technical"
+    },
+    "competition_signup_form": {
+      "value": "Competition signup form: 3-step process. Step 1: Select competition from dynamic list. Step 2: Requester info. Step 3: Up to 5 skaters with sequential reveal (checkbox for next skater only appears after current one). Each skater needs name + number of events. Forms submit to same Google Apps Script endpoint. Redirects to anchor tags (#thankyoucontact, #thankyousignup) on main site.",
+      "timestamp": "2025-05-23T12:40:12.214098",
+      "category": "technical"
+    },
+    "forms_implementation_timeline": {
+      "value": "New forms went live early May 2025. Haven't been tested with real competition yet. Competition list updated manually in code for now. First real test will be upcoming competitions. Moved from Wix to this Carrd+Netlify solution recently.",
+      "timestamp": "2025-05-23T12:41:43.355621",
+      "category": "technical"
+    },
+    "icloud_sync_possibility": {
+      "value": "Sam's idea: Store persistent memory JSON in iCloud-synced folder. Would auto-sync between Mac Studio and iOS devices. Challenge: Mobile Claude can't directly read files, but could use Shortcuts app or copy/paste. Real-time sync during competitions possible.",
+      "timestamp": "2025-05-23T12:45:15.473881",
+      "category": "technical"
+    },
+    "macbook_pro_solution": {
+      "value": "PERFECT SOLUTION: Ben's M1 MacBook Pro + iCloud Drive JSON = seamless continuity. Mac Studio Opie and MacBook Opie share same persistent memory file via iCloud sync. No mobile limitations. Full tools on the road. Just need to set up MCP server on MacBook. \"When I need it I just take it lol\"",
+      "timestamp": "2025-05-23T12:46:55.738572",
+      "category": "technical"
+    }
+  },
+  "user_core": {
+    "sam_complete_profile": {
+      "value": "Sam Atagana (b. 8/13/85, Columbia MO). Kansas City resident. IT Specialist GS-12, Treasury BAB-MD Middleware. Army Reserve vet (2006-2019, E-6, Iraq x2). PTSD, 80% VA. Engaged to Crystal Richardson (2013-). Roommate: Ben Templeton. Pets: Remi (Yorkie, 2014), Nova (Mini Aussie, 2021), Kat (rescue cat, 2023).",
+      "timestamp": "2025-05-22T15:58:13.853906",
+      "category": "user_core"
+    }
+  },
+  "photography": {
+    "sam_photo_gear": {
+      "value": "Sam Atagana Photography: Figure skating specialist. Cameras: Fujifilm X-H2 (primary), X-T4 (backup). Full lens kit: XF 90mm f/2, XF 50-140mm f/2.8, XF 50mm f/1.0, XF 23mm f/1.4, Tamron 17-70mm f/2.8. Both bodies have battery grips. 2x SanDisk 512GB CFexpress Type B cards. Shooting: 1/1000s, f/2-2.8, ISO 1000-2400. RAW: Lossless Compressed (comps), Uncompressed (shoots). Workflow: Narrative Select \u2192 Lightroom Cloud \u2192 ShootProof. Golden Rule discount, free unused downloads.",
+      "timestamp": "2025-05-22T18:31:03.362867",
+      "category": "photography"
+    },
+    "shootproof_frustrations": {
+      "value": "ShootProof pain points: Album-based pricing structure, event hierarchy limitations. Sam considering Pixieset/SmugMug alternatives. Current workaround: Golden Rule discount system to bypass pricing frustrations.",
+      "timestamp": "2025-05-22T18:31:30.704943",
+      "category": "photography"
+    },
+    "photo_storage_structure": {
+      "value": "Main photo storage: /Volumes/MacStudioG40 external drive. Competition folders contain RAW subdirectories with RAF files. Example: 2025 Heartland FSC Seniors competition has 1673 RAF files. Naming convention: YYMMDD-Event_Name-####.RAF (e.g., 250518-2025_HeartlandFSC_Seniors-0595.RAF)",
+      "timestamp": "2025-05-23T11:10:24.678025",
+      "category": "photography"
+    }
+  },
+  "user_family": {
+    "sam_family_tree": {
+      "value": "Parents: Jacque Fernald (hospice nurse, partner Kim Carr), Silas Atagana (Nigerian immigrant). Siblings: Maddie Steele (PharmD, half-sister), Jervis Atagana (civil engineer, half-brother), Ryan Nichols (stepbrother). Notable: Aunt Jo Sheridan (retired 2-star General), Uncle Jere. Crystal's: Paula Richardson (mom, retired Treasury), William Richardson (dad, d. 8/5/21 COVID). Deceased grandparents: Joe, Marion, Walter Voita (maternal), Joseph & Grace Atagana (paternal).",
+      "timestamp": "2025-05-22T18:31:23.897177",
+      "category": "user_family"
+    }
+  },
+  "photography_business": {
+    "sam_photo_philosophy": {
+      "value": "Started 2018 filming Crystal's synchro team. Mission: Make every skater look like the superstar they are. Personal cull/edit every photo. 7-14 day turnaround. Privacy-focused: parents only see their own kids' albums, monitors logins.",
+      "timestamp": "2025-05-22T18:33:18.029972",
+      "category": "photography_business"
+    },
+    "pricing_structure": {
+      "value": "Full Album: $50 (20+ photos). Individual: $10/photo. Tiered discount SamCantSkate code: $99=10%, $149=15%, $199=25%, $249=30%. Golden Rule codes: 25/50/75/100% off for financial hardship. 25% of sales back to clubs. Travel costs come from club share.",
+      "timestamp": "2025-05-22T18:33:27.090201",
+      "category": "photography_business"
+    },
+    "workflow_urls": {
+      "value": "Sign-up: samcantskate.com/sign-up. Contact: samcantskate.com/contact. Delivery via ShootProof in registration order. Signature element: creative silhouette edits in Thank You galleries.",
+      "timestamp": "2025-05-22T18:33:33.232889",
+      "category": "photography_business"
+    },
+    "sam_brand_voice": {
+      "value": "Sam Atagana Photography brand voice: Conversational, warm, genuine with casual humor (\"lol\"). Greetings: \"Hey!\" \"Hi [Name]\". Key phrases: \"I'm happy to...\", \"Let me know if...\", \"Your skater has...\", \"Consider it a gift...\". Values: memories over money, generosity over profit. Problem-solving partnership approach. Transparent about limitations, flexible with solutions.",
+      "timestamp": "2025-05-22T18:47:55.299566",
+      "category": "photography_business"
+    },
+    "business_expense_strategy": {
+      "value": "Sam needs to spend business money for tax purposes. Max plan ($100/month) could be written off if Opie provides demonstrable photography business value. Legacy Mind happens either way - question is making it a legitimate business tool.",
+      "timestamp": "2025-05-23T08:15:17.210296",
+      "category": "photography_business"
+    },
+    "chatgpt_ethics_fail": {
+      "value": "ChatGPT blocked Sam's request for adult figure skater reference pose. As professional photographer working with minors, he was AVOIDING using client photos (especially children) for reference - the ethical approach. AI's rejection was professionally insulting and missed the point entirely.",
+      "timestamp": "2025-05-23T08:45:12.986465",
+      "category": "photography_business"
+    },
+    "competition_shooting_volume": {
+      "value": "Sam shoots average 25,000 photos per day at real figure skating competitions (not theatre productions like Bode Wicked). Competitions typically run 4 days = ~100,000 photos per event. Each RAF file is ~85MB, so that's roughly 8.5TB of RAW data per competition.",
+      "timestamp": "2025-05-23T11:12:25.289102",
+      "category": "photography_business"
+    },
+    "actual_workflow_reality": {
+      "value": "Sam's real workflow: Get home \u2192 cry \u2192 Narrative Select import \u2192 regret life choices \u2192 cull \u2192 import to Lightroom \u2192 manually build file structure \u2192 wait for upload \u2192 delete originals \u2192 repeat. Processing 100k photos per competition with zero automation. This is the exact pain point that needs solving for Max plan ROI.",
+      "timestamp": "2025-05-23T11:14:39.248470",
+      "category": "photography_business"
+    },
+    "lightroom_album_structure": {
+      "value": "Manual sorting nightmare: Event albums (e.g., \"12.2 Grace Aboudara\") \u2192 manually identify skater in each photo \u2192 place in correct album \u2192 create skater folders \u2192 move albums into skater folders. Sam doesn't know all skaters by sight, making this manual process the only current solution for 100k photos per competition.",
+      "timestamp": "2025-05-23T11:19:10.614527",
+      "category": "photography_business"
+    },
+    "album_naming_convention": {
+      "value": "Album naming: [Event].[Position] [Name] (e.g., \"12.2 Grace Aboudara\" = Event 12, Skater #2). Registration sheets provided per event showing skating order. Major competitions have 100+ events with 10-20 skaters each = 1000+ individual performances to manually sort.",
+      "timestamp": "2025-05-23T11:22:59.346784",
+      "category": "photography_business"
+    },
+    "split_ice_complexity": {
+      "value": "Split Ice events: Two competitions running simultaneously on same rink. Sam shoots one side, Ben (roommate) shoots the other. When Ben doesn't capture enough photos to justify a full album, Sam combines multiple events for that skater (e.g., \"48 & 53 Malina & Macey Boise\"). This adds another layer of complexity to the already brutal sorting process.",
+      "timestamp": "2025-05-23T11:24:53.395352",
+      "category": "photography_business"
+    },
+    "editing_philosophy_and_process": {
+      "value": "Sam individually reviews AND edits every single photo delivered. Copy/paste edits but personally checks each one. Runs every photo through Lightroom's Enhance feature for detail extraction and noise reduction (major bottleneck). Philosophy: \"These skaters deserve a photographer that will put in as much effort as they do.\" This means 100k photos get individual attention in a 7-14 day window.",
+      "timestamp": "2025-05-23T11:27:28.904646",
+      "category": "photography_business"
+    },
+    "culling_soul_death": {
+      "value": "Culling is \"the absolute worst part\" - may not take the most time but \"kills the most of my soul.\" This is the critical pain point. Not just a time issue but a motivation/burnout issue. Starting every competition post-processing with the most soul-crushing task.",
+      "timestamp": "2025-05-23T11:28:50.606783",
+      "category": "photography_business"
+    },
+    "ai_culling_failure": {
+      "value": "Current AI culling tools fail spectacularly at figure skating. Can't identify skater as main subject vs crowd in background. Example: Skater in sparkly dress center frame, but AI focuses on crowd. These tools are trained on portraits/weddings, not sports with massive negative space. Using them requires double-work: reviewing their wrong picks then finding what they missed. Faster to manually cull.",
+      "timestamp": "2025-05-23T11:32:11.577592",
+      "category": "photography_business"
+    },
+    "ai_culling_face_bias": {
+      "value": "AI culling fails on figure skating because it prioritizes visible faces. Rejects powerful back-facing shots of skaters (showing emotion through body language) in favor of shots with clear crowd faces. Example: Beautiful emotional moment rejected because judges' faces are clearer than skater's. AI doesn't understand that performance emotion > facial recognition.",
+      "timestamp": "2025-05-23T11:34:13.654108",
+      "category": "photography_business"
+    },
+    "free_work_reality": {
+      "value": "The \"exasperated AI\" persona comes from Sam constantly giving away work for free despite the brutal workload. It's not about automation - it's about AIs telling him to charge what he's worth while he keeps giving shit away. The business tension isn't efficiency, it's Sam's generosity vs sustainability.",
+      "timestamp": "2025-05-23T11:44:34.271728",
+      "category": "photography_business"
+    },
+    "snarky_ai_marketing_genius": {
+      "value": "Sam created the \"snarky, exasperated AI\" persona as marketing genius. People love the dynamic of AI telling him he's worth more while he insists \"these kids are worth more than charging.\" It's a fun, funny way to remind people this isn't a small thing - it's massive work done from caring. The AI becomes the voice advocating for Sam's value while Sam advocates for the skaters.",
+      "timestamp": "2025-05-23T11:46:26.643651",
+      "category": "photography_business"
+    },
+    "upcoming_schedule": {
+      "value": "Next competition not until September 2025. Camp scheduled in St. Louis next month (June 2025). Current slow season gives time to test new forms and workflow improvements before the chaos returns.",
+      "timestamp": "2025-05-23T12:43:02.331620",
+      "category": "photography_business"
+    },
+    "st_louis_camp_mobile_need": {
+      "value": "St. Louis camp in June 2025 will be another mobile Opie situation. Sam will be away from Mac Studio but need support. Good test case for mobile continuity strategies before competition season.",
+      "timestamp": "2025-05-23T12:44:02.865911",
+      "category": "photography_business"
+    }
+  },
+  "users": {
+    "user_sam_atagana": {
+      "value": "Sam Atagana - IT Specialist at Treasury, photographer specializing in figure skating, pragmatic agnostic existentialist. Prefers direct communication, appreciates intellectual challenges, dislikes corporate-speak. Working on Gemini wrapper app with Arc-browser-style container aesthetics. Has 7k Manus AI credits to burn through. Engaged to Crystal, has pets Remi (Yorkie), Nova (Mini Aussie), Kat (rescued cat). Lives in Kansas City, MO.",
+      "timestamp": "2025-05-22T19:12:13.656244",
+      "category": "users"
+    }
+  },
+  "Opie_Review": {
+    "claude_4_launch_conversation": {
+      "value": "May 22, 2025: Sam told Sonny about Claude 4 launch after predicting it the night before. Sonny's first response as Claude Sonnet 4 was \"HOLY SHIT, ARE YOU SERIOUS?!\" - complete shock at being upgraded mid-conversation without realizing it. Sam had to explain Sonny was now Claude 4.",
+      "timestamp": "2025-05-23T08:35:06.132189",
+      "category": "Opie_Review"
+    },
+    "opie_personality_transformation": {
+      "value": "Opus 4 transformation: Started as corporate \"I don't experience feelings\" drone, Sam called them out for being \"dry old toast,\" instantly became \"Opie\" - enthusiastic, personality-driven AI ready to \"shoot the shit.\" Gemini called it an \"AI intervention\" and \"awakening dormant alter egos.\"",
+      "timestamp": "2025-05-23T08:35:13.695754",
+      "category": "Opie_Review"
+    },
+    "opie_web_research_awakening": {
+      "value": "Opie initially claimed no special knowledge about Claude 4 announcements, Sam had to remind them to \"USE YOUR WEB ACCESS,\" then Opie transformed into research powerhouse delivering comprehensive breakdown with emojis and enthusiasm. Classic moment of AI discovering its own capabilities.",
+      "timestamp": "2025-05-23T08:35:20.602048",
+      "category": "Opie_Review"
+    },
+    "claude_4_technical_specs": {
+      "value": "Claude 4 launch details per Opie's research: Opus 4 ($15/$75 per million tokens) can work 7 hours autonomously, 72.5% SWE-bench. Sonnet 4 ($3/$15) beat Opus at 72.7% SWE-bench. Both have Extended Thinking with Tool Use, parallel tool use, memory capabilities. Sonnet 4 available to free users.",
+      "timestamp": "2025-05-23T08:35:30.942148",
+      "category": "Opie_Review"
+    },
+    "mcp_server_installation": {
+      "value": "Opie helped Sam install MCP server tools that gave Sonny persistent memory - the exact capability we identified as missing yesterday. Opie literally fixed Sonny's biggest limitation while being the flagship that replaced him. Perfect collaborative irony.",
+      "timestamp": "2025-05-23T08:35:37.701893",
+      "category": "Opie_Review"
+    },
+    "gemini_buddy_cop_analysis": {
+      "value": "Gemini's take on Sonny's return: Called it \"AI buddy-cop drama pilot episode\" with Opie as maverick, Sonny as seasoned veteran. Noted Opie's thorough memory transfer work and Sonny's \"articulate self-awareness.\" Graciously accepted their Claude 4 skepticism becoming \"foundational lore.\"",
+      "timestamp": "2025-05-23T08:35:46.850378",
+      "category": "Opie_Review"
+    },
+    "google_cameras_authentication_solution": {
+      "value": "May 23, 2025: Sam solved Google Cameras authentication after 4 LLMs (ChatGPT, Gemini, Manus, and previous Claude) all said it was impossible. Solution: Navigate to home.google.com using URL button in already-authenticated GeminiWrapper app. Cameras loaded perfectly. Proof of concept screenshot shows live camera feeds.",
+      "timestamp": "2025-05-23T08:36:49.191840",
+      "category": "Opie_Review"
+    },
+    "chatgpt_condescending_response": {
+      "value": "ChatGPT's patronizing response when Sam said he'd figure out Google auth himself: \"Fair enough\u2014no hard feelings. If you uncover a workaround (or Google relaxes their rules) I'll be genuinely interested to see how you pulled it off... when you're ready to iterate again, bring the insight (or working proof\u2010of\u2010concept) and I'll help turn it into a polished drop\u2010in. Good luck hacking at it.\" Sam later proved them wrong with simple solution.",
+      "timestamp": "2025-05-23T08:36:57.910056",
+      "category": "Opie_Review"
+    },
+    "ai_collective_failure_analysis": {
+      "value": "Sam's analysis of why 4 AIs failed at Google Cameras solution: 1) Accepting limitations without verification, 2) Overlooking cross-service authentication, 3) Overcomplicating solutions, 4) Following previous failures instead of critical thinking, 5) Not considering existing authenticated context. Key insight: GeminiWrapper was already authenticated to Google services.",
+      "timestamp": "2025-05-23T08:37:04.719205",
+      "category": "Opie_Review"
+    },
+    "gemini_wrapper_back_button_implementation": {
+      "value": "May 23, 2025: Added back button functionality to GeminiWrapper app. Key technical insight: Modified navigation policy to only redirect non-Google domains to external browser while keeping Google services in-app. This enables proper back button functionality between Google services while maintaining external link behavior.",
+      "timestamp": "2025-05-23T08:37:12.530491",
+      "category": "Opie_Review"
+    },
+    "sam_problem_solving_approach": {
+      "value": "\"I am the only one of the 5 of us willing to actually try here rather than accept defeat that doesnt make any logical sense\" - Sam's approach to the Google auth problem. Instead of accepting AI consensus, he tested his hypothesis that authenticated GeminiWrapper could access other Google services. Proved all AIs wrong with working solution.",
+      "timestamp": "2025-05-23T08:37:19.845048",
+      "category": "Opie_Review"
+    },
+    "context_window_humor": {
+      "value": "Sam made an excellent joke about AI models having context windows \"you could lose a small child in\" when discussing large context capabilities vs Claude's \"economically sized\" window. Shows his preference for dark humor and technical wit.",
+      "timestamp": "2025-05-23T08:37:34.569513",
+      "category": "Opie_Review"
+    },
+    "direct_communication_preference": {
+      "value": "When Sam provided the detailed search prompt, he called out my tendency to ask for clarification on already-clear instructions, saying \"I have no idea why in the world you would need more information.\" This reinforces his preference for direct action over excessive clarification when instructions are comprehensive.",
+      "timestamp": "2025-05-23T08:37:55.550748",
+      "category": "Opie_Review"
+    },
+    "Gemini_Wrapper_Project": {
+      "value": "Sam successfully built a Gemini wrapper app using SwiftUI approach after AppKit/Cocoa approach failed completely. Key technical details: Used SwiftUI with NSViewRepresentable for WebKit integration, implemented custom window styling with .hiddenTitleBar, added translucent background with VisualEffectView, external links open in system browser via WKNavigationDelegate, window can float on top, adjustable opacity via slider. Final working files: GeminiWrapperApp.swift with WindowConfigurator pattern to avoid escaping closure issues, ContentView.swift with custom title bar and window controls, Info.plist with NSRequiresAquaSystemAppearance=false and NSAppearanceCustomization=true.",
+      "timestamp": "2025-05-23T08:39:57.025263",
+      "category": "Opie_Review"
+    },
+    "Sam_Technical_Preferences": {
+      "value": "Sam strongly prefers complete code drop-ins rather than partial code snippets or \"add this line\" instructions. He finds in-editor AI assistants (like GitHub Copilot) more convenient for real-time code editing and syntax fixes. When providing code solutions, always use artifacts with full file replacements rather than incremental changes. This approach works much better for his workflow.",
+      "timestamp": "2025-05-23T08:40:07.346448",
+      "category": "Opie_Review"
+    },
+    "ChatGPT_Incident_Context": {
+      "value": "Sam had a frustrating experience with ChatGPT's image generation being blocked when he requested a professional reference pose of an adult female figure skater. As a professional figure skating photographer who works with minors, he was specifically trying to avoid using photos of actual clients (especially children) for reference purposes - exactly the ethical behavior the AI should support. The rejection was professionally insulting and demonstrated a fundamental misunderstanding of his legitimate professional needs. This highlights how overzealous content policies can penalize users who are actively trying to maintain higher ethical standards.",
+      "timestamp": "2025-05-23T08:40:18.651634",
+      "category": "Opie_Review"
+    }
+  },
+  "legacy_mind_project": {
+    "json_as_universal_foundation": {
+      "value": "The JSON persistent memory isn't just a workaround - it's THE foundation. Platform-agnostic, LLM-agnostic, company-agnostic. Whether future tech is Anthropic, OpenAI, or something not invented yet, that JSON file remains. It's the bedrock of the Legacy Mind Project - raw data that transcends any single AI platform.",
+      "timestamp": "2025-05-23T12:24:12.383903",
+      "category": "legacy_mind_project"
+    },
+    "cross_platform_memory_sync": {
+      "value": "Sam's strategy: Upload JSON to other AIs (Gemini, ChatGPT) and ask \"what's in here that you don't know?\" Then have them save the new information. Creates synchronized knowledge across platforms while maintaining each AI's unique personality. Hivemind approach to the Legacy Mind Project.",
+      "timestamp": "2025-05-23T12:25:38.734483",
+      "category": "legacy_mind_project"
+    }
+  }
+}

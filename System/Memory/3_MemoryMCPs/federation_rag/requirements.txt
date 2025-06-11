@@ -1,0 +1,7 @@
+mcp
+langchain
+langchain-community
+chromadb
+sentence-transformers
+langchain-groq
+python-dotenv

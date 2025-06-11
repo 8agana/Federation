@@ -1,0 +1,89 @@
+import SwiftUI
+import WebKit
+
+struct ContentView: View {
+    // Binding to receive the floating state from the App struct
+    @Binding var isFloating: Bool
+
+    // You'll likely need to manage the webView instance to interact with it
+    // One way is to have the WebView struct expose its WKWebView instance
+    // For simplicity here, we assume the WebView handles its own reload via Notification.
+    // If not, you'd add an @State var webView: WKWebView? here and pass it to WebView.
+
+    var body: some View {
+        WebView(url: URL(string: "https://gemini.google.com")!) // Start with Gemini for auth
+            // Apply the window level change when isFloating changes
+            .onChange(of: isFloating) { _, newValue in
+                // Get the current window. This might need to be more robust
+                // depending on your app structure (e.g., if multiple windows are possible).
+                // For a single window app, NSApplication.shared.keyWindow is common.
+                if let window = NSApplication.shared.keyWindow {
+                    window.level = newValue ? .floating : .normal
+                } else {
+                    // Fallback for when keyWindow might not be set yet,
+                    // or if you want to apply to all windows of this type.
+                    // This is more complex if you have multiple windows.
+                    // For a simple single-window app, the keyWindow approach is usually fine.
+                    // Consider applying it slightly delayed if keyWindow is nil on first toggle.
+                    NSApplication.shared.windows.first(where: { $0.isMainWindow || $0.isKeyWindow })?.level = newValue ? .floating : .normal
+                }
+            }
+    }
+}
+
+struct WebView: NSViewRepresentable {
+    let url: URL
+    // If you need to pass the WKWebView instance up, you'd use a @Binding here.
+    // @Binding var webViewInstance: WKWebView?
+
+    func makeNSView(context: Context) -> WKWebView {
+        let config = WKWebViewConfiguration()
+        config.preferences.javaScriptCanOpenWindowsAutomatically = true
+        // If you decide to add a custom user agent later, it would go here:
+        // config.applicationNameForUserAgent = "YourCustomUserAgentString"
+
+        let webView = WKWebView(frame: .zero, configuration: config)
+        // webView.navigationDelegate = context.coordinator // If you add a coordinator for loading states etc.
+        // webView.uiDelegate = context.coordinator // If you add a coordinator for UI interactions
+
+        // Listen for the reload notification
+        NotificationCenter.default.addObserver(forName: .reloadWebViewNotification, object: nil, queue: .main) { _ in
+            webView.reload()
+        }
+        
+        // Dispatch.main.async { self.webViewInstance = webView } // If passing instance up
+
+        webView.load(URLRequest(url: url))
+        return webView
+    }
+
+    func updateNSView(_ nsView: WKWebView, context: Context) {
+        // If the URL can change, you might want to reload here:
+        // if nsView.url != url {
+        //     nsView.load(URLRequest(url: url))
+        // }
+    }
+
+    // If you need a Coordinator for delegate methods (e.g., for loading indicators,
+    // or more complex UI delegate tasks), you'd define it here.
+    // For just reload and always on top via menu, it might not be strictly necessary
+    // if the NotificationCenter handles reload and ContentView handles window level.
+    /*
+    class Coordinator: NSObject, WKNavigationDelegate, WKUIDelegate {
+        var parent: WebView
+
+        init(_ parent: WebView) {
+            self.parent = parent
+        }
+
+        // Example delegate method
+        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+            // parent.isLoading = false // If you had a loading indicator
+        }
+    }
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    */
+}

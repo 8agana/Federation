@@ -1,0 +1,245 @@
+import SwiftUI
+import WebKit
+import AppKit
+
+extension Notification.Name {
+    static let reloadWebView = Notification.Name("reloadWebView")
+}
+
+struct ContentView: View {
+    @Binding var isFloating: Bool
+    @Binding var opacity: Double
+    @State private var webView: WKWebView?
+    @State private var canGoBack = false
+    @State private var isLoading = true
+    @State private var showAuthMessage = false
+    
+    // Direct URL to cameras page
+    private let camerasURL = URL(string: "https://home.google.com/u/0/home/1-28c0b1094b44f3582e96f1398d2ca9af32e1c681b1bc7eb8062991726cc8b377/cameras/grid")!
+    
+    var body: some View {
+        ZStack {
+            WebView(url: camerasURL, webView: $webView, canGoBack: $canGoBack, isLoading: $isLoading, showAuthMessage: $showAuthMessage)
+                .opacity(opacity)
+                .frame(minWidth: 500, minHeight: 380)
+                .onChange(of: isFloating) { _, top in
+                    if let window = NSApp.keyWindow {
+                        window.level = top ? .floating : .normal
+                    }
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigation) {
+                        Button(action: {
+                            webView?.goBack()
+                        }) {
+                            Image(systemName: "chevron.left")
+                                .foregroundColor(canGoBack ? .blue : .gray)
+                        }
+                        .disabled(!canGoBack)
+                        .help("Go back")
+                    }
+                    
+                    ToolbarItem(placement: .primaryAction) {
+                        Button(action: {
+                            webView?.reload()
+                        }) {
+                            Image(systemName: "arrow.clockwise")
+                        }
+                        .help("Reload")
+                    }
+                    
+                    // Always show the Sign in with Safari button
+                    ToolbarItem(placement: .primaryAction) {
+                        Button(action: {
+                            openInSafari()
+                        }) {
+                            Text("Sign in with Safari")
+                        }
+                        .help("Open authentication in Safari")
+                    }
+                }
+                .navigationTitle("Google Cameras")
+            
+            if isLoading {
+                ProgressView()
+                    .scaleEffect(1.5)
+                    .progressViewStyle(CircularProgressViewStyle(tint: .gray))
+            }
+            
+            // Show a more prominent authentication message
+            if showAuthMessage {
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        VStack(spacing: 16) {
+                            Text("Google Authentication Required")
+                                .font(.headline)
+                            
+                            Text("Google restricts sign-in from embedded browsers for security reasons. Please use the 'Sign in with Safari' button in the toolbar to authenticate.")
+                                .multilineTextAlignment(.center)
+                                .frame(maxWidth: 400)
+                            
+                            Button("Sign in with Safari") {
+                                openInSafari()
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .controlSize(.large)
+                            
+                            Button("Dismiss") {
+                                showAuthMessage = false
+                            }
+                            .buttonStyle(.bordered)
+                        }
+                        .padding(24)
+                        .background(Color(.windowBackgroundColor).opacity(0.95))
+                        .cornerRadius(12)
+                        .shadow(radius: 10)
+                        Spacer()
+                    }
+                    Spacer()
+                }
+            }
+        }
+    }
+    
+    private func openInSafari() {
+        // Open the authentication URL in Safari
+        let authURL = URL(string: "https://accounts.google.com/ServiceLogin?continue=https://home.google.com")!
+        NSWorkspace.shared.open(authURL)
+        
+        // Hide the auth message if it's showing
+        showAuthMessage = false
+    }
+}
+
+// MARK: ‑ WKWebView wrapper
+struct WebView: NSViewRepresentable {
+    let url: URL
+    @Binding var webView: WKWebView?
+    @Binding var canGoBack: Bool
+    @Binding var isLoading: Bool
+    @Binding var showAuthMessage: Bool
+    
+    class Coordinator: NSObject, WKUIDelegate, WKNavigationDelegate {
+        var parent: WebView
+        
+        init(_ parent: WebView) {
+            self.parent = parent
+        }
+        
+        // Handle pop-ups
+        func webView(_ w: WKWebView, createWebViewWith cfg: WKWebViewConfiguration,
+                     for nav: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+            w.load(nav.request)
+            return nil
+        }
+        
+        // Handle navigation
+        func webView(_ w: WKWebView, decidePolicyFor nav: WKNavigationAction,
+                     decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+            // Update back button state
+            DispatchQueue.main.async {
+                self.parent.canGoBack = w.canGoBack
+            }
+            
+            // Keep all navigation within the app
+            decisionHandler(.allow)
+        }
+        
+        // Update loading state
+        func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+            DispatchQueue.main.async {
+                self.parent.isLoading = true
+                self.parent.showAuthMessage = false
+            }
+        }
+        
+        // Detect Google's auth block page and update UI accordingly
+        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+            DispatchQueue.main.async {
+                self.parent.canGoBack = webView.canGoBack
+                self.parent.isLoading = false
+            }
+            
+            // Simplified detection for auth pages - just check for common text
+            webView.evaluateJavaScript("""
+                document.body.innerText.includes('Couldn't sign you in') || 
+                document.body.innerText.includes('This browser or app may not be secure') ||
+                document.body.innerText.includes('Sign in with Google')
+            """) { (result, error) in
+                if let needsAuth = result as? Bool, needsAuth {
+                    // Show the auth message overlay
+                    DispatchQueue.main.async {
+                        self.parent.showAuthMessage = true
+                    }
+                }
+            }
+        }
+        
+        // Handle errors
+        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+            DispatchQueue.main.async {
+                self.parent.isLoading = false
+            }
+        }
+        
+        func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+            DispatchQueue.main.async {
+                self.parent.isLoading = false
+            }
+        }
+    }
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
+    func makeNSView(context: Context) -> WKWebView {
+        // Enhanced configuration for Google compatibility
+        let cfg = WKWebViewConfiguration()
+        
+        // Use Chrome user agent for better compatibility
+        cfg.applicationNameForUserAgent =
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        
+        // Modern way to enable JavaScript (not using deprecated APIs)
+        let prefs = WKWebpagePreferences()
+        prefs.allowsContentJavaScript = true
+        cfg.defaultWebpagePreferences = prefs
+        
+        // Use Safari's cookie store for better authentication compatibility
+        let websiteDataStore = WKWebsiteDataStore.default()
+        cfg.websiteDataStore = websiteDataStore
+        
+        // Create and configure the WebView
+        let view = WKWebView(frame: .zero, configuration: cfg)
+        view.uiDelegate = context.coordinator
+        view.navigationDelegate = context.coordinator
+        view.allowsBackForwardNavigationGestures = true
+        view.allowsMagnification = true
+        view.setValue(false, forKey: "drawsBackground")
+        
+        // Load the URL
+        view.load(URLRequest(url: url))
+        
+        // Store reference to webView for back button functionality
+        DispatchQueue.main.async {
+            self.webView = view
+        }
+        
+        NotificationCenter.default.addObserver(forName: .reloadWebView,
+                                               object: nil,
+                                               queue: .main) { _ in view.reload() }
+        return view
+    }
+    
+    func updateNSView(_ nsView: WKWebView, context: Context) {
+        // Update the webView reference if needed
+        DispatchQueue.main.async {
+            if self.webView == nil {
+                self.webView = nsView
+            }
+        }
+    }
+}

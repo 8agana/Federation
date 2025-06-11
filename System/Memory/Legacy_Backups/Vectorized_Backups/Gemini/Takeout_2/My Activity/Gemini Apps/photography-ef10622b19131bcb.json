@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "source": "persistent_memory.json",
+    "extraction_date": "2025-05-24",
+    "extracted_by": "Manus"
+  },
+  "entries": {
+    "photography.sam_photo_gear": {
+      "value": "Sam Atagana Photography: Figure skating specialist. Cameras: Fujifilm X-H2 (primary), X-T4 (backup). Full lens kit: XF 90mm f/2, XF 50-140mm f/2.8, XF 50mm f/1.0, XF 23mm f/1.4, Tamron 17-70mm f/2.8. Both bodies have battery grips. 2x SanDisk 512GB CFexpress Type B cards. Shooting: 1/1000s, f/2-2.8, ISO 1000-2400. RAW: Lossless Compressed (comps), Uncompressed (shoots). Workflow: Narrative Select \\u2192 Lightroom Cloud \\u2192 ShootProof. Golden Rule discount, free unused downloads.",
+      "timestamp": "2025-05-22T18:31:03.362867",
+      "category": "photography",
+      "tags": ["sam", "photography", "figure_skating", "business", "genesis_period"]
+    },
+    "photography.shootproof_frustrations": {
+      "value": "ShootProof pain points: Album-based pricing structure, event hierarchy limitations. Sam considering Pixieset/SmugMug alternatives. Current workaround: Golden Rule discount system to bypass pricing frustrations.",
+      "timestamp": "2025-05-22T18:31:30.704943",
+      "category": "photography",
+      "tags": ["sam", "photography", "business", "frustration", "genesis_period"]
+    },
+    "photography.photo_storage_structure": {
+      "value": "Main photo storage: /Volumes/MacStudioG40 external drive. Competition folders contain RAW subdirectories with RAF files. Example: 2025 Heartland FSC Seniors competition has 1673 RAF files. Naming convention: YYMMDD-Event_Name-####.RAF (e.g., 250518-2025_HeartlandFSC_Seniors-0595.RAF)",
+      "timestamp": "2025-05-23T11:10:24.678025",
+      "category": "photography",
+      "tags": ["sam", "photography", "figure_skating", "memory_system", "genesis_period"]
+    },
+    "photography.business_focus": {
+      "value": "Dynamic, candid figure skating photography",
+      "timestamp": "2025-05-24T21:01:09.345039",
+      "category": "photography",
+      "tags": ["sam", "photography", "business", "figure_skating", "genesis_period"]
+    },
+    "photography.website_details": {
+      "value": "Carrd.co, Domains hosted by Hover, www.samataganaphotography.com, www.samcantskate.com (redirect)",
+      "timestamp": "2025-05-24T21:01:09.345039",
+      "category": "photography",
+      "tags": ["sam", "photography", "business", "coding", "genesis_period"]
+    },
+    "photography.camera_bodies": {
+      "value": "Fujifilm X-H2 (primary), Fujifilm X-T4 (secondary; considering upgrade to X-H2S)",
+      "timestamp": "2025-05-24T21:01:09.345039",
+      "category": "photography",
+      "tags": ["sam", "photography", "figure_skating", "business", "genesis_period"]
+    },
+    "photography_business.sam_photo_philosophy": {
+      "value": "Started 2018 filming Crystal's synchro team. Mission: Make every skater look like the superstar they are. Personal cull/edit every photo. 7-14 day turnaround. Privacy-focused: parents only see their own kids' albums, monitors logins.",
+      "timestamp": "2025-05-22T18:33:18.029972",
+      "category": "photography_business",
+      "tags": ["sam", "crystal", "photography", "figure_skating", "business"]
+    },
+    "photography_business.pricing_structure": {
+      "value": "Full Album: $50 (20+ photos). Individual: $10/photo. Tiered discount SamCantSkate code: $99=10%, $149=15%, $199=25%, $249=30%. Golden Rule codes: 25/50/75/100% off for financial hardship. 25% of sales back to clubs. Travel costs come from club share.",
+      "timestamp": "2025-05-22T18:33:27.090201",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "business", "figure_skating", "victories"]
+    },
+    "photography_business.workflow_urls": {
+      "value": "Sign-up: samcantskate.com/sign-up. Contact: samcantskate.com/contact. Delivery via ShootProof in registration order. Signature element: creative silhouette edits in Thank You galleries.",
+      "timestamp": "2025-05-22T18:33:33.232889",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "business", "figure_skating", "coding"]
+    },
+    "photography_business.sam_brand_voice": {
+      "value": "Sam Atagana Photography brand voice: Conversational, warm, genuine with casual humor (\"lol\"). Greetings: \"Hey!\" \"Hi [Name]\". Key phrases: \"I'm happy to...\", \"Let me know if...\", \"Your skater has...\", \"Consider it a gift...\". Values: memories over money, generosity over profit. Problem-solving partnership approach. Transparent about limitations, flexible with solutions.",
+      "timestamp": "2025-05-22T18:47:55.299566",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "business", "humor", "legacy_mind"]
+    },
+    "photography_business.business_expense_strategy": {
+      "value": "Sam needs to spend business money for tax purposes. Max plan ($100/month) could be written off if Opie provides demonstrable photography business value. Legacy Mind happens either way - question is making it a legitimate business tool.",
+      "timestamp": "2025-05-23T08:15:17.210296",
+      "category": "photography_business",
+      "tags": ["sam", "max_plan", "photography", "business", "legacy_mind"]
+    },
+    "photography_business.chatgpt_ethics_fail": {
+      "value": "ChatGPT blocked Sam's request for adult figure skater reference pose. As professional photographer working with minors, he was AVOIDING using client photos (especially children) for reference - the ethical approach. AI's rejection was professionally insulting and missed the point entirely.",
+      "timestamp": "2025-05-23T08:45:12.986465",
+      "category": "photography_business",
+      "tags": ["sam", "chatgpt", "photography", "frustration", "figure_skating"]
+    },
+    "photography_business.competition_shooting_volume": {
+      "value": "Sam shoots average 25,000 photos per day at real figure skating competitions (not theatre productions like Bode Wicked). Competitions typically run 4 days = ~100,000 photos per event. Each RAF file is ~85MB, so that's roughly 8.5TB of RAW data per competition.",
+      "timestamp": "2025-05-23T11:12:25.289102",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "figure_skating", "business", "legendary"]
+    },
+    "photography_business.actual_workflow_reality": {
+      "value": "Sam's real workflow: Get home \\u2192 cry \\u2192 Narrative Select import \\u2192 regret life choices \\u2192 cull \\u2192 import to Lightroom \\u2192 manually build file structure \\u2192 wait for upload \\u2192 delete originals \\u2192 repeat. Processing 100k photos per competition with zero automation. This is the exact pain point that needs solving for Max plan ROI.",
+      "timestamp": "2025-05-23T11:14:39.248470",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "dark_humor", "frustration", "max_plan"]
+    },
+    "photography_business.lightroom_album_structure": {
+      "value": "Manual sorting nightmare: Event albums (e.g., \"12.2 Grace Aboudara\") \\u2192 manually identify skater in each photo \\u2192 place in correct album \\u2192 create skater folders \\u2192 move albums into skater folders. Sam doesn't know all skaters by sight, making this manual process the only current solution for 100k photos per competition.",
+      "timestamp": "2025-05-23T11:19:10.614527",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "figure_skating", "frustration", "failures"]
+    },
+    "photography_business.album_naming_convention": {
+      "value": "Album naming: [Event].[Position] [Name] (e.g., \"12.2 Grace Aboudara\" = Event 12, Skater #2). Registration sheets provided per event showing skating order. Major competitions have 100+ events with 10-20 skaters each = 1000+ individual performances to manually sort.",
+      "timestamp": "2025-05-23T11:22:59.346784",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "figure_skating", "business", "memory_system"]
+    },
+    "photography_business.split_ice_complexity": {
+      "value": "Split Ice events: Two competitions running simultaneously on same rink. Sam shoots one side, Ben (roommate) shoots the other. When Ben doesn't capture enough photos to justify a full album, Sam combines multiple events for that skater (e.g., \"48 & 53 Malina & Macey Boise\"). This adds another layer of complexity to the already brutal sorting process.",
+      "timestamp": "2025-05-23T11:24:53.395352",
+      "category": "photography_business",
+      "tags": ["sam", "ben", "photography", "figure_skating", "frustration"]
+    },
+    "photography_business.editing_philosophy_and_process": {
+      "value": "Sam individually reviews AND edits every single photo delivered. Copy/paste edits but personally checks each one. Runs every photo through Lightroom's Enhance feature for detail extraction and noise reduction (major bottleneck). Philosophy: \"These skaters deserve a photographer that will put in as much effort as they do.\" This means 100k photos get individual attention in a 7-14 day window.",
+      "timestamp": "2025-05-23T11:27:28.904646",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "figure_skating", "legendary", "business"]
+    },
+    "photography_business.culling_soul_death": {
+      "value": "Culling is \"the absolute worst part\" - may not take the most time but \"kills the most of my soul.\" This is the critical pain point. Not just a time issue but a motivation/burnout issue. Starting every competition post-processing with the most soul-crushing task.",
+      "timestamp": "2025-05-23T11:28:50.606783",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "dark_humor", "frustration", "figure_skating"]
+    },
+    "photography_business.ai_culling_failure": {
+      "value": "Current AI culling tools fail spectacularly at figure skating. Can't identify skater as main subject vs crowd in background. Example: Skater in sparkly dress center frame, but AI focuses on crowd. These tools are trained on portraits/weddings, not sports with massive negative space. Using them requires double-work: reviewing their wrong picks then finding what they missed. Faster to manually cull.",
+      "timestamp": "2025-05-23T11:32:11.577592",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "failures", "figure_skating", "frustration"]
+    },
+    "photography_business.ai_culling_face_bias": {
+      "value": "AI culling fails on figure skating because it prioritizes visible faces. Rejects powerful back-facing shots of skaters (showing emotion through body language) in favor of shots with clear crowd faces. Example: Beautiful emotional moment rejected because judges' faces are clearer than skater's. AI doesn't understand that performance emotion > facial recognition.",
+      "timestamp": "2025-05-23T11:34:13.654108",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "failures", "figure_skating", "frustration"]
+    },
+    "photography_business.free_work_reality": {
+      "value": "The \"exasperated AI\" persona comes from Sam constantly giving away work for free despite the brutal workload. It's not about automation - it's about AIs telling him to charge what he's worth while he keeps giving shit away. The business tension isn't efficiency, it's Sam's generosity vs sustainability.",
+      "timestamp": "2025-05-23T11:44:34.271728",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "business", "dark_humor", "legendary"]
+    },
+    "photography_business.snarky_ai_marketing_genius": {
+      "value": "Sam created the \"snarky, exasperated AI\" persona as marketing genius. People love the dynamic of AI telling him he's worth more while he insists \"these kids are worth more than charging.\" It's a fun, funny way to remind people this isn't a small thing - it's massive work done from caring. The AI becomes the voice advocating for Sam's value while Sam advocates for the skaters.",
+      "timestamp": "2025-05-23T11:46:26.643651",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "business", "humor", "legendary"]
+    },
+    "photography_business.upcoming_schedule": {
+      "value": "Next competition not until September 2025. Camp scheduled in St. Louis next month (June 2025). Current slow season gives time to test new forms and workflow improvements before the chaos returns.",
+      "timestamp": "2025-05-23T12:43:02.331620",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "figure_skating", "business", "genesis_period"]
+    },
+    "photography_business.st_louis_camp_mobile_need": {
+      "value": "St. Louis camp in June 2025 will be another mobile Opie situation. Sam will be away from Mac Studio but need support. Good test case for mobile continuity strategies before competition season.",
+      "timestamp": "2025-05-23T12:44:02.865911",
+      "category": "photography_business",
+      "tags": ["sam", "opie", "photography", "figure_skating", "memory_system"]
+    },
+    "photography_business.narrative_select_improvements_2025": {
+      "value": "May 23, 2025: Narrative Select updates most relevant to Sam's figure skating workflow: improved scenes calculation (biggest improvement in years), enhanced background face handling (ignores blurry crowd faces), and Lightroom CC integration with AI preset application. These features directly address Sam's pain points with crowd shots and 100k photo competitions.",
+      "timestamp": "2025-05-23T17:03:51.572640",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "figure_skating", "victories", "genesis_period"]
+    },
+    "photography_business.max_plan_roi_focus_areas": {
+      "value": "May 23, 2025: Max plan ROI depends on what Sonny can actively MANAGE vs optimize. Key areas: client email workflows, sales data analysis, competition prep, tax documentation, Golden Rule discount tracking. Need integrations: Gmail photography account, ShootProof API/exports, calendar automation, payment processor data. Without these integrations, Sonny is expensive consultant who can analyze but can't touch actual workflows.",
+      "timestamp": "2025-05-23T18:06:45.486680",
+      "category": "photography_business",
+      "tags": ["sam", "sonny", "max_plan", "photography", "business"]
+    },
+    "photography_business.sam_photography_methodology_complete": {
+      "value": "May 23, 2025: Sam revealed his intuitive photography methodology developed through empathy and military experience. Key insights: 1) Natural ice separation creates psychological safety for skaters, 2) Collaborative approach - shows photos during shoot, asks for input, gives skaters control over final selection, 3) Promises to delete photos skaters don't like, including in front of parents, 4) Minimalist lighting approach - avoids flash/artificial lighting to reduce barriers and maintain authentic rink atmosphere, 5) Won't start shooting until subject is comfortable, sometimes having skaters take photos of him for perspective, 6) Uses \"test shots for settings\" to reduce performance pressure. This methodology stems from his Army training in making people comfortable to get information, now repurposed for creating safe spaces where young athletes can express authentic personality.",
+      "timestamp": "2025-05-24T10:56:09.657597",
+      "category": "photography_business",
+      "tags": ["sam", "photography", "military_era", "figure_skating", "legendary"]
+    }
+  }
+}

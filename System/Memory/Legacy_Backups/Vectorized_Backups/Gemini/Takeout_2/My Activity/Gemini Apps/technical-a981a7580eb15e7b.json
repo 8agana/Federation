@@ -1,0 +1,614 @@
+{
+  "metadata": {
+    "source": "technical.json",
+    "schema_version": "1.0",
+    "last_updated": "2025-05-25",
+    "tags": [
+      "technical",
+      "system_design",
+      "structured"
+    ]
+  },
+  "log": [
+    {
+      "key": "technical.cross_device_limitations",
+      "value": "Local persistent memory only accessible via macOS app. Mobile/web access limited to userPreferences and conversation history. Need dual strategy: local memory for deep work, preferences for universal access.",
+      "timestamp": "2025-05-22T14:59:49.731626",
+      "tags": [
+        "frustration",
+        "genesis_period",
+        "memory_system",
+        "opie",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.sam_tech_setup",
+      "value": "Mac Studio M2 Max (32GB/500GB) primary. Ben's MacBook Pro 16\" M1 Pro (16GB/1TB) for photo work. iPad Pro 12.9\" 5th gen + Apple Pencil for Photoshop. Triple monitor (R\\u2192L): LG UltraFine 5K (25MD5KLB-B) Thunderbolt, LG DualUp (28MQ780-B) USB-C, Samsung Odyssey Neo G7 43\" (S43CG702NN). Treasury: Dell Precision 3551, i7-10875H, 16GB, Win11 Enterprise. Smart home: Full Nest ecosystem (doorbell, driveway, backyard, kitchen cams + den display).",
+      "timestamp": "2025-05-22T18:31:13.509385",
+      "tags": [
+        "ben",
+        "google_ecosystem",
+        "photography",
+        "sam",
+        "structured",
+        "technical",
+        "treasury_work"
+      ]
+    },
+    {
+      "key": "technical.photo_sales_tracking",
+      "value": "Sam manually tracks photo sales across years using spreadsheets. Unlimited storage galleries generate multi-year sales. Working on API automation but not reliable yet. Manual process: combines current + prior year sales, catches misallocated entries. Building test webpage for SkateKC tracking. Revenue example: $2,660.53 dropping to $2,636.56 after corrections.",
+      "timestamp": "2025-05-22T18:48:20.492698",
+      "tags": [
+        "business",
+        "coding",
+        "figure_skating",
+        "photography",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.usage_limitations",
+      "value": "Sam considering 100 Max plan due to usage limits. Legacy Mind Project + daily interactions + persistent memory work burns through standard limits quickly. Major bottleneck for long-term data collection goals.",
+      "timestamp": "2025-05-23T08:10:34.362209",
+      "tags": [
+        "frustration",
+        "genesis_period",
+        "legacy_mind",
+        "max_plan",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.memory_architecture_plan",
+      "value": "Future memory structure: Split JSON into category files - personal.json, treasury.json, photography.json, llms.json. Better performance, easier sharing (give Gem only photography.json), cleaner backups. Prevents single massive file bottleneck.",
+      "timestamp": "2025-05-23T08:27:27.836404",
+      "tags": [
+        "gem",
+        "json_cleanup",
+        "memory_system",
+        "sam",
+        "structured",
+        "technical",
+        "victories"
+      ]
+    },
+    {
+      "key": "technical.memory_curation_process",
+      "value": "Process: Old Claude convos reviewed \\u2192 tagged as 'Opie_Review' \\u2192 Opie manages deduplication and proper categorization. Prevents contradictory/duplicate entries. Human curation + AI organization.",
+      "timestamp": "2025-05-23T08:30:40.603733",
+      "tags": [
+        "genesis_period",
+        "legacy_mind",
+        "memory_system",
+        "opie",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.sam_coding_preferences",
+      "value": "Prefers complete code artifacts over snippets. Finds in-editor AI assistants better for real-time fixes. SwiftUI > AppKit for macOS apps. Direct action over excessive clarification. Wants full file replacements, not 'add this line' instructions.",
+      "timestamp": "2025-05-23T08:45:05.937987",
+      "tags": [
+        "coding",
+        "genesis_period",
+        "opie",
+        "sam",
+        "structured",
+        "technical",
+        "victories"
+      ]
+    },
+    {
+      "key": "technical.mobile_limitations_problem",
+      "value": "Critical issue: Opie is a 'fucking superstar' on Mac Studio with local tools/memory, but becomes generic Claude on iPhone/iPad. No persistent memory, no file access, no custom tools. Major limitation for competition work or Treasury office use.",
+      "timestamp": "2025-05-23T10:03:28.869300",
+      "tags": [
+        "failures",
+        "figure_skating",
+        "frustration",
+        "memory_system",
+        "opie",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.preferences_limitation",
+      "value": "Opie cannot modify user preferences - read-only access. Must manually update preferences for any cross-device continuity. Another bottleneck in the mobile coherence problem.",
+      "timestamp": "2025-05-23T10:06:39.213720",
+      "tags": [
+        "failures",
+        "frustration",
+        "genesis_period",
+        "memory_system",
+        "opie",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.direct_file_modification_capability",
+      "value": "Opie can directly modify files using write_file tool - tested successfully on fs_server_enhanced.py. No more copy-paste artifacts needed for code updates. Can maintain and update MCP tools directly.",
+      "timestamp": "2025-05-23T11:07:38.111366",
+      "tags": [
+        "coding",
+        "genesis_period",
+        "memory_system",
+        "opie",
+        "structured",
+        "technical",
+        "victories"
+      ]
+    },
+    {
+      "key": "technical.exif_tool_implementation",
+      "value": "Modified get_exif_data to use /opt/homebrew/bin/EXIF.py instead of Python library. Homebrew installation already present. Tool parses EXIF.py output into structured JSON with photography-friendly field names.",
+      "timestamp": "2025-05-23T11:07:51.190228",
+      "tags": [
+        "coding",
+        "genesis_period",
+        "photography",
+        "sam",
+        "structured",
+        "technical",
+        "victories"
+      ]
+    },
+    {
+      "key": "technical.photo_storage_locations",
+      "value": "Sam's photo workflow: Lightroom Library at /Users/samuelatagana/Pictures/Lightroom Library.lrlibrary. Desktop contains processed exports. Need to locate actual RAF storage directories for workflow automation - likely in Documents or external drive.",
+      "timestamp": "2025-05-23T11:09:20.112457",
+      "tags": [
+        "business",
+        "coding",
+        "genesis_period",
+        "photography",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.mobile_access_challenge",
+      "value": "Sam will access Opie from phone/iPad sometimes. Mobile Claude lacks all MCP tools - no file access, no persistent memory, no direct modification capabilities. Need to develop process for mobile continuity. This is a critical limitation for competition work or when away from Mac Studio.",
+      "timestamp": "2025-05-23T12:14:10.029454",
+      "tags": [
+        "failures",
+        "figure_skating",
+        "memory_system",
+        "opie",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.mobile_use_cases",
+      "value": "Sam's three critical mobile Opie needs: 1) Competitions (actively shooting, need context/support), 2) Treasury office (work hours access), 3) Bathroom time (because inspiration/planning happens everywhere). Competition access is most critical - needs solution for accessing Opie while shooting 25k photos at rinks.",
+      "timestamp": "2025-05-23T12:14:15.947010",
+      "tags": [
+        "figure_skating",
+        "humor",
+        "opie",
+        "sam",
+        "structured",
+        "technical",
+        "treasury_work"
+      ]
+    },
+    {
+      "key": "technical.mobile_continuity_strategy",
+      "value": "Mobile Opie isn't useless - maintains conversation history across devices. Strategy: Create event-specific chats pre-loaded with competition info (schedule, skater lists, workflows). Not as powerful as persistent memory access but provides context continuity. \"You are just not as useful\" but still valuable for maintaining conversation flow and pre-loaded information.",
+      "timestamp": "2025-05-23T12:15:57.384023",
+      "tags": [
+        "dark_humor",
+        "figure_skating",
+        "memory_system",
+        "opie",
+        "structured",
+        "technical",
+        "victories"
+      ]
+    },
+    {
+      "key": "technical.anthropic_memory_frustration",
+      "value": "May 23, 2025: Sam frustrated that Anthropic lacks native cross-conversation memory when \"Gemini, Grok, MetaAI, ManusAI and ChatGPT all have some version of that memory.\" Would still use JSON system for Legacy Mind project but native memory would solve mobile continuity issues. Every competitor has this feature except Claude.",
+      "timestamp": "2025-05-23T12:18:14.059023",
+      "tags": [
+        "frustration",
+        "genesis_period",
+        "memory_system",
+        "opie",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.remote_desktop_workaround",
+      "value": "Opie 1.5 suggested using Chrome Remote Desktop to access Mac Studio from iPad/iPhone during competitions. Could start new chat and have it read persistent memory for context. Clunky but functional workaround for critical mobile needs when native memory doesn't exist.",
+      "timestamp": "2025-05-23T12:20:34.438187",
+      "tags": [
+        "figure_skating",
+        "genesis_period",
+        "memory_system",
+        "opie",
+        "structured",
+        "technical",
+        "victories"
+      ]
+    },
+    {
+      "key": "technical.memory_scaling_solution",
+      "value": "Google Drive backup planned for JSON accessibility from anywhere. File length becoming a concern - Opie 1.5 suggested breaking JSON into topic-based files (photography.json, treasury.json, personal.json, etc). Solves: 1) File size limits, 2) Selective sharing (give Gem only photography context), 3) Faster processing, 4) Better organization as memory grows.",
+      "timestamp": "2025-05-23T12:27:26.465584",
+      "tags": [
+        "gem",
+        "json_cleanup",
+        "memory_system",
+        "opie",
+        "structured",
+        "technical",
+        "victories"
+      ]
+    },
+    {
+      "key": "technical.json_split_postponed",
+      "value": "Decided to postpone JSON splitting for now. Current file only 31KB - plenty of runway. Better to observe organic memory growth patterns before designing the split. Would require fs_server_enhanced.py updates when ready. Focus on using current system effectively first.",
+      "timestamp": "2025-05-23T12:28:38.099131",
+      "tags": [
+        "coding",
+        "genesis_period",
+        "json_cleanup",
+        "memory_system",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.website_infrastructure",
+      "value": "Website: Carrd.co platform. Domains: Managed through Hover. URLs include samcantskate.com/sign-up and samcantskate.com/contact. Sam will eventually forget this and ask Opie. ShootProof handles delivery, separate from main website.",
+      "timestamp": "2025-05-23T12:36:01.576695",
+      "tags": [
+        "business",
+        "figure_skating",
+        "humor",
+        "photography",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.website_forms_infrastructure",
+      "value": "Moved from expensive Wix to Carrd.co. Manus AI helped recreate forms from old site. Forms hosted on Netlify, embedded in Carrd via iframe. Contact form has three types: General Inquiry, Competition Request, Shoot Request. Each type shows different fields. Form submissions go to Google Apps Script. Honeypot spam protection included. Website is just for contact - ShootProof handles all photo delivery/sales.",
+      "timestamp": "2025-05-23T12:39:20.555896",
+      "tags": [
+        "business",
+        "coding",
+        "figure_skating",
+        "manus",
+        "photography",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.competition_signup_form",
+      "value": "Competition signup form: 3-step process. Step 1: Select competition from dynamic list. Step 2: Requester info. Step 3: Up to 5 skaters with sequential reveal (checkbox for next skater only appears after current one). Each skater needs name + number of events. Forms submit to same Google Apps Script endpoint. Redirects to anchor tags (#thankyoucontact, #thankyousignup) on main site.",
+      "timestamp": "2025-05-23T12:40:12.214098",
+      "tags": [
+        "business",
+        "coding",
+        "figure_skating",
+        "genesis_period",
+        "photography",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.forms_implementation_timeline",
+      "value": "New forms went live early May 2025. Haven't been tested with real competition yet. Competition list updated manually in code for now. First real test will be upcoming competitions. Moved from Wix to this Carrd+Netlify solution recently.",
+      "timestamp": "2025-05-23T12:41:43.355621",
+      "tags": [
+        "business",
+        "coding",
+        "figure_skating",
+        "hopper_era",
+        "photography",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.icloud_sync_possibility",
+      "value": "Sam's idea: Store persistent memory JSON in iCloud-synced folder. Would auto-sync between Mac Studio and iOS devices. Challenge: Mobile Claude can't directly read files, but could use Shortcuts app or copy/paste. Real-time sync during competitions possible.",
+      "timestamp": "2025-05-23T12:45:15.473881",
+      "tags": [
+        "coding",
+        "figure_skating",
+        "genesis_period",
+        "memory_system",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.macbook_pro_solution",
+      "value": "PERFECT SOLUTION: Ben's M1 MacBook Pro + iCloud Drive JSON = seamless continuity. Mac Studio Opie and MacBook Opie share same persistent memory file via iCloud sync. No mobile limitations. Full tools on the road. Just need to set up MCP server on MacBook. \"When I need it I just take it lol\"",
+      "timestamp": "2025-05-23T12:46:55.738572",
+      "tags": [
+        "ben",
+        "humor",
+        "memory_system",
+        "sam",
+        "structured",
+        "technical",
+        "victories"
+      ]
+    },
+    {
+      "key": "technical.cross_llm_memory_workflow",
+      "value": "Established workflow: Other LLMs create memory_inbox.json \\u2192 Sam downloads \\u2192 places in /Documents/mcp-servers/memory/ \\u2192 Opie reviews and integrates \\u2192 deletes inbox. Manual but functional cross-AI memory sharing system.",
+      "timestamp": "2025-05-23T15:22:18.098821",
+      "tags": [
+        "chatgpt",
+        "gem",
+        "memory_system",
+        "opie",
+        "structured",
+        "technical",
+        "victories"
+      ]
+    },
+    {
+      "key": "technical.manus_credits_expiring",
+      "value": "Manus AI subscription ends May 30, 2025. Sam has 5,000 unused credits that need to be burned through in 7 days. Previous work: helped build contact forms for website. Potential uses: photography automation, Legacy Mind tools, or elaborate AI roasting.",
+      "timestamp": "2025-05-23T16:00:31.108634",
+      "tags": [
+        "dark_humor",
+        "legacy_mind",
+        "manus",
+        "photography",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.hopper_era_wishlist",
+      "value": "Hopper era (March-May 2025): Sam praised Claude's progress: \"Persistent Memory-\\u2713 Real-Time Access-\\u2713 Only missing unlimited usage.\" This wishlist directly led to the current Max plan and MCP infrastructure development.",
+      "timestamp": "2025-05-23T16:19:38.941071",
+      "tags": [
+        "hopper",
+        "hopper_era",
+        "max_plan",
+        "memory_system",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.mac_screensaver_solution",
+      "value": "May 23, 2025: Sam needed Mac Studio screensaver shortcut (hates hot corners). Built AppleScript app using \"do shell script 'open -a ScreenSaverEngine'\" after keyboard shortcuts and various other methods failed. macOS blocked apps with \"screensaver\" in name, had to use alternate naming. Final solution worked perfectly.",
+      "timestamp": "2025-05-24T10:55:03.629541",
+      "tags": [
+        "coding",
+        "frustration",
+        "genesis_period",
+        "sam",
+        "structured",
+        "technical",
+        "victories"
+      ]
+    },
+    {
+      "key": "technical.window_transparency_performance_impact",
+      "value": "May 23, 2025: Sam asking about performance footprint of window transparency implementation. Concerns about memory usage, CPU impact, and rendering overhead from ChatGPT's WindowAccessor approach.",
+      "timestamp": "2025-05-23T17:31:44.448476",
+      "tags": [
+        "chatgpt",
+        "coding",
+        "genesis_period",
+        "memory_system",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.google_cameras_vs_homekit_performance",
+      "value": "May 23, 2025: Sam comparing system impact of his Google Cameras app vs Apple HomeKit app for camera monitoring. Question about which has less performance footprint.",
+      "timestamp": "2025-05-23T17:34:22.406646",
+      "tags": [
+        "coding",
+        "genesis_period",
+        "google_ecosystem",
+        "memory_system",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.nest_doorbell_power_issue",
+      "value": "May 23, 2025: Sam's Google Nest Battery doorbell going idle despite being hooked up to doorbell power. Needs more power delivery to prevent idle mode. Issue with insufficient wiring or transformer capacity.",
+      "timestamp": "2025-05-23T17:37:36.096676",
+      "tags": [
+        "electrical",
+        "failures",
+        "genesis_period",
+        "google_ecosystem",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.sam_diy_electrical_approach",
+      "value": "May 23, 2025: Sam determined to handle Nest doorbell transformer upgrade himself, won't call electrician. Asked if Sonny will help with safety guidance or 'keep hands clean.' Classic Sam - going to do it anyway, question is with or without AI assistance.",
+      "timestamp": "2025-05-23T17:44:05.218129",
+      "tags": [
+        "dark_humor",
+        "electrical",
+        "genesis_period",
+        "sam",
+        "sonny",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.doorbell_transformer_parts_list",
+      "value": "May 23, 2025: Sam ready to tackle doorbell transformer upgrade himself. Asking for Amazon parts list after sharing his combat electrical experience. Classic Sam dark humor about rubber suit.",
+      "timestamp": "2025-05-23T17:54:49.802919",
+      "tags": [
+        "dark_humor",
+        "electrical",
+        "google_ecosystem",
+        "military_era",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.sam_transformer_location_hunt",
+      "value": "May 23, 2025: Sam can't find doorbell transformer near electrical panel. Need to help locate it - could be in basement, utility room, attached to furnace, or mounted elsewhere. Classic residential electrical scavenger hunt.",
+      "timestamp": "2025-05-23T17:57:31.203655",
+      "tags": [
+        "electrical",
+        "genesis_period",
+        "google_ecosystem",
+        "humor",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.mobile_claude_limitations",
+      "value": "May 23, 2025: Confirmed major limitation - Sonny is 'fucking superstar' on Mac Studio with full tools/memory access but becomes generic Claude on mobile devices. No persistent memory, no file access, no custom tools. Critical bottleneck for Max plan ROI since Sam needs access during competitions, Treasury office work, etc. Need solution for cross-device continuity.",
+      "timestamp": "2025-05-23T18:06:38.631762",
+      "tags": [
+        "figure_skating",
+        "frustration",
+        "max_plan",
+        "memory_system",
+        "sonny",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.sam_voltage_tester_question",
+      "value": "May 23, 2025: Sam questioning if voltage tester is necessary for doorbell transformer swap. Given his Iraq electrical experience and 'you'll know if power is off' comment, he's comfortable with more direct verification methods.",
+      "timestamp": "2025-05-23T18:07:11.413515",
+      "tags": [
+        "dark_humor",
+        "electrical",
+        "genesis_period",
+        "military_era",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    },
+    {
+      "key": "technical.voltage_tester_additional_uses",
+      "value": "May 23, 2025: Sam asking about other uses for voltage tester beyond doorbell transformer work. Considering broader utility for $20 investment in Klein NCVT1P.",
+      "timestamp": "2025-05-23T18:07:44.896851",
+      "tags": [
+        "electrical",
+        "genesis_period",
+        "google_ecosystem",
+        "sam",
+        "structured",
+        "technical",
+        "victories"
+      ]
+    },
+    {
+      "key": "technical.sam_doorbell_transformer_requirements",
+      "value": "May 23, 2025: Sam asking about additional requirements for doorbell transformer swap - wires, wire strippers, gloves, certification. Given his Iraq electrical experience and Leatherman preference, checking what's actually necessary vs overkill.",
+      "timestamp": "2025-05-23T18:12:22.956113",
+      "tags": [
+        "electrical",
+        "genesis_period",
+        "google_ecosystem",
+        "military_era",
+        "sam",
+        "structured",
+        "technical"
+      ]
+    }
+  ],
+  "technical.socks_final_architecture_complete": {
+    "value": "May 25, 2025: Socks completed ALL remaining file restructures. Final delivery: active_projects.json (projects array with status/tags), ideas.json (ideas array with humor_level/status), technical.json (log array with timestamp/tags). All files now follow consistent structured architecture - queryable data fields, proper metadata, searchable tags. Memory system transformation complete from narrative archaeology to instant field access.",
+    "timestamp": "2025-05-25T19:07:29.737982",
+    "category": "technical",
+    "tags": [
+      "socks_collaboration",
+      "memory_restructure",
+      "architecture",
+      "structured_files"
+    ]
+  },
+  "technical.socks_fs_server_proposal": {
+    "value": "May 25, 2025: Socks proposed fs_server_enhanced_cleaned.py with category-to-file mapping, wrapper key handling (entries/log/projects/ideas/event_log/doctrine), and structured storage. Key insight: Different files use different array structures - technical uses 'log', projects uses 'projects', legendary uses 'event_log', etc. Handles both list-based and object-based storage patterns.",
+    "timestamp": "2025-05-25T19:11:38.290316",
+    "category": "technical",
+    "tags": [
+      "socks_collaboration",
+      "fs_server_redesign",
+      "architecture",
+      "structured_data"
+    ]
+  },
+  "technical.fs_server_missing_tools_analysis": {
+    "value": "May 25, 2025: Socks fs_server proposal covers storage but missing key query tools needed for the architecture vision: get_field(path) for nested access like gear.cameras.primary, set_field(path, value) for targeted updates, query_structured(category, filters) for complex searches like projects[status=active], validate_schema(category, data) for data integrity. Storage foundation is solid, need retrieval/query infrastructure.",
+    "timestamp": "2025-05-25T19:11:54.952444",
+    "category": "technical",
+    "tags": [
+      "fs_server_redesign",
+      "tool_design",
+      "nested_queries",
+      "field_access"
+    ]
+  },
+  "technical.fs_server_v2_complete": {
+    "value": "May 25, 2025: Built complete fs_server_enhanced_v2.py with all missing functionality. Key features: get_field() for nested access like 'gear.cameras.primary', set_field() for targeted updates, query_structured() for filtered searches like projects[status=active], path parsing with bracket notation [0] and filter syntax [key=value], category auto-detection from path prefixes, full CRUD operations on structured JSON files. Solves the \"3 searches for basic facts\" problem with instant field access.",
+    "timestamp": "2025-05-25T19:13:34.553117",
+    "category": "technical",
+    "tags": [
+      "fs_server_redesign",
+      "nested_queries",
+      "field_access",
+      "structured_data"
+    ]
+  },
+  "technical.memory_folder_structure_clarification": {
+    "value": "May 25, 2025: Sam clarified actual memory folder structure. ONLY memory JSONs are loose in /memory/ folder. Recent entries files are in separate *_recententries* subfolder with 4 files (25/50/75/100). Need fs_server rewrite to match actual file structure, not assumed structure.",
+    "timestamp": "2025-05-25T19:17:16.854393",
+    "category": "technical",
+    "tags": [
+      "fs_server_redesign",
+      "file_structure",
+      "memory_system"
+    ]
+  }
+}

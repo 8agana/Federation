@@ -1,0 +1,108 @@
+{
+  "test_date": "2025-06-09T21:01:51.960534",
+  "samples_tested": 5,
+  "migrations": [
+    {
+      "old_id": "20250530_2306_chunk_0",
+      "new_id": "cc_20250530_120000_05a0eaeb",
+      "date_extracted": "20250530_120000",
+      "content_preview": "User: Hey CC,\nWe've been hitting repeated context length and compaction errors. Here's\na summary to ...",
+      "metadata_before": 23,
+      "metadata_after": 10,
+      "cleaned_fields": [
+        "category",
+        "domain",
+        "priority",
+        "message_count",
+        "original_id",
+        "migration_version",
+        "migrated_at",
+        "migration_source_db",
+        "source",
+        "created_at"
+      ]
+    },
+    {
+      "old_id": "20250530_2306_chunk_1",
+      "new_id": "cc_20250530_120000_cf8bf40e",
+      "date_extracted": "20250530_120000",
+      "content_preview": "ne take_screenshot() function in computer_use_server.py for\nrecursion/bugs\n\u2610 Check MCP logs for spec...",
+      "metadata_before": 23,
+      "metadata_after": 10,
+      "cleaned_fields": [
+        "category",
+        "domain",
+        "priority",
+        "message_count",
+        "original_id",
+        "migration_version",
+        "migrated_at",
+        "migration_source_db",
+        "source",
+        "created_at"
+      ]
+    },
+    {
+      "old_id": "20250530_2306_chunk_2",
+      "new_id": "cc_20250530_120000_29bac2f1",
+      "date_extracted": "20250530_120000",
+      "content_preview": "pecific error messages\n\u2610 Fix the maximum call stack error in take_screenshot()\n\u23fa Let me check the MC...",
+      "metadata_before": 24,
+      "metadata_after": 10,
+      "cleaned_fields": [
+        "category",
+        "domain",
+        "priority",
+        "message_count",
+        "original_id",
+        "migration_version",
+        "migrated_at",
+        "migration_source_db",
+        "source",
+        "created_at"
+      ]
+    },
+    {
+      "old_id": "20250530_2306_chunk_3",
+      "new_id": "cc_20250530_120000_a2327adc",
+      "date_extracted": "20250530_120000",
+      "content_preview": "plementation\nThe screenshot function itself was perfectly fine - the problem was in\nthe MCP server's...",
+      "metadata_before": 24,
+      "metadata_after": 10,
+      "cleaned_fields": [
+        "category",
+        "domain",
+        "priority",
+        "message_count",
+        "original_id",
+        "migration_version",
+        "migrated_at",
+        "migration_source_db",
+        "source",
+        "created_at"
+      ]
+    },
+    {
+      "old_id": "20250530_2306_chunk_4",
+      "new_id": "cc_20250530_120000_f71c74d3",
+      "date_extracted": "20250530_120000",
+      "content_preview": "ppears to be a deeper problem in either the MCP\nframework or Claude Code's tool calling mechanism wh...",
+      "metadata_before": 23,
+      "metadata_after": 10,
+      "cleaned_fields": [
+        "category",
+        "domain",
+        "priority",
+        "message_count",
+        "original_id",
+        "migration_version",
+        "migrated_at",
+        "migration_source_db",
+        "source",
+        "created_at"
+      ]
+    }
+  ],
+  "date_extraction_working": true,
+  "metadata_cleaned": true
+}

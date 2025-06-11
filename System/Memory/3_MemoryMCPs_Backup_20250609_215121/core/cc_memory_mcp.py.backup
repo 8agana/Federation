@@ -1,0 +1,704 @@
+#!/usr/bin/env python3
+"""
+CC Federation Memory MCP Server
+Exposes CC's federation memory operations as MCP tools
+
+This is a thin wrapper around the federation bridge layer.
+All business logic remains in Layer 2 (bridge scripts).
+"""
+
+import asyncio
+import sys
+from pathlib import Path
+from typing import Dict, List, Optional, Any, Union
+import json
+import logging
+
+# Add bridge scripts to Python path
+sys.path.append(str(Path(__file__).parent.parent.parent.parent / "2_BridgeScripts"))
+from federation.cc_federation_bridge import CCFederationBridge
+from federation.shared_federation_bridge import SharedFederationBridge
+
+# Add Obsidian integration
+sys.path.append(str(Path(__file__).parent / "obsidian"))
+from vault_manager import ObsidianVaultManager
+from integration import MemoryNoteIntegration
+
+# Import MCP SDK
+try:
+    from mcp.server import Server, NotificationOptions
+    from mcp.server.models import InitializationOptions
+    import mcp.server.stdio
+    import mcp.types as types
+except ImportError:
+    print("ERROR: MCP SDK not installed. Install with: pip install mcp", file=sys.stderr)
+    sys.exit(1)
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[logging.StreamHandler(sys.stderr)]
+)
+logger = logging.getLogger("cc_federation_mcp")
+
+# Initialize MCP server
+server = Server("cc-federation-memory")
+
+# Initialize bridges (will be done on first use)
+bridge: Optional[CCFederationBridge] = None
+shared_bridge: Optional[SharedFederationBridge] = None
+
+# Initialize Obsidian components
+vault_manager: Optional[ObsidianVaultManager] = None
+memory_integration: Optional[MemoryNoteIntegration] = None
+
+
+def get_bridge() -> CCFederationBridge:
+    """Get or initialize the CC federation bridge"""
+    global bridge
+    if bridge is None:
+        try:
+            bridge = CCFederationBridge()
+            logger.info("CC Federation Bridge initialized successfully")
+        except Exception as e:
+            logger.error(f"Failed to initialize bridge: {e}")
+            raise
+    return bridge
+
+
+def get_shared_bridge() -> SharedFederationBridge:
+    """Get or initialize the shared federation bridge"""
+    global shared_bridge
+    if shared_bridge is None:
+        try:
+            shared_bridge = SharedFederationBridge()
+            logger.info("Shared Federation Bridge initialized successfully")
+        except Exception as e:
+            logger.error(f"Failed to initialize shared bridge: {e}")
+            raise
+    return shared_bridge
+
+
+def get_vault_manager() -> ObsidianVaultManager:
+    """Get or initialize the Obsidian vault manager"""
+    global vault_manager
+    if vault_manager is None:
+        try:
+            vault_manager = ObsidianVaultManager()
+            logger.info("Obsidian Vault Manager initialized successfully")
+        except Exception as e:
+            logger.error(f"Failed to initialize vault manager: {e}")
+            raise
+    return vault_manager
+
+
+def get_memory_integration() -> MemoryNoteIntegration:
+    """Get or initialize the memory-note integration"""
+    global memory_integration
+    if memory_integration is None:
+        try:
+            # Need ChromaDB collection for integration
+            bridge = get_bridge()
+            collection = bridge.memory_manager.get_cc_collection()
+            vault = get_vault_manager()
+            memory_integration = MemoryNoteIntegration(vault, collection)
+            logger.info("Memory-Note Integration initialized successfully")
+        except Exception as e:
+            logger.error(f"Failed to initialize integration: {e}")
+            raise
+    return memory_integration
+
+
+# Tool definitions
+@server.list_tools()
+async def handle_list_tools() -> list[types.Tool]:
+    """List available CC federation memory tools"""
+    return [
+        types.Tool(
+            name="cc_remember",
+            description="Store a memory in CC's federation database",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "content": {"type": "string", "description": "The memory content to store"},
+                    "title": {"type": "string", "description": "Optional title for the memory"},
+                    "tags": {
+                        "oneOf": [
+                            {"type": "string", "description": "Comma-separated tags"},
+                            {"type": "array", "items": {"type": "string"}, "description": "Array of tags"}
+                        ]
+                    },
+                    "metadata": {"type": "object", "description": "Optional metadata dict"}
+                },
+                "required": ["content"]
+            }
+        ),
+        types.Tool(
+            name="cc_recall",
+            description="Search CC's memories with natural language time parsing",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "Search query (may include time expressions)"},
+                    "n_results": {"type": "integer", "description": "Maximum number of results (default: 5)"}
+                },
+                "required": ["query"]
+            }
+        ),
+        types.Tool(
+            name="cc_update_memory",
+            description="Update an existing memory (living documents)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "memory_id": {"type": "string", "description": "ID of memory to update"},
+                    "content": {"type": "string", "description": "New content (optional)"},
+                    "metadata": {"type": "object", "description": "Metadata updates (optional)"},
+                    "version_comment": {"type": "string", "description": "Comment about the update"}
+                },
+                "required": ["memory_id"]
+            }
+        ),
+        types.Tool(
+            name="cc_search_by_tags",
+            description="Search memories by tags (OR logic)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "tags": {
+                        "oneOf": [
+                            {"type": "string", "description": "Tag to search for"},
+                            {"type": "array", "items": {"type": "string"}, "description": "Tags to search for"}
+                        ]
+                    },
+                    "n_results": {"type": "integer", "description": "Maximum results (default: 10)"}
+                },
+                "required": ["tags"]
+            }
+        ),
+        types.Tool(
+            name="cc_health_check",
+            description="Check CC federation memory system health",
+            inputSchema={
+                "type": "object",
+                "properties": {}
+            }
+        ),
+        types.Tool(
+            name="cc_memory_stats",
+            description="Get CC memory system statistics",
+            inputSchema={
+                "type": "object",
+                "properties": {}
+            }
+        ),
+        types.Tool(
+            name="cc_search_dt",
+            description="Search ONLY DT's memories (respecting privacy)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "Search query"},
+                    "n_results": {"type": "integer", "description": "Maximum results (default: 10)"}
+                },
+                "required": ["query"]
+            }
+        ),
+        types.Tool(
+            name="cc_federation_search",
+            description="Search across BOTH CC and DT memories",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "Search query"},
+                    "n_results": {"type": "integer", "description": "Maximum results per instance (default: 10)"}
+                },
+                "required": ["query"]
+            }
+        ),
+        
+        # Obsidian Nerve Center Tools
+        types.Tool(
+            name="cc_create_note",
+            description="Create a new note in the Obsidian Nerve Center",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "title": {"type": "string", "description": "Note title"},
+                    "content": {"type": "string", "description": "Note content (markdown)"},
+                    "folder": {"type": "string", "description": "Target folder (default: Knowledge)", "default": "🧠 Knowledge"},
+                    "tags": {"type": "array", "items": {"type": "string"}, "description": "Tags for the note"},
+                    "metadata": {"type": "object", "description": "Additional metadata"}
+                },
+                "required": ["title", "content"]
+            }
+        ),
+        types.Tool(
+            name="cc_read_note",
+            description="Read a note from the Obsidian Nerve Center",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "title": {"type": "string", "description": "Note title to read"},
+                    "folder": {"type": "string", "description": "Specific folder to search (optional)"}
+                },
+                "required": ["title"]
+            }
+        ),
+        types.Tool(
+            name="cc_update_note",
+            description="Update an existing note in the Obsidian Nerve Center",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "title": {"type": "string", "description": "Note title to update"},
+                    "content": {"type": "string", "description": "New content for the note"},
+                    "folder": {"type": "string", "description": "Specific folder to search (optional)"}
+                },
+                "required": ["title", "content"]
+            }
+        ),
+        types.Tool(
+            name="cc_search_notes",
+            description="Search notes in the Obsidian Nerve Center",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "Search query"},
+                    "folder": {"type": "string", "description": "Specific folder to search (optional)"}
+                },
+                "required": ["query"]
+            }
+        ),
+        types.Tool(
+            name="cc_create_daily_note",
+            description="Create or update today's daily note",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "summary": {"type": "string", "description": "Summary of the day"},
+                    "events": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "time": {"type": "string"},
+                                "description": {"type": "string"},
+                                "details": {"type": "string"}
+                            }
+                        },
+                        "description": "Key events of the day"
+                    }
+                },
+                "required": ["summary"]
+            }
+        ),
+        types.Tool(
+            name="cc_memory_to_note",
+            description="Convert a ChromaDB memory to an Obsidian note",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "memory_id": {"type": "string", "description": "Memory ID to convert"},
+                    "folder": {"type": "string", "description": "Target folder", "default": "🧠 Knowledge"}
+                },
+                "required": ["memory_id"]
+            }
+        ),
+        types.Tool(
+            name="cc_sync_to_obsidian",
+            description="Sync important memories to Obsidian",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "Query to find memories to sync", "default": "tag:important"},
+                    "n_results": {"type": "integer", "description": "Number of memories to sync", "default": 10}
+                }
+            }
+        ),
+
+    ]
+
+
+@server.call_tool()
+async def handle_call_tool(
+    name: str, arguments: dict
+) -> list[types.TextContent]:
+    """Handle tool calls"""
+    
+    try:
+        if name == "cc_remember":
+            bridge = get_bridge()
+            result = bridge.remember(
+                content=arguments["content"],
+                title=arguments.get("title"),
+                tags=arguments.get("tags"),
+                metadata=arguments.get("metadata")
+            )
+            
+            # Check for duplicate
+            if result.startswith("DUPLICATE:"):
+                return [types.TextContent(
+                    type="text",
+                    text=f"Duplicate content detected. Existing ID: {result.replace('DUPLICATE:', '')}"
+                )]
+            
+            return [types.TextContent(
+                type="text",
+                text=f"Memory stored successfully: {result}"
+            )]
+            
+        elif name == "cc_recall":
+            bridge = get_bridge()
+            memories = bridge.recall(
+                query=arguments["query"],
+                n_results=arguments.get("n_results", 5)
+            )
+            
+            if not memories:
+                return [types.TextContent(
+                    type="text",
+                    text="No memories found matching your query."
+                )]
+            
+            # Format results
+            results = []
+            for i, memory in enumerate(memories):
+                metadata = memory.get('metadata', {})
+                results.append(f"{i+1}. [{memory['id']}]")
+                if metadata.get('title'):
+                    results.append(f"   Title: {metadata['title']}")
+                results.append(f"   Content: {memory['content'][:200]}...")
+                if metadata.get('tags'):
+                    results.append(f"   Tags: {metadata['tags']}")
+                results.append(f"   Relevance: {memory.get('relevance_score', 0):.2f}")
+                results.append("")
+            
+            return [types.TextContent(
+                type="text",
+                text=f"Found {len(memories)} memories:\n\n" + "\n".join(results)
+            )]
+            
+        elif name == "cc_update_memory":
+            bridge = get_bridge()
+            success = bridge.update_memory(
+                memory_id=arguments["memory_id"],
+                content=arguments.get("content"),
+                metadata=arguments.get("metadata"),
+                version_comment=arguments.get("version_comment")
+            )
+            
+            if success:
+                return [types.TextContent(
+                    type="text",
+                    text=f"Memory {arguments['memory_id']} updated successfully"
+                )]
+            else:
+                return [types.TextContent(
+                    type="text",
+                    text=f"Failed to update memory {arguments['memory_id']} - not found"
+                )]
+                
+        elif name == "cc_search_by_tags":
+            bridge = get_bridge()
+            memories = bridge.search_by_tags(
+                tags=arguments["tags"],
+                n_results=arguments.get("n_results", 10)
+            )
+            
+            if not memories:
+                return [types.TextContent(
+                    type="text",
+                    text="No memories found with those tags."
+                )]
+            
+            # Format results
+            results = []
+            for i, memory in enumerate(memories):
+                results.append(f"{i+1}. [{memory['id']}]")
+                results.append(f"   Content: {memory['content'][:200]}...")
+                results.append(f"   Tags: {', '.join(memory.get('tags', []))}")
+                results.append("")
+            
+            return [types.TextContent(
+                type="text",
+                text=f"Found {len(memories)} memories with tags:\n\n" + "\n".join(results)
+            )]
+            
+        elif name == "cc_health_check":
+            bridge = get_bridge()
+            health = bridge.health_check()
+            
+            return [types.TextContent(
+                type="text",
+                text=f"CC Federation Memory Health:\n"
+                     f"Status: {health['status']}\n"
+                     f"Total Memories: {health['total_memories']}\n"
+                     f"Recent (24h): {health['recent_24h']}\n"
+                     f"Health Score: {health['health_score']:.2f}\n"
+                     f"Duplicates: {health['duplicates_found']}"
+            )]
+            
+        elif name == "cc_memory_stats":
+            bridge = get_bridge()
+            stats = bridge.get_memory_stats()
+            
+            return [types.TextContent(
+                type="text",
+                text=f"CC Memory Statistics:\n"
+                     f"Total: {stats['total_memories']}\n"
+                     f"Recent: {stats['recent_24h']}\n"
+                     f"Health: {stats['health_status']}\n"
+                     f"Domains: {json.dumps(stats.get('domain_stats', {}), indent=2)}"
+            )]
+            
+        elif name == "cc_search_dt":
+            shared = get_shared_bridge()
+            memories = shared.search_other_instance(
+                query=arguments["query"],
+                from_instance='cc',
+                n_results=arguments.get("n_results", 10)
+            )
+            
+            if not memories:
+                return [types.TextContent(
+                    type="text",
+                    text="No memories found in DT's database."
+                )]
+            
+            # Format results
+            results = []
+            for i, memory in enumerate(memories):
+                metadata = memory.get('metadata', {})
+                results.append(f"{i+1}. [DT: {memory['id']}]")
+                if metadata.get('title'):
+                    results.append(f"   Title: {metadata['title']}")
+                results.append(f"   Content: {memory['content'][:200]}...")
+                results.append("")
+            
+            return [types.TextContent(
+                type="text",
+                text=f"Found {len(memories)} memories from DT:\n\n" + "\n".join(results)
+            )]
+            
+        elif name == "cc_federation_search":
+            shared = get_shared_bridge()
+            results = shared.federation_search(
+                query=arguments["query"],
+                instances=['cc', 'dt'],
+                n_results=arguments.get("n_results", 10)
+            )
+            
+            total = results['total_found']
+            if total == 0:
+                return [types.TextContent(
+                    type="text",
+                    text="No memories found across the federation."
+                )]
+            
+            # Format results by instance
+            output = [f"Found {total} total memories across federation:\n"]
+            
+            for instance, data in results['results'].items():
+                if data['status'] == 'success' and data['count'] > 0:
+                    output.append(f"\n{instance.upper()} ({data['count']} memories):")
+                    for i, memory in enumerate(data['memories'][:5]):  # Show first 5
+                        metadata = memory.get('metadata', {})
+                        output.append(f"  {i+1}. [{memory['id']}]")
+                        if metadata.get('title'):
+                            output.append(f"     Title: {metadata['title']}")
+                        output.append(f"     Content: {memory['content'][:150]}...")
+            
+            return [types.TextContent(
+                type="text",
+                text="\n".join(output)
+            )]
+        
+        # Knowledge Graph Tools
+        elif name == "cc_kg_auto_extract":
+            extractor = get_kg_extractor()
+            result = extractor.auto_process_and_store(
+                arguments["text"],
+                arguments.get("source", "conversation"),
+                arguments.get("session_id")
+            )
+            
+            output = [
+                "🤖 Auto-Extraction Complete",
+                "=" * 30,
+                f"Source: {arguments.get('source', 'conversation')}",
+                f"Session: {arguments.get('session_id', 'unknown')}",
+                "",
+                f"📊 Extraction Results:",
+                f"  - Entities stored: {result['stored_entities']}",
+                f"  - Relations stored: {result['stored_relations']}",
+                f"  - Files found: {result['files_found']}",
+                f"  - Tasks found: {result['tasks_found']}",
+                f"  - Problems found: {result['problems_found']}",
+                f"  - Solutions found: {result['solutions_found']}",
+                "",
+                f"⏰ Timestamp: {result['extraction_timestamp']}"
+            ]
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+        
+        elif name == "cc_kg_instant_briefing":
+            storage = get_kg_storage()
+            briefing = storage.generate_instant_briefing(arguments.get("hours_back", 24))
+            
+            output = [
+                "🚀 INSTANT CONTEXT BRIEFING",
+                "=" * 40,
+                f"📅 Looking back {arguments.get('hours_back', 24)} hours",
+                "",
+                briefing,
+                "",
+                "💡 This briefing provides immediate context for continuing work",
+                "   without needing to explain what happened previously."
+            ]
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+        
+        elif name == "cc_kg_semantic_search":
+            storage = get_kg_storage()
+            results = storage.search_entities_by_name(arguments["query"])
+            
+            # Filter by type if specified
+            if entity_types := arguments.get("entity_types"):
+                filtered = []
+                for entity in results:
+                    if entity.entity_type.value in entity_types:
+                        filtered.append(entity)
+                results = filtered
+            
+            # Limit results
+            results = results[:arguments.get("n_results", 10)]
+            
+            output = [
+                f"🔍 Search Results for '{arguments['query']}'",
+                "=" * 50,
+                f"Found {len(results)} entities:"
+            ]
+            
+            for entity in results:
+                output.append("")
+                output.append(f"🎯 {entity.name} ({entity.entity_type.value})")
+                output.append(f"   ID: {entity.id}")
+                if entity.observations:
+                    output.append(f"   📝 {entity.observations[0]}")
+                output.append(f"   🕐 {entity.updated_at.strftime('%Y-%m-%d %H:%M')}")
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+        
+        elif name == "cc_kg_find_related":
+            storage = get_kg_storage()
+            entity = storage.get_entity(arguments["entity_id"])
+            
+            if not entity:
+                return [types.TextContent(type="text", text=f"❌ Entity {arguments['entity_id']} not found")]
+            
+            relations = storage.get_relations_for_entity(arguments["entity_id"])
+            
+            output = [
+                f"🔗 Related Entities for {entity.name}",
+                "=" * 50,
+                f"Entity Type: {entity.entity_type.value}",
+                ""
+            ]
+            
+            if relations:
+                output.append("📍 Direct Relations:")
+                for rel in relations[:10]:
+                    if rel.source_entity_id == arguments["entity_id"]:
+                        target = storage.get_entity(rel.target_entity_id)
+                        if target:
+                            output.append(f"  - {rel.relation_type.value} → {target.name} ({target.entity_type.value})")
+                    else:
+                        source = storage.get_entity(rel.source_entity_id)
+                        if source:
+                            output.append(f"  - {source.name} {rel.relation_type.value} → this")
+            else:
+                output.append("No direct relations found")
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+        
+        elif name == "cc_kg_get_active_context":
+            storage = get_kg_storage()
+            context = storage.get_active_context(arguments.get("hours_back", 24))
+            
+            output = [
+                f"⚡ Active Context (last {arguments.get('hours_back', 24)} hours)",
+                "=" * 40
+            ]
+            
+            for context_type, entity_ids in context.items():
+                if entity_ids:
+                    output.append(f"\n🎯 {context_type.replace('_', ' ').title()}:")
+                    for entity_id in entity_ids[:5]:
+                        entity = storage.get_entity(entity_id)
+                        if entity:
+                            output.append(f"  - {entity.name}")
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+        
+        elif name == "cc_kg_stats":
+            storage = get_kg_storage()
+            stats = storage.get_stats()
+            
+            output = [
+                "📊 Knowledge Graph Statistics", 
+                "=" * 35,
+                f"📚 Total Entities: {stats['total_entities']}",
+                f"🔗 Total Relations: {stats['total_relations']}",
+                f"💾 Storage Path: {stats['storage_path']}",
+                "",
+                "🏷️  Entity Type Distribution:"
+            ]
+            
+            for entity_type, count in stats['entity_types'].items():
+                output.append(f"  - {entity_type}: {count}")
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+            
+        else:
+            return [types.TextContent(
+                type="text",
+                text=f"Unknown tool: {name}"
+            )]
+            
+    except Exception as e:
+        logger.error(f"Tool {name} error: {e}", exc_info=True)
+        return [types.TextContent(
+            type="text",
+            text=f"Error in {name}: {str(e)}"
+        )]
+
+
+# Main entry point
+async def main():
+    """Run the CC Federation Memory MCP server"""
+    logger.info("Starting CC Federation Memory MCP Server")
+    
+    try:
+        # Run the server
+        async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):
+            await server.run(
+                read_stream,
+                write_stream,
+                InitializationOptions(
+                    server_name="cc-federation-memory",
+                    server_version="1.0.0",
+                    capabilities=server.get_capabilities(
+                        notification_options=NotificationOptions(),
+                        experimental_capabilities={},
+                    )
+                )
+            )
+    except Exception as e:
+        logger.error(f"Server error: {e}")
+        raise
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

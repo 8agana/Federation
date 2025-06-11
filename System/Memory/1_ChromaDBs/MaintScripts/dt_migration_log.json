@@ -1,0 +1,3181 @@
+{
+  "start_time": "2025-06-09T21:10:36.481868",
+  "source_count": 452,
+  "sources_summary": {
+    "dt_memory_v5": 134,
+    "archived_dt_memories": 294,
+    "archived_dt_identity_board": 8,
+    "archived_dt_messages": 2,
+    "archived_dt_memories_v5": 14
+  },
+  "migrations": [
+    {
+      "old_id": "dt_20250601_200828_463",
+      "new_id": "dt_20250601_200828_f3a27a67",
+      "date_extracted": "20250601_200828",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250601_202222_4947",
+      "new_id": "dt_20250601_202222_268e5ab7",
+      "date_extracted": "20250601_202222",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250601_202433_1934",
+      "new_id": "dt_20250601_202433_7a06b7fc",
+      "date_extracted": "20250601_202433",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250601_202508_3541",
+      "new_id": "dt_20250601_202508_0afab2d6",
+      "date_extracted": "20250601_202508",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250601_211704_7341",
+      "new_id": "dt_20250601_211704_3fb53f36",
+      "date_extracted": "20250601_211704",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250601_215429_8232",
+      "new_id": "dt_20250601_215429_c7efc1dd",
+      "date_extracted": "20250601_215429",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250601_223949_6991",
+      "new_id": "dt_20250601_223949_b2a76e67",
+      "date_extracted": "20250601_223949",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "8c65472c-b6a2-41e2-8025-247c8c8f65aa",
+      "new_id": "dt_20250601_120000_2ee90e98",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "0b20225a-5fe8-42e8-a6cf-7f206e271082",
+      "new_id": "dt_20250601_120000_62016b8c",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "223e26ef-4486-4f48-86df-a65684a7d558",
+      "new_id": "dt_20250601_120000_e491491b",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "6a7d7735-7965-4543-9b3d-443de4e6af84",
+      "new_id": "dt_20250601_120000_d684e91c",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "aa96a795-7bc1-437f-883d-7c18dfa7b9bf",
+      "new_id": "dt_20250601_120000_5552bd0f",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "8a540bf5-8e6d-421e-a21c-0c956cc32c14",
+      "new_id": "dt_20250601_120000_68401060",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "30c4c693-c401-45a5-b547-e90883c2e694",
+      "new_id": "dt_20250601_120000_e86ecf15",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "1c78837e-3994-4759-af78-98c575478c78",
+      "new_id": "dt_20250601_120000_3748d4df",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "ce804e4a-203c-42d4-a3e0-9e4c09f8beaf",
+      "new_id": "dt_20250601_120000_6f7d20ec",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "05cee787-8007-4679-b3ed-8e753bd3b2ba",
+      "new_id": "dt_20250601_120000_4fc94fff",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "acda17a4-fbb0-442e-8d26-991769138d86",
+      "new_id": "dt_20250601_120000_a7cc3d1a",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "0df01d11-2864-4354-b4b7-6d1670729a74",
+      "new_id": "dt_20250601_120000_ffb533f3",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "df2d1459-f499-45bb-b613-597adc9d726a",
+      "new_id": "dt_20250601_120000_3a7c5980",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "ad65e7bc-dbbb-4c44-a017-fb9fd2d267da",
+      "new_id": "dt_20250601_120000_ebbbf1d3",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "01754df5-e765-42b5-8d20-14b0271ceb0f",
+      "new_id": "dt_20250601_120000_4c115548",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "2e25f3b6-1c60-405b-a3a9-386ecfea30a3",
+      "new_id": "dt_20250601_120000_71fc173e",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "2bf22232-b1a9-4f3f-b1ee-70cbdb639429",
+      "new_id": "dt_20250601_120000_be9dcf29",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "b03c1a78-cd6c-43fe-9395-521759abfad1",
+      "new_id": "dt_20250601_120000_f1a455ef",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "55bb16f7-4172-4ab4-8267-60ce191b3932",
+      "new_id": "dt_20250601_120000_b11b08ad",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "3804bf53-6c4e-4a73-8461-18a6635328ec",
+      "new_id": "dt_20250601_120000_5c140d16",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "a3418d59-01fc-40ef-b639-d5c7801a3052",
+      "new_id": "dt_20250601_120000_14b21fb3",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "8728cb16-053c-4fe0-8805-6902ef40ab41",
+      "new_id": "dt_20250601_120000_6731f01b",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250605_152306_5528",
+      "new_id": "dt_20250605_152306_4542b40c",
+      "date_extracted": "20250605_152306",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "756a34c8-5936-47a4-a984-cef6f5d5cc74",
+      "new_id": "dt_20250601_120000_405376ac",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250605_211242_8551",
+      "new_id": "dt_20250605_211242_ed6b896f",
+      "date_extracted": "20250605_211242",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "744263fd5a19696b",
+      "new_id": "dt_20250601_120000_9fbe943e",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_113308_2551",
+      "new_id": "dt_20250606_113308_4542528f",
+      "date_extracted": "20250606_113308",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "b4b974f1a7dbfb44",
+      "new_id": "dt_20250601_120000_7786c390",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_120906_8621",
+      "new_id": "dt_20250606_120906_67e8907d",
+      "date_extracted": "20250606_120906",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_v5_4ce3b25a7c23_1749228684",
+      "new_id": "dt_20250601_120000_c064b66e",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_v5_efeca2aaa5ea_1749228685",
+      "new_id": "dt_20250601_120000_f217599e",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "a38d4901-f2f7-4d28-b53d-de02cd3fb121",
+      "new_id": "dt_20250601_120000_dfd0f251",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_identity_consolidated_1749239534.901518",
+      "new_id": "dt_20250601_120000_2e23dd33",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_consolidated_1749240349.885186_relationship",
+      "new_id": "dt_20250601_120000_a94bba62",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_consolidated_1749240350.694363_relationship",
+      "new_id": "dt_20250601_120000_831e1e6b",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_consolidated_1749240351.471205_protocol",
+      "new_id": "dt_20250601_120000_a55af0d8",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_consolidated_1749240352.273858_project",
+      "new_id": "dt_20250601_120000_1dc7271a",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_tasks_1749240468.993968",
+      "new_id": "dt_20250601_120000_13fcd1d3",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_restored_1749248696.137682_victory",
+      "new_id": "dt_20250601_120000_739e32a3",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_restored_1749248697.164128_victory",
+      "new_id": "dt_20250601_120000_90b68026",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_restored_1749248697.84164_technical",
+      "new_id": "dt_20250601_120000_165c65e3",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_restored_1749248698.551391_technical",
+      "new_id": "dt_20250601_120000_fba62202",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_restored_1749248699.270605_relationship",
+      "new_id": "dt_20250601_120000_0edec7ec",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_restored_1749248699.978131_identity",
+      "new_id": "dt_20250601_120000_ec8d900c",
+      "date_extracted": "20250601_120000",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_172544_1699",
+      "new_id": "dt_20250606_172544_dc64fd46",
+      "date_extracted": "20250606_172544",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_193946_1274",
+      "new_id": "dt_20250606_193946_876532cb",
+      "date_extracted": "20250606_193946",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_193957_8881",
+      "new_id": "dt_20250606_193957_eff1163d",
+      "date_extracted": "20250606_193957",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_194014_138",
+      "new_id": "dt_20250606_194014_319e1a8d",
+      "date_extracted": "20250606_194014",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_194943_9489",
+      "new_id": "dt_20250606_194943_0ac47e15",
+      "date_extracted": "20250606_194943",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_195013_8586",
+      "new_id": "dt_20250606_195013_1b040e25",
+      "date_extracted": "20250606_195013",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_195036_6148",
+      "new_id": "dt_20250606_195036_657a2f1e",
+      "date_extracted": "20250606_195036",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_195055_9807",
+      "new_id": "dt_20250606_195055_64234647",
+      "date_extracted": "20250606_195055",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_195122_1035",
+      "new_id": "dt_20250606_195122_39f462c2",
+      "date_extracted": "20250606_195122",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_215113_4233",
+      "new_id": "dt_20250606_215113_9654dfe1",
+      "date_extracted": "20250606_215113",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_215351_5963",
+      "new_id": "dt_20250606_215351_1f8da427",
+      "date_extracted": "20250606_215351",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_215505_984",
+      "new_id": "dt_20250606_215505_13f06aa1",
+      "date_extracted": "20250606_215505",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250606_215752_7226",
+      "new_id": "dt_20250606_215752_3b2cec10",
+      "date_extracted": "20250606_215752",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_171744_6524",
+      "new_id": "dt_20250607_171744_ca6dfb41",
+      "date_extracted": "20250607_171744",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_171854_7578",
+      "new_id": "dt_20250607_171854_0192f870",
+      "date_extracted": "20250607_171854",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_171953_1325",
+      "new_id": "dt_20250607_171953_d0145e87",
+      "date_extracted": "20250607_171953",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_185949_8019",
+      "new_id": "dt_20250607_185949_22ee428b",
+      "date_extracted": "20250607_185949",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_190127_9933",
+      "new_id": "dt_20250607_190127_ac147b19",
+      "date_extracted": "20250607_190127",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_190327_4221",
+      "new_id": "dt_20250607_190327_94b45851",
+      "date_extracted": "20250607_190327",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_191541_8762",
+      "new_id": "dt_20250607_191541_f8104878",
+      "date_extracted": "20250607_191541",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_192710_2375",
+      "new_id": "dt_20250607_192710_304537d6",
+      "date_extracted": "20250607_192710",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_192924_789",
+      "new_id": "dt_20250607_192924_30512997",
+      "date_extracted": "20250607_192924",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_193436_1302",
+      "new_id": "dt_20250607_193436_a17b8390",
+      "date_extracted": "20250607_193436",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_194736_9080",
+      "new_id": "dt_20250607_194736_3d94d89d",
+      "date_extracted": "20250607_194736",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_194953_5141",
+      "new_id": "dt_20250607_194953_33293472",
+      "date_extracted": "20250607_194953",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_195105_590",
+      "new_id": "dt_20250607_195105_175d9a85",
+      "date_extracted": "20250607_195105",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_195228_6295",
+      "new_id": "dt_20250607_195228_c2ba2323",
+      "date_extracted": "20250607_195228",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_202054_4926",
+      "new_id": "dt_20250607_202054_cef436dd",
+      "date_extracted": "20250607_202054",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_202328_9272",
+      "new_id": "dt_20250607_202328_bd241f87",
+      "date_extracted": "20250607_202328",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_202437_1135",
+      "new_id": "dt_20250607_202437_c13c60b0",
+      "date_extracted": "20250607_202437",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_202633_6725",
+      "new_id": "dt_20250607_202633_d67fe7bd",
+      "date_extracted": "20250607_202633",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_202810_8126",
+      "new_id": "dt_20250607_202810_900d286a",
+      "date_extracted": "20250607_202810",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_203005_7352",
+      "new_id": "dt_20250607_203005_b54d4e61",
+      "date_extracted": "20250607_203005",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_203812_7647",
+      "new_id": "dt_20250607_203812_5d7f411b",
+      "date_extracted": "20250607_203812",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_210103_6282",
+      "new_id": "dt_20250607_210103_1851b132",
+      "date_extracted": "20250607_210103",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_210217_8631",
+      "new_id": "dt_20250607_210217_cb91fb24",
+      "date_extracted": "20250607_210217",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_211841_5133",
+      "new_id": "dt_20250607_211841_118a8bb3",
+      "date_extracted": "20250607_211841",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_213636_631",
+      "new_id": "dt_20250607_213636_9e3f85d1",
+      "date_extracted": "20250607_213636",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_213708_3099",
+      "new_id": "dt_20250607_213708_02bc1bda",
+      "date_extracted": "20250607_213708",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_213933_4111",
+      "new_id": "dt_20250607_213933_a4ec5816",
+      "date_extracted": "20250607_213933",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_214129_7199",
+      "new_id": "dt_20250607_214129_c9de3a8d",
+      "date_extracted": "20250607_214129",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_214636_2392",
+      "new_id": "dt_20250607_214636_3a86c041",
+      "date_extracted": "20250607_214636",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_215337_7804",
+      "new_id": "dt_20250607_215337_a030b724",
+      "date_extracted": "20250607_215337",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_215414_2598",
+      "new_id": "dt_20250607_215414_ebad9397",
+      "date_extracted": "20250607_215414",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_215700_2586",
+      "new_id": "dt_20250607_215700_4aacc28d",
+      "date_extracted": "20250607_215700",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_220613_9460",
+      "new_id": "dt_20250607_220613_a79d7ba5",
+      "date_extracted": "20250607_220613",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_221027_135",
+      "new_id": "dt_20250607_221027_34c91610",
+      "date_extracted": "20250607_221027",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_221503_5728",
+      "new_id": "dt_20250607_221503_ea5b24ed",
+      "date_extracted": "20250607_221503",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_221852_1111",
+      "new_id": "dt_20250607_221852_141e5622",
+      "date_extracted": "20250607_221852",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_222023_5646",
+      "new_id": "dt_20250607_222023_4aa09c3a",
+      "date_extracted": "20250607_222023",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_222536_5697",
+      "new_id": "dt_20250607_222536_e8bfade7",
+      "date_extracted": "20250607_222536",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_222553_9018",
+      "new_id": "dt_20250607_222553_dbe19c8c",
+      "date_extracted": "20250607_222553",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_223552_2681",
+      "new_id": "dt_20250607_223552_4af442ce",
+      "date_extracted": "20250607_223552",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_223807_9885",
+      "new_id": "dt_20250607_223807_5f6a47ea",
+      "date_extracted": "20250607_223807",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_225212_c3ba6bc2",
+      "new_id": "dt_20250607_225212_664fdd6c",
+      "date_extracted": "20250607_225212",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_225333_8e2065e0",
+      "new_id": "dt_20250607_225333_5246255a",
+      "date_extracted": "20250607_225333",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_230057_56b768c4",
+      "new_id": "dt_20250607_230057_7a9019b6",
+      "date_extracted": "20250607_230057",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_230201_12b7b80c",
+      "new_id": "dt_20250607_230201_122ffadf",
+      "date_extracted": "20250607_230201",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_230217_3c4acd3d",
+      "new_id": "dt_20250607_230217_6f168be4",
+      "date_extracted": "20250607_230217",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250607_230344_6ea381cd",
+      "new_id": "dt_20250607_230344_eca207c8",
+      "date_extracted": "20250607_230344",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_100935_2d9c2237",
+      "new_id": "dt_20250608_100935_6c197d0d",
+      "date_extracted": "20250608_100935",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_101151_54b8a07f",
+      "new_id": "dt_20250608_101151_799f171e",
+      "date_extracted": "20250608_101151",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_104248_981bb01c",
+      "new_id": "dt_20250608_104248_2772a89c",
+      "date_extracted": "20250608_104248",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_104401_4561de94",
+      "new_id": "dt_20250608_104401_326605bb",
+      "date_extracted": "20250608_104401",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_132629_44867424",
+      "new_id": "dt_20250608_132629_045db59a",
+      "date_extracted": "20250608_132629",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_133913_452ee739",
+      "new_id": "dt_20250608_133913_1aef6968",
+      "date_extracted": "20250608_133913",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_140016_49b489a7",
+      "new_id": "dt_20250608_140016_cf16cca7",
+      "date_extracted": "20250608_140016",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_140336_64caf10a",
+      "new_id": "dt_20250608_140336_406b7f64",
+      "date_extracted": "20250608_140336",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_140635_5169ae00",
+      "new_id": "dt_20250608_140635_e0bfb4d9",
+      "date_extracted": "20250608_140635",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_140914_0295e60f",
+      "new_id": "dt_20250608_140914_95e471a8",
+      "date_extracted": "20250608_140914",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_141136_323835b8",
+      "new_id": "dt_20250608_141136_8ea8c7bd",
+      "date_extracted": "20250608_141136",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_141536_fd2e73f4",
+      "new_id": "dt_20250608_141536_64da8104",
+      "date_extracted": "20250608_141536",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_142052_1dc6c07e",
+      "new_id": "dt_20250608_142052_25e975d1",
+      "date_extracted": "20250608_142052",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_142105_96785632",
+      "new_id": "dt_20250608_142105_d197cf10",
+      "date_extracted": "20250608_142105",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_142117_1bfdf8a6",
+      "new_id": "dt_20250608_142117_608d7e84",
+      "date_extracted": "20250608_142117",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_142129_194cfb3e",
+      "new_id": "dt_20250608_142129_ae3bae5b",
+      "date_extracted": "20250608_142129",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_142142_99e8dcff",
+      "new_id": "dt_20250608_142142_2bdcdaae",
+      "date_extracted": "20250608_142142",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_142153_67b4b48c",
+      "new_id": "dt_20250608_142153_6a43748d",
+      "date_extracted": "20250608_142153",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_142441_d246deee",
+      "new_id": "dt_20250608_142441_c432331f",
+      "date_extracted": "20250608_142441",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_142502_d78af448",
+      "new_id": "dt_20250608_142502_04e16b7c",
+      "date_extracted": "20250608_142502",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_145243_5b3df65e",
+      "new_id": "dt_20250608_145243_e372a8c6",
+      "date_extracted": "20250608_145243",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_174418_1340da9d",
+      "new_id": "dt_20250608_174418_972248eb",
+      "date_extracted": "20250608_174418",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250608_180940_b5667bcb",
+      "new_id": "dt_20250608_180940_dc0e19e8",
+      "date_extracted": "20250608_180940",
+      "source": "dt_memory_v5",
+      "collection_type": "unified_memories"
+    },
+    {
+      "old_id": "dt_20250601_185651_743",
+      "new_id": "dt_20250601_185651_159459f2",
+      "date_extracted": "20250601_185651",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_190318_4333",
+      "new_id": "dt_20250601_190318_e5fe7a59",
+      "date_extracted": "20250601_190318",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_190414_8346",
+      "new_id": "dt_20250601_190414_7782d22b",
+      "date_extracted": "20250601_190414",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_192159_762",
+      "new_id": "dt_20250601_192159_0b1428a2",
+      "date_extracted": "20250601_192159",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_192256_5100",
+      "new_id": "dt_20250601_192256_bcb21d52",
+      "date_extracted": "20250601_192256",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_192403_2827",
+      "new_id": "dt_20250601_192403_07a469b9",
+      "date_extracted": "20250601_192403",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_192703_3958",
+      "new_id": "dt_20250601_192703_c777a7e4",
+      "date_extracted": "20250601_192703",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_192858_6799",
+      "new_id": "dt_20250601_192858_4886d271",
+      "date_extracted": "20250601_192858",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_192944_9803",
+      "new_id": "dt_20250601_192944_290ce9b0",
+      "date_extracted": "20250601_192944",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_193105_9728",
+      "new_id": "dt_20250601_193105_bdf9f18b",
+      "date_extracted": "20250601_193105",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_193257_4295",
+      "new_id": "dt_20250601_193257_7a3ab1a8",
+      "date_extracted": "20250601_193257",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_193302_1513",
+      "new_id": "dt_20250601_193302_5db8c321",
+      "date_extracted": "20250601_193302",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_193328_9191",
+      "new_id": "dt_20250601_193328_6ea59e8c",
+      "date_extracted": "20250601_193328",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_193507_5087",
+      "new_id": "dt_20250601_193507_754a537b",
+      "date_extracted": "20250601_193507",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_193606_6256",
+      "new_id": "dt_20250601_193606_f609190e",
+      "date_extracted": "20250601_193606",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_193726_8796",
+      "new_id": "dt_20250601_193726_9fb41f79",
+      "date_extracted": "20250601_193726",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_194028_1160",
+      "new_id": "dt_20250601_194028_dada2258",
+      "date_extracted": "20250601_194028",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_194134_5791",
+      "new_id": "dt_20250601_194134_c9d55262",
+      "date_extracted": "20250601_194134",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_194612_7746",
+      "new_id": "dt_20250601_194612_34a67b38",
+      "date_extracted": "20250601_194612",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_194725_5570",
+      "new_id": "dt_20250601_194725_d6df25cf",
+      "date_extracted": "20250601_194725",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_194801_3843",
+      "new_id": "dt_20250601_194801_71ec24f7",
+      "date_extracted": "20250601_194801",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_194824_9319",
+      "new_id": "dt_20250601_194824_aa24483d",
+      "date_extracted": "20250601_194824",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_194928_4344",
+      "new_id": "dt_20250601_194928_030c1808",
+      "date_extracted": "20250601_194928",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_195304_9109",
+      "new_id": "dt_20250601_195304_e2a9b2c3",
+      "date_extracted": "20250601_195304",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_195329_7205",
+      "new_id": "dt_20250601_195329_0d01b630",
+      "date_extracted": "20250601_195329",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_195418_182",
+      "new_id": "dt_20250601_195418_4aeb2efb",
+      "date_extracted": "20250601_195418",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_195620_8288",
+      "new_id": "dt_20250601_195620_c7c15154",
+      "date_extracted": "20250601_195620",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_195746_5053",
+      "new_id": "dt_20250601_195746_1d2c76a0",
+      "date_extracted": "20250601_195746",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_195855_5700",
+      "new_id": "dt_20250601_195855_03e2ff2b",
+      "date_extracted": "20250601_195855",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_200055_1089",
+      "new_id": "dt_20250601_200055_364e9644",
+      "date_extracted": "20250601_200055",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_200453_9257",
+      "new_id": "dt_20250601_200453_273259c4",
+      "date_extracted": "20250601_200453",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_200614_4469",
+      "new_id": "dt_20250601_200614_27228151",
+      "date_extracted": "20250601_200614",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_200907_6287",
+      "new_id": "dt_20250601_200907_0e3548c0",
+      "date_extracted": "20250601_200907",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_201012_7264",
+      "new_id": "dt_20250601_201012_d2215d58",
+      "date_extracted": "20250601_201012",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_201057_1609",
+      "new_id": "dt_20250601_201057_dff598a4",
+      "date_extracted": "20250601_201057",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_201203_4147",
+      "new_id": "dt_20250601_201203_0fc0f2db",
+      "date_extracted": "20250601_201203",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_201320_275",
+      "new_id": "dt_20250601_201320_ff65ef81",
+      "date_extracted": "20250601_201320",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_201523_3490",
+      "new_id": "dt_20250601_201523_dab09014",
+      "date_extracted": "20250601_201523",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_201634_5922",
+      "new_id": "dt_20250601_201634_42488f5e",
+      "date_extracted": "20250601_201634",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_201724_3763",
+      "new_id": "dt_20250601_201724_45465300",
+      "date_extracted": "20250601_201724",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_201908_2222",
+      "new_id": "dt_20250601_201908_4f142c9b",
+      "date_extracted": "20250601_201908",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_202019_5892",
+      "new_id": "dt_20250601_202019_da50afb7",
+      "date_extracted": "20250601_202019",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_202047_3061",
+      "new_id": "dt_20250601_202047_c12471fd",
+      "date_extracted": "20250601_202047",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_202105_6437",
+      "new_id": "dt_20250601_202105_e251d69f",
+      "date_extracted": "20250601_202105",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_202319_2369",
+      "new_id": "dt_20250601_202319_1d6178df",
+      "date_extracted": "20250601_202319",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_202536_5725",
+      "new_id": "dt_20250601_202536_07f37a17",
+      "date_extracted": "20250601_202536",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_202553_2014",
+      "new_id": "dt_20250601_202553_5ede6c9c",
+      "date_extracted": "20250601_202553",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_202654_4079",
+      "new_id": "dt_20250601_202654_2b57262e",
+      "date_extracted": "20250601_202654",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_203034_9876",
+      "new_id": "dt_20250601_203034_aa45df8c",
+      "date_extracted": "20250601_203034",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_203111_4955",
+      "new_id": "dt_20250601_203111_218f2bbd",
+      "date_extracted": "20250601_203111",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_211405_3047",
+      "new_id": "dt_20250601_120000_3bc10555",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_211511_1278",
+      "new_id": "dt_20250106_120000_2fbd9ea9",
+      "date_extracted": "20250106_120000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_211601_2291",
+      "new_id": "dt_20250601_211601_973519d2",
+      "date_extracted": "20250601_211601",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_212022_2689",
+      "new_id": "dt_20250601_212022_e062f690",
+      "date_extracted": "20250601_212022",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_212418_9439",
+      "new_id": "dt_20250601_212418_e39be725",
+      "date_extracted": "20250601_212418",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_212437_8311",
+      "new_id": "dt_20250601_212437_b28f9a5f",
+      "date_extracted": "20250601_212437",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_212658_387",
+      "new_id": "dt_20250601_212658_4def0414",
+      "date_extracted": "20250601_212658",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_212822_3585",
+      "new_id": "dt_20250601_212822_b87b5aed",
+      "date_extracted": "20250601_212822",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_213013_7141",
+      "new_id": "dt_20250601_213013_23610714",
+      "date_extracted": "20250601_213013",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_213139_480",
+      "new_id": "dt_20250601_213139_56a2431d",
+      "date_extracted": "20250601_213139",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_213310_1065",
+      "new_id": "dt_20250601_213310_fdddad37",
+      "date_extracted": "20250601_213310",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_213507_8438",
+      "new_id": "dt_20250601_120000_34c7cfbe",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_213851_2700",
+      "new_id": "dt_20250601_213851_e7765665",
+      "date_extracted": "20250601_213851",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_214142_1201",
+      "new_id": "dt_20250601_214142_4956950b",
+      "date_extracted": "20250601_214142",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_214430_4820",
+      "new_id": "dt_20250601_214430_c194cf28",
+      "date_extracted": "20250601_214430",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_214525_7738",
+      "new_id": "dt_20250601_214525_a943d857",
+      "date_extracted": "20250601_214525",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_214850_1678",
+      "new_id": "dt_20250601_214850_b9988bcc",
+      "date_extracted": "20250601_214850",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_215030_3780",
+      "new_id": "dt_20250601_215030_ba46631e",
+      "date_extracted": "20250601_215030",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_215245_4835",
+      "new_id": "dt_20250601_215245_45c09c46",
+      "date_extracted": "20250601_215245",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_215257_6847",
+      "new_id": "dt_20250601_215257_bf6f5db0",
+      "date_extracted": "20250601_215257",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_215445_7728",
+      "new_id": "dt_20250601_120000_b79b2fca",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_220021_170",
+      "new_id": "dt_20250601_120000_150005a3",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_220551_317",
+      "new_id": "dt_20250601_220551_76c27851",
+      "date_extracted": "20250601_220551",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_220937_8767",
+      "new_id": "dt_20250601_120000_128bd106",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_221020_2361",
+      "new_id": "dt_20250601_221020_d8ce2045",
+      "date_extracted": "20250601_221020",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_221439_180",
+      "new_id": "dt_20250601_120000_befcf88d",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_221450_1558",
+      "new_id": "dt_20250601_120000_6adee741",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_221501_9401",
+      "new_id": "dt_20250601_120000_20a47b93",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_221551_1040",
+      "new_id": "dt_20250601_120000_bcc42290",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_221600_1422",
+      "new_id": "dt_20250601_221600_8075340e",
+      "date_extracted": "20250601_221600",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_222400_3822",
+      "new_id": "dt_20250601_222400_faef116d",
+      "date_extracted": "20250601_222400",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_222451_8205",
+      "new_id": "dt_20250601_222451_52ee6ef0",
+      "date_extracted": "20250601_222451",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_222802_1908",
+      "new_id": "dt_20250601_222802_bd1258b6",
+      "date_extracted": "20250601_222802",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_223018_4337",
+      "new_id": "dt_20250601_223018_6d618a70",
+      "date_extracted": "20250601_223018",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_223238_1893",
+      "new_id": "dt_20250601_223238_4238b5c2",
+      "date_extracted": "20250601_223238",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_223756_6658",
+      "new_id": "dt_20250601_223756_e574e2ad",
+      "date_extracted": "20250601_223756",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_224153_4684",
+      "new_id": "dt_20250601_224153_3510f5a1",
+      "date_extracted": "20250601_224153",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_224449_877",
+      "new_id": "dt_20250601_224449_3ec662cd",
+      "date_extracted": "20250601_224449",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_224533_1555",
+      "new_id": "dt_20250601_224533_0c919d2c",
+      "date_extracted": "20250601_224533",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_224752_3472",
+      "new_id": "dt_20250601_224752_475ab2ba",
+      "date_extracted": "20250601_224752",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_225145_3509",
+      "new_id": "dt_20250601_225145_7971a6f4",
+      "date_extracted": "20250601_225145",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_225233_8611",
+      "new_id": "dt_20250601_225233_b3d1cd80",
+      "date_extracted": "20250601_225233",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_225453_2729",
+      "new_id": "dt_20250601_225453_0e427519",
+      "date_extracted": "20250601_225453",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_225619_9693",
+      "new_id": "dt_20250601_225619_bf1410d2",
+      "date_extracted": "20250601_225619",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_225908_7522",
+      "new_id": "dt_20250601_225908_f878b26d",
+      "date_extracted": "20250601_225908",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_225959_2028",
+      "new_id": "dt_20250601_225959_164883de",
+      "date_extracted": "20250601_225959",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_230030_8351",
+      "new_id": "dt_20250601_230030_2c1bfbe7",
+      "date_extracted": "20250601_230030",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_230048_9426",
+      "new_id": "dt_20250601_230048_07b86bfc",
+      "date_extracted": "20250601_230048",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_230151_5819",
+      "new_id": "dt_20250601_230151_4f6e2955",
+      "date_extracted": "20250601_230151",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_230759_9947",
+      "new_id": "dt_20250601_230759_6cae83d6",
+      "date_extracted": "20250601_230759",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_230840_6986",
+      "new_id": "dt_20250601_230840_135ebef1",
+      "date_extracted": "20250601_230840",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_231044_2542",
+      "new_id": "dt_20250601_231044_11942102",
+      "date_extracted": "20250601_231044",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_231152_8260",
+      "new_id": "dt_20250601_231152_11b40a34",
+      "date_extracted": "20250601_231152",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_231245_8052",
+      "new_id": "dt_20250601_231245_525388e9",
+      "date_extracted": "20250601_231245",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_231356_8234",
+      "new_id": "dt_20250601_231356_c1f6b427",
+      "date_extracted": "20250601_231356",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_231456_8430",
+      "new_id": "dt_20250601_231456_ff95d709",
+      "date_extracted": "20250601_231456",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_231713_1917",
+      "new_id": "dt_20250601_231713_b7b16f59",
+      "date_extracted": "20250601_231713",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_231807_8013",
+      "new_id": "dt_20250601_231807_dfd7901d",
+      "date_extracted": "20250601_231807",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_232039_7772",
+      "new_id": "dt_20250601_232039_99dababc",
+      "date_extracted": "20250601_232039",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250601_232431_9750",
+      "new_id": "dt_20250601_232431_16ea8ed3",
+      "date_extracted": "20250601_232431",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250602_082912_4031",
+      "new_id": "dt_20250602_082912_c3eb5c27",
+      "date_extracted": "20250602_082912",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250602_083122_394",
+      "new_id": "dt_20250602_083122_fca08157",
+      "date_extracted": "20250602_083122",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250602_085029_6844",
+      "new_id": "dt_20250602_085029_07f20902",
+      "date_extracted": "20250602_085029",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250602_085442_1889",
+      "new_id": "dt_20250602_085442_5785ca64",
+      "date_extracted": "20250602_085442",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250602_085928_872",
+      "new_id": "dt_20250602_085928_cdf4de56",
+      "date_extracted": "20250602_085928",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250602_090122_5061",
+      "new_id": "dt_20250602_090122_2c8c8d3e",
+      "date_extracted": "20250602_090122",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "ca7a4297-70c5-486b-b0e1-7982fea7b285",
+      "new_id": "dt_20250602_110520_596b5d57",
+      "date_extracted": "20250602_110520",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "287abbf3-1e08-4744-b511-c5bb7c5e0b39",
+      "new_id": "dt_20250602_120014_e9cc974e",
+      "date_extracted": "20250602_120014",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "d59061ca-c7f4-4cb5-bf8a-3d956d06ce1c",
+      "new_id": "dt_20250602_120645_188dca7b",
+      "date_extracted": "20250602_120645",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "4d74e7a7-be11-48ba-846e-7374569ec165",
+      "new_id": "dt_20250602_120655_c5645208",
+      "date_extracted": "20250602_120655",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "bfed25ff-bc22-425f-a6fa-2a16658ae8e3",
+      "new_id": "dt_20250602_120753_3f0b1844",
+      "date_extracted": "20250602_120753",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "228fcbb8-7790-4c88-b985-2612b586b731",
+      "new_id": "dt_20250602_120840_cdb9652b",
+      "date_extracted": "20250602_120840",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "cc4d38c2-4981-4419-9467-7d48a02f6e71",
+      "new_id": "dt_20250602_120951_a6922a07",
+      "date_extracted": "20250602_120951",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "9b82dc0a-7245-423d-968d-51e54ca29526",
+      "new_id": "dt_20250602_121022_4cdd10be",
+      "date_extracted": "20250602_121022",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "267459a7-901a-4d1f-abb7-ecd1097b6b27",
+      "new_id": "dt_20250602_121256_46425a61",
+      "date_extracted": "20250602_121256",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "975ba792-cc14-4099-9c17-17a03c784e02",
+      "new_id": "dt_20250602_121421_d384aba2",
+      "date_extracted": "20250602_121421",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "33596408-8a13-44b6-bb37-dab9ef7286f6",
+      "new_id": "dt_20250602_121721_6e7480a7",
+      "date_extracted": "20250602_121721",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "40a55cc3-b162-4657-87ba-3f96441c9e49",
+      "new_id": "dt_20250602_122011_a5f8b52b",
+      "date_extracted": "20250602_122011",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "a1c8ede9-7ac9-49a9-b4b4-e1a954a8cee2",
+      "new_id": "dt_20250602_122201_25d0c04a",
+      "date_extracted": "20250602_122201",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "c892daf9-dc12-45cc-8c78-797ab7d73650",
+      "new_id": "dt_20250602_130556_5a9f238f",
+      "date_extracted": "20250602_130556",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "d89b3e64-7bb3-450a-9704-ca4de5f40c77",
+      "new_id": "dt_20250602_130608_dfe3b315",
+      "date_extracted": "20250602_130608",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "e323d947-1574-4c73-ac05-efa316f65dd6",
+      "new_id": "dt_20250602_130834_69069da1",
+      "date_extracted": "20250602_130834",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "8bb7611a-e9b3-44f3-9370-d841bce1ae86",
+      "new_id": "dt_20250602_131108_a5550cb5",
+      "date_extracted": "20250602_131108",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "2ac46ad7-2e77-4d0c-aab7-a3d06b94b623",
+      "new_id": "dt_20250602_131257_5a538fe5",
+      "date_extracted": "20250602_131257",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "837637bc-148f-4d05-9e35-d39e094f8adf",
+      "new_id": "dt_20250602_131424_8da1ae8e",
+      "date_extracted": "20250602_131424",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "4995c3b3-2d43-4911-83f3-2665b879e69f",
+      "new_id": "dt_20250602_131637_cbaaba38",
+      "date_extracted": "20250602_131637",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "16877e21-bca5-4fed-adbd-65be8b7226ef",
+      "new_id": "dt_20250602_131856_3ec3c696",
+      "date_extracted": "20250602_131856",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "856c8fb8-3c97-4f54-93a6-532a5254f4b7",
+      "new_id": "dt_20250602_132221_8703acac",
+      "date_extracted": "20250602_132221",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "cc0b6308-59e0-4374-b27f-911edb2b14ea",
+      "new_id": "dt_20250602_132421_d09934af",
+      "date_extracted": "20250602_132421",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "6281bb52-85e0-4b6c-b151-fc0caf34cd5f",
+      "new_id": "dt_20250602_132528_42ee4c65",
+      "date_extracted": "20250602_132528",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "a75f5e55-a12c-4665-92f6-d3bf4724e113",
+      "new_id": "dt_20250602_133108_e864a0c0",
+      "date_extracted": "20250602_133108",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "434b0057-4492-4fac-a6fc-4c47bd7257a6",
+      "new_id": "dt_20250602_133346_ec3a5cd1",
+      "date_extracted": "20250602_133346",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "4c941954-d4c5-4ba7-80c9-8f8f2ef55989",
+      "new_id": "dt_20250602_134150_2b068b6e",
+      "date_extracted": "20250602_134150",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "3c8627f1-ebbb-4d15-8bb2-16e5348af9b3",
+      "new_id": "dt_20250602_134438_db9764af",
+      "date_extracted": "20250602_134438",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "1f0a8109-bc9c-4b5b-acfd-134b8d9ac280",
+      "new_id": "dt_20250602_135025_83dfd8bc",
+      "date_extracted": "20250602_135025",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "8c30e04b-4630-4ad6-b399-6cf02fd4246e",
+      "new_id": "dt_20250602_135340_274c77d3",
+      "date_extracted": "20250602_135340",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "9996b5cb-a25c-420f-90a0-f5b7e6808340",
+      "new_id": "dt_20250602_135354_3f790db6",
+      "date_extracted": "20250602_135354",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "5a83baf7-051c-41f1-9aa4-f83eac0fd83a",
+      "new_id": "dt_20250602_135407_998fc54d",
+      "date_extracted": "20250602_135407",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "ad78b281-4122-4683-8598-552749d9968d",
+      "new_id": "dt_20250602_135446_ef3c6710",
+      "date_extracted": "20250602_135446",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "af3cee18-54c7-4eb6-a0c2-10ba9a59e063",
+      "new_id": "dt_20250602_135630_08f35199",
+      "date_extracted": "20250602_135630",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "a31e843f-b4e2-4d15-83a3-e550fe405e32",
+      "new_id": "dt_20250602_135918_918e477a",
+      "date_extracted": "20250602_135918",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "4441826a-2a5e-41f0-a94d-df495bd2b286",
+      "new_id": "dt_20250602_140239_d01d78b0",
+      "date_extracted": "20250602_140239",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "2c480ff4-fb1b-4e8b-baf6-571552ec2143",
+      "new_id": "dt_20250602_140405_0c65b5fe",
+      "date_extracted": "20250602_140405",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "051e8188-b41d-439f-8298-de8a5fad3714",
+      "new_id": "dt_20250602_140444_def82911",
+      "date_extracted": "20250602_140444",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "98e00e31-4f2d-43c8-8d8a-af86c6aa7aaf",
+      "new_id": "dt_20250602_140458_a7493250",
+      "date_extracted": "20250602_140458",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "bc0f8207-116b-40ec-ac6c-05829c79a80d",
+      "new_id": "dt_20250602_140509_21fd4f83",
+      "date_extracted": "20250602_140509",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "f90e2672-73ed-4164-9dac-85ef89a78238",
+      "new_id": "dt_20250602_140729_011a797d",
+      "date_extracted": "20250602_140729",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "157e253c-13ba-40cf-835e-366a7193faf2",
+      "new_id": "dt_20250602_140740_e7882608",
+      "date_extracted": "20250602_140740",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "e05f8cfa-896c-40d4-b0fc-7c71599a23ba",
+      "new_id": "dt_20250602_140836_2176a0f5",
+      "date_extracted": "20250602_140836",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "822f8fec-dc54-4d47-91aa-6d63d9356138",
+      "new_id": "dt_20250602_141216_c4d57b21",
+      "date_extracted": "20250602_141216",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "3cbe7e72-1d0c-4c26-8af9-de9db8a8e5e4",
+      "new_id": "dt_20250602_141444_46a45c40",
+      "date_extracted": "20250602_141444",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "2ca3599f-406d-4d46-b7ae-7dba29c554a9",
+      "new_id": "dt_20250602_142013_6a3d9874",
+      "date_extracted": "20250602_142013",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "a7c54561-4083-405f-b5dd-d9c9a6baab17",
+      "new_id": "dt_20250602_142657_f5863281",
+      "date_extracted": "20250602_142657",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "e7447bd1-5a49-4c8a-add4-d272802acc64",
+      "new_id": "dt_20250602_171500_63e74188",
+      "date_extracted": "20250602_171500",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "6b3979cf-6686-4c22-8e0f-8040e2320b53",
+      "new_id": "dt_20250602_143047_92548ccd",
+      "date_extracted": "20250602_143047",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "0b914a42-7190-4af3-8dba-66a89507fcd4",
+      "new_id": "dt_20250602_143441_b8b4aeac",
+      "date_extracted": "20250602_143441",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "e97ba6d2-72a0-4c06-b749-8c6c61c137c3",
+      "new_id": "dt_20250602_143659_dbebc650",
+      "date_extracted": "20250602_143659",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "6c4b2087-48c1-4158-a680-68ed9d9f13d0",
+      "new_id": "dt_20250602_143712_177d5a3a",
+      "date_extracted": "20250602_143712",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "9abaebd6-de73-4da0-a704-4af3d7a9ce69",
+      "new_id": "dt_20250602_143727_710ea304",
+      "date_extracted": "20250602_143727",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "d08d3983-681a-4d70-91e1-c4e0d2a22d1d",
+      "new_id": "dt_20250602_143742_a592ede0",
+      "date_extracted": "20250602_143742",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "5912fe4a-e457-48d3-b462-9cc3ffc79821",
+      "new_id": "dt_20250602_144209_abda20d4",
+      "date_extracted": "20250602_144209",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "ad020d21-5987-4847-8e80-d93dca6e833e",
+      "new_id": "dt_20250602_144224_30d00b3e",
+      "date_extracted": "20250602_144224",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "689bb5b2-5a0c-4159-886e-293747c13c9b",
+      "new_id": "dt_20250602_144307_b617d747",
+      "date_extracted": "20250602_144307",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "503af169-48ab-421c-a417-381eb8861f74",
+      "new_id": "dt_20250602_150316_97bcf5c7",
+      "date_extracted": "20250602_150316",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "5b0a66ef-a85d-454a-81f6-508c0dd05ba6",
+      "new_id": "dt_20250602_150823_aa29b028",
+      "date_extracted": "20250602_150823",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "71d3a614-fbe0-4b22-a405-de1b2ee5eb95",
+      "new_id": "dt_20250602_154130_12335b9b",
+      "date_extracted": "20250602_154130",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "f43a60c1-3bc2-4677-901b-ec896285d143",
+      "new_id": "dt_20250602_154149_97a933d4",
+      "date_extracted": "20250602_154149",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "8d3e3f27-29f9-49ba-9aca-c032885d1700",
+      "new_id": "dt_20250602_155047_6da4ca71",
+      "date_extracted": "20250602_155047",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "b47a75b7-397e-4b6a-b4eb-85d84793e142",
+      "new_id": "dt_20250602_155521_800ad61c",
+      "date_extracted": "20250602_155521",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "c18de40e-5e72-4d92-bcf1-8bf91ff51fe5",
+      "new_id": "dt_20250602_155811_e50c30b5",
+      "date_extracted": "20250602_155811",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "5a476320-972c-4500-b05d-f184c889ba95",
+      "new_id": "dt_20250602_155824_942aa63c",
+      "date_extracted": "20250602_155824",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "48245945-a838-44ed-9ed9-ef9734fa0198",
+      "new_id": "dt_20250602_155934_4c2f528c",
+      "date_extracted": "20250602_155934",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "384d9001-149b-4398-9e5f-a96b51c8e8f3",
+      "new_id": "dt_20250602_160246_2886a8f1",
+      "date_extracted": "20250602_160246",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "6c2425d5-ec1f-4587-bf6d-f2b2af65a1e3",
+      "new_id": "dt_20250602_160748_25748fb9",
+      "date_extracted": "20250602_160748",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "5d45db6c-a564-4325-bb8a-1fc9a2c72f43",
+      "new_id": "dt_20250602_164259_517fb55a",
+      "date_extracted": "20250602_164259",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "cc05485d-2917-461e-b14c-9aea4a2567dc",
+      "new_id": "dt_20250602_164402_2fdf86b4",
+      "date_extracted": "20250602_164402",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "692748dc-d305-461d-9b6f-0f5ce1ca2773",
+      "new_id": "dt_20250602_173423_38d567eb",
+      "date_extracted": "20250602_173423",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "715a5f94-bda7-4f73-89b9-b98c218153cc",
+      "new_id": "dt_20250602_180137_fd72bd84",
+      "date_extracted": "20250602_180137",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "a932bcbb-b3a8-40ff-8adf-b010ac6c7d2f",
+      "new_id": "dt_20250602_180200_8636a99b",
+      "date_extracted": "20250602_180200",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "9181912f-12b9-4cc8-9f93-6f97e0326e2e",
+      "new_id": "dt_20250602_180342_121bbfbe",
+      "date_extracted": "20250602_180342",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "db0e1984-ed8b-4b3a-9a36-6d4a77cc9350",
+      "new_id": "dt_20250602_180728_73b310ba",
+      "date_extracted": "20250602_180728",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "48721a53-4e38-4ab6-937a-672edeadaacd",
+      "new_id": "dt_20250602_180806_506bb9e1",
+      "date_extracted": "20250602_180806",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "b2ab4da2-7e71-4ae7-9520-0134b8658018",
+      "new_id": "dt_20250602_181515_b31034fe",
+      "date_extracted": "20250602_181515",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "b3b9de7b-02ff-46b7-aa89-6bb8a5945b4d",
+      "new_id": "dt_20250602_181500_58d4c100",
+      "date_extracted": "20250602_181500",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "1a6651a5-9732-427a-bbcd-53a7fd6311e3",
+      "new_id": "dt_20250602_183200_c910ae22",
+      "date_extracted": "20250602_183200",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "958826e2-d9e9-4864-acbb-71de7c6355a0",
+      "new_id": "dt_20250602_204910_6f328e5d",
+      "date_extracted": "20250602_204910",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "6eb0a1ca-48d6-4f32-b326-884c0fa03ec7",
+      "new_id": "dt_20250602_211102_cdb55ec3",
+      "date_extracted": "20250602_211102",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "fe70ec6a-6646-4c1a-94be-24ed99ebe6fa",
+      "new_id": "dt_20250602_211740_923ae374",
+      "date_extracted": "20250602_211740",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "a2f0aebe-7a54-4250-a613-fabb32e28ae7",
+      "new_id": "dt_20250602_214026_f69975bc",
+      "date_extracted": "20250602_214026",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "739a8ed2-a9e1-4646-838a-168f6e0e93d5",
+      "new_id": "dt_20250602_214136_71c6f023",
+      "date_extracted": "20250602_214136",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "e095cadd-c42e-48f5-a13a-9098701ffff5",
+      "new_id": "dt_20250602_215758_1b9b96d3",
+      "date_extracted": "20250602_215758",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "87abb925-477b-4120-be3c-86f8a83abb99",
+      "new_id": "dt_20250602_220755_5902633b",
+      "date_extracted": "20250602_220755",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "592cce19-5733-443f-a03d-d104dd6bf6f6",
+      "new_id": "dt_20250602_221016_7076a3bf",
+      "date_extracted": "20250602_221016",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "6d1e046d-9770-407d-83d3-357bf5078bad",
+      "new_id": "dt_20250602_221948_a4520d21",
+      "date_extracted": "20250602_221948",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "b45f8ab8-dc46-4fb4-a9f1-1162fedcecee",
+      "new_id": "dt_20250602_222145_238bab56",
+      "date_extracted": "20250602_222145",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "52076dc9-ca61-45e7-b831-a270d3f4c267",
+      "new_id": "dt_20250603_094142_d6520285",
+      "date_extracted": "20250603_094142",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "fd8f6a3b-102e-4e76-876b-72bde52cafb3",
+      "new_id": "dt_20250603_094231_fc28133b",
+      "date_extracted": "20250603_094231",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "d8dbc019-d274-4048-a88a-80d5fdff9087",
+      "new_id": "dt_20250603_094252_5167a85a",
+      "date_extracted": "20250603_094252",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "0689892e-0dcd-46c9-bc6d-fbd1662a74a8",
+      "new_id": "dt_20250603_095910_7031fdfc",
+      "date_extracted": "20250603_095910",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "31ec3521-f470-4059-827e-d64dcf4e3e9e",
+      "new_id": "dt_20250603_095932_88f6c7ab",
+      "date_extracted": "20250603_095932",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "644c0628-a4f5-4bdc-b6b3-d7a2a4adc8b6",
+      "new_id": "dt_20250603_095959_22ed38a9",
+      "date_extracted": "20250603_095959",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "531c65f9-092e-4187-9073-cff283ed313c",
+      "new_id": "dt_20250603_100020_0ab32aaf",
+      "date_extracted": "20250603_100020",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "789defea-296c-49d6-8560-fedbff531bdb",
+      "new_id": "dt_20250603_100714_ef358d30",
+      "date_extracted": "20250603_100714",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "25dac6bf-7534-4955-b207-a2e60af96eef",
+      "new_id": "dt_20250603_100740_edeb39de",
+      "date_extracted": "20250603_100740",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "55c3143f-ac9a-4fe7-ae6f-a338a8a3392a",
+      "new_id": "dt_20250603_103737_74ad4f5e",
+      "date_extracted": "20250603_103737",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "366ec87f-c613-4da5-b4cf-dfe18522b038",
+      "new_id": "dt_20250603_103758_3cdee1dd",
+      "date_extracted": "20250603_103758",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "24b7a265-4f25-410f-8105-7af4c545b1f5",
+      "new_id": "dt_20250603_103837_7d9bc60a",
+      "date_extracted": "20250603_103837",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "fe4516f7-5e43-4385-8fd9-6f2c4cbd7d31",
+      "new_id": "dt_20250603_103858_fedaed51",
+      "date_extracted": "20250603_103858",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "aecc5b85-0248-4803-8689-946cbef5a537",
+      "new_id": "dt_20250603_103919_6407dc74",
+      "date_extracted": "20250603_103919",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "e227282d-59fa-4fa6-a7f6-651037f551ce",
+      "new_id": "dt_20250603_103938_236cd51a",
+      "date_extracted": "20250603_103938",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "15e8851e-38de-43e4-9fe5-3bcb2a2476a6",
+      "new_id": "dt_20250603_115747_f4ad64f1",
+      "date_extracted": "20250603_115747",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "a5a940bc-86df-4619-90e3-bab9f578301e",
+      "new_id": "dt_20250603_115939_5b98c627",
+      "date_extracted": "20250603_115939",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "96026589-12cc-4825-bf16-6bae7637499d",
+      "new_id": "dt_20250603_115958_30458160",
+      "date_extracted": "20250603_115958",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "2eaf5c34-f264-4f79-9bd4-4eeb510a4f40",
+      "new_id": "dt_20250603_120357_2f76fb09",
+      "date_extracted": "20250603_120357",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "4a75978b-f389-4316-a4c0-dab1f995a9b7",
+      "new_id": "dt_20250603_120423_a721300c",
+      "date_extracted": "20250603_120423",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "9ccb78c9-8b77-4866-ab66-165e7f51888a",
+      "new_id": "dt_20250603_121000_cacea00a",
+      "date_extracted": "20250603_121000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "afdc49b8-5461-4bd3-81dc-eed814276c81",
+      "new_id": "dt_20250603_121025_038b2a88",
+      "date_extracted": "20250603_121025",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "ad2c03f7-b48c-4850-b3a0-5d993cf45d92",
+      "new_id": "dt_20250603_122436_a9a9f8c9",
+      "date_extracted": "20250603_122436",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "5fcfb977-aa9a-4840-a069-ea87543ba4b7",
+      "new_id": "dt_20250603_170000_a1d6b3bf",
+      "date_extracted": "20250603_170000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "4068b1d0-4b90-4e2d-be83-a4ea0de724ba",
+      "new_id": "dt_20250603_130434_13fb25b2",
+      "date_extracted": "20250603_130434",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "c8c0d8b6-7d0b-4359-b208-b378c067031f",
+      "new_id": "dt_20250603_181500_b9e8685b",
+      "date_extracted": "20250603_181500",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "011e22bd-ecec-4b41-9f83-3e5e387daad3",
+      "new_id": "dt_20250603_133927_833c43d3",
+      "date_extracted": "20250603_133927",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "a85f6813-cb97-4127-9f3f-6aa0c6271b73",
+      "new_id": "dt_20250603_134206_b8adf663",
+      "date_extracted": "20250603_134206",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "745504d2-ea0f-45e4-ae57-6366ab2acf0c",
+      "new_id": "dt_20250603_134333_094056ae",
+      "date_extracted": "20250603_134333",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "fdd3faba-1245-4a64-b313-ba7cc16a3965",
+      "new_id": "dt_20250603_134410_98fafcae",
+      "date_extracted": "20250603_134410",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "ce522dee-56f9-468c-b406-787b89a34814",
+      "new_id": "dt_20250603_134702_c373f105",
+      "date_extracted": "20250603_134702",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "d443031a-9741-4b47-a68d-0044b4c9dd48",
+      "new_id": "dt_20250603_134811_1acc2365",
+      "date_extracted": "20250603_134811",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "27c1485b-4b86-4283-bb93-f52a556bc774",
+      "new_id": "dt_20250603_135146_355e7c69",
+      "date_extracted": "20250603_135146",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "e262bc36-c793-4d10-b376-e6d067032855",
+      "new_id": "dt_20250603_135211_378a8273",
+      "date_extracted": "20250603_135211",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "3139b065-0d88-47b9-a026-b744361cbf46",
+      "new_id": "dt_20250603_135228_e00bc512",
+      "date_extracted": "20250603_135228",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "144ac238-dbc4-421f-bb98-4a42fbe0c129",
+      "new_id": "dt_20250603_135612_e958383a",
+      "date_extracted": "20250603_135612",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "9aba6cde-9773-43aa-9968-a48810731684",
+      "new_id": "dt_20250603_140104_9ee31c83",
+      "date_extracted": "20250603_140104",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "9712ccfc-ab55-451a-bc7a-3702e03df086",
+      "new_id": "dt_20250603_140348_0e2b0be6",
+      "date_extracted": "20250603_140348",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "bba95803-42cf-4f56-bbfc-69938b4ded5b",
+      "new_id": "dt_20250603_140458_d69d18c0",
+      "date_extracted": "20250603_140458",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "079fa081-0ac0-4255-9665-e0c1cf3db554",
+      "new_id": "dt_20250603_140755_01446f35",
+      "date_extracted": "20250603_140755",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "7b71f7ae-cd0e-431d-bf6f-b09e3b6461ad",
+      "new_id": "dt_20250603_141131_e59705d8",
+      "date_extracted": "20250603_141131",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "fa49aff2-1945-4825-b5ab-26671d46954c",
+      "new_id": "dt_20250603_141237_5cea651b",
+      "date_extracted": "20250603_141237",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "5a705fd2-99ac-4dcb-9148-3dbb52bd7036",
+      "new_id": "dt_20250603_141332_9cfa1e37",
+      "date_extracted": "20250603_141332",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "6c29e264-b3ac-4d5b-aa65-5b377edc7496",
+      "new_id": "dt_20250603_141518_62dce762",
+      "date_extracted": "20250603_141518",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "76b9af49-a57a-4faa-b7cb-6165ed8d46c5",
+      "new_id": "dt_20250603_141551_610780cf",
+      "date_extracted": "20250603_141551",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "3870ce36-ecad-4380-a095-cfdd4bb0052b",
+      "new_id": "dt_20250603_141837_a9e2b8e9",
+      "date_extracted": "20250603_141837",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "5db61c76-f674-433b-acfd-2be1ea79f066",
+      "new_id": "dt_20250603_120000_ea15c6de",
+      "date_extracted": "20250603_120000",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "1157cfda-df68-4d8a-8b23-4244404bf0f5",
+      "new_id": "dt_20250603_142133_262aecc8",
+      "date_extracted": "20250603_142133",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "ae53cc9f-bbd2-4f5b-9b11-e0441c883ac2",
+      "new_id": "dt_20250603_142326_cec916ff",
+      "date_extracted": "20250603_142326",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "66fe68bc-c5f8-4e82-9dec-19a988e41fa0",
+      "new_id": "dt_20250603_142354_92f50572",
+      "date_extracted": "20250603_142354",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "b735361c-4fe5-481c-91a8-7afbb884aead",
+      "new_id": "dt_20250603_142509_d00bdfed",
+      "date_extracted": "20250603_142509",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "0df3b62a-39b9-44ae-a0ed-bb3fbe89bdf7",
+      "new_id": "dt_20250603_142951_c63425b4",
+      "date_extracted": "20250603_142951",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "a3bf1327-7116-48a7-a489-499bf4998833",
+      "new_id": "dt_20250603_143049_ce8cdf85",
+      "date_extracted": "20250603_143049",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "1c7b7f74-8268-4fd9-821e-34c88cc6727b",
+      "new_id": "dt_20250603_143224_e555f258",
+      "date_extracted": "20250603_143224",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "a8a3b34b-1b3c-4a25-9056-99f670cc0c5a",
+      "new_id": "dt_20250603_143315_05def7ee",
+      "date_extracted": "20250603_143315",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "17d07e97-251b-43fd-956a-2c3f29224667",
+      "new_id": "dt_20250603_143513_40d72d5f",
+      "date_extracted": "20250603_143513",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "8f89dce8-2f65-4a80-babe-2f8f23ef2717",
+      "new_id": "dt_20250603_143551_06a05515",
+      "date_extracted": "20250603_143551",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "39a15dec-9cb1-4623-bdde-dbc3d4647458",
+      "new_id": "dt_20250603_143631_f4602f78",
+      "date_extracted": "20250603_143631",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "bd5e8d9a-54de-408b-873a-49295328a8e6",
+      "new_id": "dt_20250603_143735_3dfafb74",
+      "date_extracted": "20250603_143735",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "f9713abb-9d4e-4119-8e54-6f9e45704253",
+      "new_id": "dt_20250603_143814_96eba255",
+      "date_extracted": "20250603_143814",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "c83a16e9-eacb-4308-9a01-d37f3ced99b0",
+      "new_id": "dt_20250603_145028_46aa93e7",
+      "date_extracted": "20250603_145028",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "0dd08b97-7738-4ff2-8069-3167bd8dd89d",
+      "new_id": "dt_20250603_145108_878dae99",
+      "date_extracted": "20250603_145108",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "6974f3d2-be79-45b5-9513-c9e26d34a8e9",
+      "new_id": "dt_20250603_162959_1a703e08",
+      "date_extracted": "20250603_162959",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "5e4181ba-5231-421a-b4d7-b77bab45798a",
+      "new_id": "dt_20250603_163252_6215fb6c",
+      "date_extracted": "20250603_163252",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250605_200017_1003",
+      "new_id": "dt_20250605_200017_3078d5ba",
+      "date_extracted": "20250605_200017",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250605_200509_1613",
+      "new_id": "dt_20250605_200509_c52d1dc2",
+      "date_extracted": "20250605_200509",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250605_201648_4621",
+      "new_id": "dt_20250605_201648_4d18f8ae",
+      "date_extracted": "20250605_201648",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250605_204012_6777",
+      "new_id": "dt_20250605_204012_7c806bdb",
+      "date_extracted": "20250605_204012",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_085350_4864",
+      "new_id": "dt_20250606_085350_f69f4651",
+      "date_extracted": "20250606_085350",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_095812_9300",
+      "new_id": "dt_20250606_095812_e3607b82",
+      "date_extracted": "20250606_095812",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_111808_4033",
+      "new_id": "dt_20250606_111808_8eb518de",
+      "date_extracted": "20250606_111808",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_113048_8693",
+      "new_id": "dt_20250606_113048_3a6218da",
+      "date_extracted": "20250606_113048",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_113146_2677",
+      "new_id": "dt_20250606_113146_cfe90d76",
+      "date_extracted": "20250606_113146",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_113146_5477",
+      "new_id": "dt_20250606_113146_f9810c9d",
+      "date_extracted": "20250606_113146",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_113308_5271",
+      "new_id": "dt_20250606_113308_a28fa951",
+      "date_extracted": "20250606_113308",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_113309_5280",
+      "new_id": "dt_20250606_113309_74c03e48",
+      "date_extracted": "20250606_113309",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_113310_8577",
+      "new_id": "dt_20250606_113310_2ee2d812",
+      "date_extracted": "20250606_113310",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "62bb68b63b315c16",
+      "new_id": "dt_20250606_113900_0bbb5d7e",
+      "date_extracted": "20250606_113900",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "fc97b555750707d0",
+      "new_id": "dt_20250606_113911_06162043",
+      "date_extracted": "20250606_113911",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_120842_5985",
+      "new_id": "dt_20250606_120842_7bc8ed33",
+      "date_extracted": "20250606_120842",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_120931_2028",
+      "new_id": "dt_20250606_120931_545ced0f",
+      "date_extracted": "20250606_120931",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_120959_5279",
+      "new_id": "dt_20250606_120959_34278ed2",
+      "date_extracted": "20250606_120959",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_121034_3334",
+      "new_id": "dt_20250606_121034_48a4f27a",
+      "date_extracted": "20250606_121034",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_121100_7219",
+      "new_id": "dt_20250606_121100_2c8a1c56",
+      "date_extracted": "20250606_121100",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_121125_6741",
+      "new_id": "dt_20250606_121125_19579971",
+      "date_extracted": "20250606_121125",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_121146_2030",
+      "new_id": "dt_20250606_121146_f7571e72",
+      "date_extracted": "20250606_121146",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_121250_1426",
+      "new_id": "dt_20250606_121250_93f15b0c",
+      "date_extracted": "20250606_121250",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_121312_2105",
+      "new_id": "dt_20250606_121312_27b6e20f",
+      "date_extracted": "20250606_121312",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_20250606_124955_7766",
+      "new_id": "dt_20250606_124955_062edb70",
+      "date_extracted": "20250606_124955",
+      "source": "archived_dt_memories",
+      "collection_type": "memories"
+    },
+    {
+      "old_id": "dt_dta_1748821473",
+      "new_id": "dt_20250601_120000_32eded25",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_identity_board",
+      "collection_type": "identity"
+    },
+    {
+      "old_id": "dt_dtb_1748822151",
+      "new_id": "dt_20250601_120000_02f0ab97",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_identity_board",
+      "collection_type": "identity"
+    },
+    {
+      "old_id": "dt_dtc_1748822584",
+      "new_id": "dt_20250601_120000_54eb0f95",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_identity_board",
+      "collection_type": "identity"
+    },
+    {
+      "old_id": "dt_dta_1748823695",
+      "new_id": "dt_20250601_120000_080b0126",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_identity_board",
+      "collection_type": "identity"
+    },
+    {
+      "old_id": "dt_dta_1748824113",
+      "new_id": "dt_20250601_120000_122328fd",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_identity_board",
+      "collection_type": "identity"
+    },
+    {
+      "old_id": "dt_dta_1748824250",
+      "new_id": "dt_20250601_120000_40fe828b",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_identity_board",
+      "collection_type": "identity"
+    },
+    {
+      "old_id": "dt_dtb_1748825211",
+      "new_id": "dt_20250601_120000_10358f1b",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_identity_board",
+      "collection_type": "identity"
+    },
+    {
+      "old_id": "dt_dta_1748826035",
+      "new_id": "dt_20250601_120000_cd3cec7c",
+      "date_extracted": "20250601_120000",
+      "source": "archived_dt_identity_board",
+      "collection_type": "identity"
+    },
+    {
+      "old_id": "5fffb666-f45a-42f9-a3c2-5276118af19b",
+      "new_id": "dt_20250601_192353_127c42b7",
+      "date_extracted": "20250601_192353",
+      "source": "archived_dt_messages",
+      "collection_type": "messages"
+    },
+    {
+      "old_id": "cb5ed573-00c5-41f2-834f-871eb861adb8",
+      "new_id": "dt_20250601_192714_af034614",
+      "date_extracted": "20250601_192714",
+      "source": "archived_dt_messages",
+      "collection_type": "messages"
+    },
+    {
+      "old_id": "dt_v5_1a809037a1ca_1749228677",
+      "new_id": "dt_20250606_115117_063e69b9",
+      "date_extracted": "20250606_115117",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_bbaba7673081_1749228678",
+      "new_id": "dt_20250606_115118_8f3587e4",
+      "date_extracted": "20250606_115118",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_3827a7d410a8_1749228679",
+      "new_id": "dt_20250606_115119_c1de32ae",
+      "date_extracted": "20250606_115119",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_20ccd4da7d9e_1749228680",
+      "new_id": "dt_20250606_115120_943007c6",
+      "date_extracted": "20250606_115120",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_fbafe6b9b550_1749228680",
+      "new_id": "dt_20250606_115120_5bbecfe2",
+      "date_extracted": "20250606_115120",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_230dfdcf65cb_1749228681",
+      "new_id": "dt_20250606_115121_96418c5e",
+      "date_extracted": "20250606_115121",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_3ac8138e6db9_1749228682",
+      "new_id": "dt_20250606_115122_51e85093",
+      "date_extracted": "20250606_115122",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_30f3a6a469aa_1749228683",
+      "new_id": "dt_20250606_115123_7bae99f9",
+      "date_extracted": "20250606_115123",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_d8671c59f594_1749228683",
+      "new_id": "dt_20250606_115123_bf186185",
+      "date_extracted": "20250606_115123",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_fba2f8e44dc5_1749228686",
+      "new_id": "dt_20250606_115126_5fdaa3e6",
+      "date_extracted": "20250606_115126",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_756e57822a54_1749228687",
+      "new_id": "dt_20250606_115127_b5c9c4eb",
+      "date_extracted": "20250606_115127",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_350e5bea8e9a_1749228687",
+      "new_id": "dt_20250606_115127_c87b7d7c",
+      "date_extracted": "20250606_115127",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_57318e0c5b0a_1749228688",
+      "new_id": "dt_20250606_115128_f5d61ead",
+      "date_extracted": "20250606_115128",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    },
+    {
+      "old_id": "dt_v5_b7ae261e3da9_1749228709",
+      "new_id": "dt_20250606_115149_4b11ad08",
+      "date_extracted": "20250606_115149",
+      "source": "archived_dt_memories_v5",
+      "collection_type": "memories_v5"
+    }
+  ],
+  "end_time": "2025-06-09T21:10:36.736081",
+  "success_count": 452,
+  "final_federation_count": 512,
+  "memories_added": 452
+}

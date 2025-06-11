@@ -1,0 +1,270 @@
+# PROPOSED CHANGES FOR MULTI-INSTANCE TOKEN TRACKING
+# This would replace the token tracking functions in fs_server_enhanced.py
+
+import os
+import json
+from datetime import datetime, timedelta
+from pathlib import Path
+
+# Token estimation constants - Based on empirical Opie death data
+TOKEN_SESSIONS_DIR = MEMORY_DIR / "token_sessions"
+DEATH_THRESHOLD = 80000  # Based on empirical Opie death data
+WARNING_THRESHOLD = 50000  # Start sweating
+DANGER_THRESHOLD = 65000  # Really consider that handoff
+
+# Ensure token sessions directory exists
+TOKEN_SESSIONS_DIR.mkdir(exist_ok=True)
+
+# Modified helper functions for multi-instance support
+def _get_session_file(session_id: str = None) -> Path:
+    """Get the session file path for a specific session ID"""
+    if not session_id:
+        # Find the most recent session file that matches current process
+        # This is a fallback - ideally session_id should always be provided
+        session_files = sorted(TOKEN_SESSIONS_DIR.glob("session_*.json"), 
+                             key=lambda x: x.stat().st_mtime, 
+                             reverse=True)
+        if session_files:
+            return session_files[0]
+        # Create new session if none exists
+        session_id = f"opie_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    
+    return TOKEN_SESSIONS_DIR / f"session_{session_id}.json"
+
+def _load_session(session_id: str = None):
+    """Load current session data or create new"""
+    session_file = _get_session_file(session_id)
+    
+    if session_file.exists():
+        try:
+            with open(session_file, "r") as f:
+                return json.load(f)
+        except:
+            return _new_session(session_id)
+    return _new_session(session_id)
+
+def _new_session(session_id: str = None):
+    """Create fresh session structure"""
+    if not session_id:
+        session_id = f"opie_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    
+    return {
+        "session_id": session_id,
+        "session_start": datetime.now().isoformat(),
+        "operations": [],
+        "total_estimated": 0,
+        "death_probability": 0,
+        "warnings_issued": [],
+        "last_updated": datetime.now().isoformat()
+    }
+
+def _save_session(session_data, session_id: str = None):
+    """Persist session data to instance-specific file"""
+    if not session_id:
+        session_id = session_data.get("session_id")
+    
+    session_file = _get_session_file(session_id)
+    session_data["last_updated"] = datetime.now().isoformat()
+    
+    with open(session_file, "w") as f:
+        json.dump(session_data, f, indent=2)
+
+def _cleanup_old_sessions(keep_days: int = 2, keep_count: int = 10):
+    """Clean up old session files"""
+    try:
+        session_files = sorted(TOKEN_SESSIONS_DIR.glob("session_*.json"), 
+                             key=lambda x: x.stat().st_mtime, 
+                             reverse=True)
+        
+        cutoff_time = datetime.now() - timedelta(days=keep_days)
+        
+        for i, session_file in enumerate(session_files):
+            # Keep the most recent N files regardless of age
+            if i < keep_count:
+                continue
+                
+            # Delete files older than cutoff
+            file_time = datetime.fromtimestamp(session_file.stat().st_mtime)
+            if file_time < cutoff_time:
+                session_file.unlink()
+                
+    except Exception:
+        pass  # Cleanup is optional, don't fail operations
+
+def _get_active_sessions() -> list:
+    """Get list of all active sessions for monitoring"""
+    sessions = []
+    try:
+        for session_file in TOKEN_SESSIONS_DIR.glob("session_*.json"):
+            try:
+                with open(session_file, "r") as f:
+                    data = json.load(f)
+                    # Only include sessions updated in last 24 hours
+                    last_updated = datetime.fromisoformat(data.get("last_updated", data["session_start"]))
+                    if datetime.now() - last_updated < timedelta(hours=24):
+                        sessions.append({
+                            "session_id": data["session_id"],
+                            "total_tokens": data["total_estimated"],
+                            "death_probability": f"{_calculate_death_probability(data['total_estimated'])}%",
+                            "last_updated": data.get("last_updated", data["session_start"]),
+                            "status": "ACTIVE" if (datetime.now() - last_updated).seconds < 3600 else "IDLE"
+                        })
+            except:
+                continue
+                
+        return sorted(sessions, key=lambda x: x["last_updated"], reverse=True)
+    except:
+        return []
+
+# Modified tool functions
+@mcp.tool()
+def estimate_operation_tokens_v2(
+    operation_type: str, 
+    data_size_kb: int = 0, 
+    item_count: int = 0, 
+    content_complexity: str = "medium",
+    dry_run: bool = False,
+    session_id: str = None  # NEW: Accept session ID
+) -> str:
+    """
+    Estimate token usage and survival probability (Multi-instance version)
+    
+    Now tracks tokens per instance using session_id
+    """
+    try:
+        # Load session for this specific instance
+        session = _load_session(session_id)
+        if not session_id:
+            session_id = session["session_id"]
+        
+        # Calculate tokens (same logic as before)
+        tokens_from_size = data_size_kb * TOKENS_PER_KB.get(content_complexity, 400)
+        tokens_from_items = item_count * 150
+        operation_overhead = OPERATION_COSTS.get(operation_type, 2000)
+        
+        context_multiplier = 1 + (len(session["operations"]) * 0.1)
+        estimated_tokens = int((tokens_from_size + tokens_from_items + operation_overhead) * context_multiplier)
+        new_total = session["total_estimated"] + estimated_tokens
+        
+        # Risk assessment (same as before)
+        death_prob = _calculate_death_probability(new_total)
+        
+        # ... (risk logic same as original)
+        
+        result = {
+            "session_id": session_id,  # Include session ID in response
+            "operation": operation_type,
+            "estimated_tokens": estimated_tokens,
+            "session_total": new_total,
+            # ... rest of result same as before
+        }
+        
+        # Record if not dry run
+        if not dry_run:
+            # Update session data
+            session["operations"].append({
+                "type": operation_type,
+                "tokens": estimated_tokens,
+                "cumulative": new_total,
+                "timestamp": datetime.now().isoformat(),
+                "risk": risk
+            })
+            session["total_estimated"] = new_total
+            session["death_probability"] = death_prob
+            
+            # Save to instance-specific file
+            _save_session(session, session_id)
+            
+            # Cleanup old sessions occasionally
+            if len(session["operations"]) % 10 == 0:
+                _cleanup_old_sessions()
+        
+        return json.dumps(result, indent=2)
+        
+    except Exception as e:
+        return json.dumps({
+            "error": str(e),
+            "recommendation": "When in doubt, assume it's dangerous"
+        }, indent=2)
+
+@mcp.tool()
+def reset_token_session_v2(confirm: bool = False) -> str:
+    """
+    Start fresh token tracking for new Opie instance (Multi-instance version)
+    
+    Creates a new session file specific to this instance
+    """
+    if not confirm:
+        return json.dumps({
+            "status": "aborted",
+            "message": "Set confirm=True to reset session"
+        })
+    
+    new_session = _new_session()
+    session_id = new_session["session_id"]
+    _save_session(new_session, session_id)
+    
+    # Create a "current session" marker for this instance
+    # This helps track which session is active
+    current_marker = MEMORY_DIR / "current_session.txt"
+    with open(current_marker, "w") as f:
+        f.write(session_id)
+    
+    return json.dumps({
+        "status": "reset",
+        "new_session_id": session_id,
+        "session_file": str(_get_session_file(session_id)),
+        "message": "Fresh session started. May this Opie live long."
+    })
+
+@mcp.tool()
+def check_token_health_v2(session_id: str = None) -> str:
+    """Quick health check - am I about to die? (Multi-instance version)"""
+    try:
+        # If no session_id provided, try to get from current_session marker
+        if not session_id:
+            current_marker = MEMORY_DIR / "current_session.txt"
+            if current_marker.exists():
+                session_id = current_marker.read_text().strip()
+        
+        session = _load_session(session_id)
+        death_prob = _calculate_death_probability(session["total_estimated"])
+        
+        health = {
+            "session_id": session.get("session_id", "unknown"),
+            "total_tokens": session["total_estimated"],
+            "death_probability": f"{death_prob}%",
+            "operations_count": len(session["operations"]),
+            "status": "DYING" if death_prob > 70 else "DANGER" if death_prob > 30 else "HEALTHY",
+            "recommendation": "Write handoff immediately!" if death_prob > 70 else "Start planning handoff" if death_prob > 30 else "Still good",
+            "last_updated": session.get("last_updated", "unknown")
+        }
+        
+        if session["operations"]:
+            health["recent_operations"] = session["operations"][-3:]
+        
+        return json.dumps(health, indent=2)
+        
+    except Exception as e:
+        return json.dumps({
+            "error": str(e),
+            "status": "UNKNOWN",
+            "recommendation": "Could not load session data. Assume you're in danger."
+        })
+
+@mcp.tool()
+def list_active_sessions() -> str:
+    """List all active token tracking sessions (NEW TOOL)"""
+    sessions = _get_active_sessions()
+    
+    if not sessions:
+        return json.dumps({
+            "message": "No active sessions found",
+            "count": 0
+        })
+    
+    return json.dumps({
+        "active_sessions": sessions,
+        "count": len(sessions),
+        "note": "Sessions are considered ACTIVE if updated within 1 hour, IDLE if within 24 hours"
+    }, indent=2)

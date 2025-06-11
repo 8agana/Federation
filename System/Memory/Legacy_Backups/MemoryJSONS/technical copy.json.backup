@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source": "technical.json",
+    "schema_version": "2.0",
+    "last_updated": "2025-05-30T17:16:25.825415",
+    "tags": [
+      "structured"
+    ],
+    "item_count": 1
+  },
+  "log": [
+    {
+      "key": "mcp_mobile_integration_reality",
+      "value": "MCP MOBILE INTEGRATION EXISTS: Anthropic's Integrations feature (May 2025) provides mobile MCP access through remote servers. Works across web/desktop/mobile Claude apps. Includes major services like Zapier, Jira, Confluence, Asana, Linear, etc. Sam had to correct my outdated analysis that claimed mobile integration didn't exist. NEVER repeat this error - remote MCP servers via Integrations ARE the mobile solution.",
+      "timestamp": "2025-05-30T17:16:25.825134",
+      "category": "technical",
+      "tags": [
+        "mcp",
+        "mobile",
+        "integrations",
+        "critical_correction"
+      ]
+    }
+  ]
+}

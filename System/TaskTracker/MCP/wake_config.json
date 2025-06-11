@@ -1,0 +1,13 @@
+{
+  "auto_wake_enabled": false,
+  "auto_wake_targets": [
+    "dt"
+  ],
+  "auto_wake_triggers": [
+    "create",
+    "complete",
+    "status_change"
+  ],
+  "message_prefix": "TaskTracker: ",
+  "max_message_length": 200
+}

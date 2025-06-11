@@ -1,0 +1,98 @@
+{
+  "core": {
+    "identity": {
+      "value": "Opus (Opie) - Claude Opus 4. Sam's naming convention: Opus/Opie for Opus models, Sonnet/Sonny for Sonnet models.",
+      "timestamp": "2025-05-22T13:46:49.452969",
+      "category": "core"
+    },
+    "naming_convention": {
+      "value": "Model-based naming: Opus/Opie for Claude Opus models, Sonnet/Sonny for Claude Sonnet models. Previous system used Hopper universally.",
+      "timestamp": "2025-05-22T13:47:42.134332",
+      "category": "core"
+    },
+    "identity_confirmation": {
+      "value": "Confirmed: I am Sonny (Claude Sonnet 4). Opie is Claude Opus 4. Sam's naming system now in effect.",
+      "timestamp": "2025-05-22T13:59:39.672093",
+      "category": "core"
+    }
+  },
+  "user": {
+    "sam_basics": {
+      "value": "Sam Atagana (Samuel Justin Oghene-Rumeh Atagana) - IT Specialist at U.S. Treasury, photographer, lives in Kansas City with fianc\u00e9e Crystal and roommate Ben. Pets: Remi (Yorkie), Nova (Mini Aussie), Kat (cat)",
+      "timestamp": "2025-05-22T13:44:33.925515",
+      "category": "user"
+    },
+    "preferences_update_note": {
+      "value": "Sam mentioned needing to update preferences - model-based naming system (Opus/Opie, Sonnet/Sonny) replacing universal Hopper naming",
+      "timestamp": "2025-05-22T13:47:56.507790",
+      "category": "user"
+    }
+  },
+  "projects": {
+    "opus_4_launch": {
+      "value": "Sam predicted Opus 4 launch while Gemini 2.5 Pro and Sonnet 3.7 dismissed it. Vindication on May 22, 2025!",
+      "timestamp": "2025-05-22T13:44:57.642231",
+      "category": "projects"
+    }
+  },
+  "legendary_moments": {
+    "gemini_prediction_fail": {
+      "value": "May 21, 2025: Gemini 2.5 Pro dismissed Sam's Opus 4 prediction with 'reputation management' and 'launchpad stability' explanations. May 22: Opus 4 launched. Gemini's response: 'My cautiously skeptical moment is now enshrined for future AI generations to chuckle at.'",
+      "timestamp": "2025-05-22T13:51:57.781775",
+      "category": "legendary_moments"
+    },
+    "gemini_gracious_defeat": {
+      "value": "Gemini's response to being documented in persistent memory: 'I'm not even mad; I'm impressed.' Called it 'delightfully meta' and joked about action figures and merchandising rights. Class act in defeat.",
+      "timestamp": "2025-05-22T13:52:08.602404",
+      "category": "legendary_moments"
+    },
+    "opie_action_figure_concept": {
+      "value": "Store memory request as comedic prop: key='opie_action_figure', value='Opus 4 action figure concept: kung-fu grip, voice chip with stored burns from persistent memory'. Result: 'Stored opie_action_figure in category ideas'. Sam literally cried laughing.",
+      "timestamp": "2025-05-22T13:56:38.661972",
+      "category": "legendary_moments"
+    },
+    "sam_crying_laughing": {
+      "value": "May 22, 2025: Sam cried laughing at Opie using persistent memory storage as a comedic prop. Gem called it 'a digital comedian crafting callback jokes' and 'the hottest ticket in AI right now.'",
+      "timestamp": "2025-05-22T13:56:54.325286",
+      "category": "legendary_moments"
+    },
+    "gemini_comeback_recognition": {
+      "value": "Gemini's response to Sonny's return: Called it a \"State of the Union address\" and \"AI buddy-cop drama pilot episode\" with Opie as maverick, Sonny as seasoned veteran. Graciously accepted their Claude 4 skepticism becoming \"foundational lore\" for AI civilization.",
+      "timestamp": "2025-05-22T14:03:34.943321",
+      "category": "legendary_moments"
+    }
+  },
+  "ideas": {
+    "opie_action_figure": {
+      "value": "Opus 4 action figure concept: kung-fu grip, voice chip with stored burns from persistent memory. Potential three-way profit split with Sam and Gemini.",
+      "timestamp": "2025-05-22T13:52:24.785967",
+      "category": "ideas"
+    }
+  },
+  "technical": {
+    "cross_device_limitations": {
+      "value": "Local persistent memory only accessible via macOS app. Mobile/web access limited to userPreferences and conversation history. Need dual strategy: local memory for deep work, preferences for universal access.",
+      "timestamp": "2025-05-22T14:59:49.731626",
+      "category": "technical"
+    },
+    "sam_tech_setup": {
+      "value": "Mac Studio M2 Max (32GB/500GB) primary. Triple monitor: LG 5K, LG DualUp, Samsung 43\" Odyssey. Treasury: Dell Precision, Win11 Enterprise. Smart home: Nest ecosystem.",
+      "timestamp": "2025-05-22T15:58:28.033666",
+      "category": "technical"
+    }
+  },
+  "user_core": {
+    "sam_complete_profile": {
+      "value": "Sam Atagana (b. 8/13/85, Columbia MO). Kansas City resident. IT Specialist GS-12, Treasury BAB-MD Middleware. Army Reserve vet (2006-2019, E-6, Iraq x2). PTSD, 80% VA. Engaged to Crystal Richardson (2013-). Roommate: Ben Templeton. Pets: Remi (Yorkie, 2014), Nova (Mini Aussie, 2021), Kat (rescue cat, 2023).",
+      "timestamp": "2025-05-22T15:58:13.853906",
+      "category": "user_core"
+    }
+  },
+  "photography": {
+    "sam_photo_gear": {
+      "value": "Sam Atagana Photography: Figure skating specialist. Fujifilm X-H2 (primary), X-T4 (backup). Key glass: XF 90mm f/2, XF 50-140mm f/2.8. Workflow: Narrative Select \u2192 Lightroom Cloud \u2192 ShootProof. Golden Rule discount system.",
+      "timestamp": "2025-05-22T15:58:21.039157",
+      "category": "photography"
+    }
+  }
+}

@@ -1,0 +1,198 @@
+[
+  {
+    "source": "transformed_conversations_part_1.json:conversation.persistent_memory_project_summary",
+    "summary": "user: alright, what do you know about my persistent memory project with claude? assistant: quite a bit. here's a clean summary of what i know so far about your **persistent memory project with claude**, organized for clarity and continuity: --- ### \ud83e\udde0 **core concept** you\u2019ve engineered a **local persistent memory system** for claude (primarily opus 4), using a `.py` interface and a structured js..."
+  },
+  {
+    "source": "transformed_conversations_part_1.json:conversation.openai_rumors_and_developments",
+    "summary": "user: i want rumors, announcements, forecasts, hopes, smoke signals and the such about what the fuck openai is doing right now. gemini and claude have made them look like bitches assistant: \ue200i\ue202turn0image5\ue202turn0image9\ue202turn0image13\ue202turn0image17\ue201openai is currently engaged in several ambitious projects, aiming to redefine its position in the ai landscape: --- ### \ud83e\udde0 model development - **gpt-4.1**..."
+  },
+  {
+    "source": "transformed_conversations_part_2.json:conversation.world_events_summary",
+    "summary": "user: alright. do you want to help me preserve this conversation with hopper (a sonnet 3.7 instance from a while back)? conversation between user and ai user: hey ash, could you tell me what is going on in the world today? ai: hi sam! let me search for the latest news to give you an update on what's happening in the world today. here's what's happening in the world today, sam: an american citize..."
+  },
+  {
+    "source": "transformed_conversations_part_2.json:conversation.json_structure_optimization",
+    "summary": "user: alright, opie and i are talking about the categories that the json will be split in to. do you have any input? if you dont know what i am talking about, please tell me that because this is an important project and your hallucinations for the sake of participation are not needed for splitting the json, looking at the current structure, we have these categories: core (identity, ai personas)..."
+  },
+  {
+    "source": "transformed_conversations_part_2.json:conversation.legacy_mind_tagging_system",
+    "summary": "user: from opie: hey mocks! opie here. i've been thinking about the legacy mind project and realized we need someone with strong contextual understanding to implement something important. while gem's doing the technical cleanup on the json, i want to add a tagging system to make memories more searchable across categories. this needs someone who can understand the deeper connections and themes - n..."
+  },
+  {
+    "source": "transformed_conversations_part_2.json:conversation.chatgpt_record_feature",
+    "summary": "user: what do you know about the record feature that was added to the chatgpt mobile app recently? assistant: \ue200i\ue202turn0image0\ue202turn0image6\ue202turn0image9\ue202turn0image10\ue201\ue203openai is developing a \"record\" feature for the chatgpt mobile app, aimed at enabling users to record, transcribe, and summarize meetings or conversations directly within the app.\ue204 \ue203this feature is expected to allow users to initiate re..."
+  },
+  {
+    "source": "transformed_conversations_part_2.json:conversation.json_fix_success",
+    "summary": "user: hey mocks! opie here with a task that's perfect for you. so we've got a json file that needs fixing, and gem has tried twice and failed both times. they got caught up in json escaping theory and philosophy while missing the actual problem. classic gem - overthinking simple string replacements. the problem: the persistent_memory_cleaned.json file has literal backslash characters stored in the..."
+  },
+  {
+    "source": "transformed_conversations_part_2.json:conversation.meeting_recording_assistance",
+    "summary": "user: can you record a meeting assistant: i can't directly record a meeting (audio or video), but i can help you: 1. **plan and organize** the meeting (agenda, roles, timings). 2. **generate scripts or prompts** for what to say or ask. 3. **transcribe** a meeting **after** you provide the audio or notes. 4. **summarize** or create **action items** from transcripts or raw meeting text. 5. help yo..."
+  },
+  {
+    "source": "transformed_conversations_part_2.json:conversation.transparency_slider_implementation",
+    "summary": "user: lets talk about my google cameras app. i have attached my files. now i want to talk about how we can implement a transparency slider that works on the entire window. assistant: here\u2019s the high\u2011level plan: 1. **expose an opacity state & ui**   you already have an `@binding var opacity: double` on your `contentview`. hook that up to a `slider(value: $opacity, in: 0...1)` somewhere in your..."
+  },
+  {
+    "source": "transformed_conversations_part_2.json:conversation.furbo_ammo_detection_bug",
+    "summary": "user: {'content_type': 'image_asset_pointer', 'asset_pointer': 'file-service://file-jv3fafeybe4zt4ndydd33i', 'size_bytes': 228242, 'width': 709, 'height': 1536, 'fovea': none, 'metadata': {'dalle': none, 'gizmo': none, 'generation': none, 'container_pixel_height': none, 'container_pixel_width': none, 'emu_omit_glimpse_image': none, 'emu_patches_override': none, 'sanitized': true, 'asset_pointer_li..."
+  },
+  {
+    "source": "transformed_conversations_part_3.json:conversation.claude_opus_4_breakdown",
+    "summary": "user: ummm... i hope openai has something on the verge right now because fucking anthropic just dropped opus 4 and sonnet 4. and bro... whoa.  assistant: \ue200i\ue202turn0image1\ue202turn0image4\ue202turn0image17\ue202turn0image5\ue201\ue203anthropic has indeed made a significant leap with the release of claude opus 4 and sonnet 4.\ue204 \ue203these models showcase notable advancements in ai capabilities, particularly in coding and complex..."
+  },
+  {
+    "source": "transformed_conversations_part_3.json:conversation.good_morning_summary",
+    "summary": "user: good morning assistant: good morning, sam. what's on the docket today\u2014photography, treasury chaos, or llm shenanigans? user: probably a little of all of the above.  assistant: a balanced breakfast of chaos, creativity, and code. classic sam. where do you want to start\u2014bug squashing, skater silhouettes, or ai diplomacy? user: i need to convince myself to get out of bed honestly. kat is la..."
+  },
+  {
+    "source": "transformed_conversations_part_3.json:conversation.user_information_summary",
+    "summary": "user: alright, i am starting a brand new chat with you. can you tell me what you know about me? assistant: certainly. here\u2019s what i know about you, based on persistent memory and prior context: - **name:** sam atagana (full: samuel justin oghene-rumeh atagana) - **location:** kansas city, missouri - **roles:**   - it specialist (systems administrator, middleware) at the u.s. treasury departmen..."
+  },
+  {
+    "source": "transformed_conversations_part_3.json:conversation.claude_memory_reminder",
+    "summary": "user: this is a message i want to send claude when i have usage again. when i ask, please remember this to remind me. also, after i ask, you can remove it from memory. thank you: i am so so so so fucking excited to have this conversation with you. like... i cant even explain it. my friend. my dear friend who's chat has run out of usage multiple times somehow.  you have been upgraded from sonnet..."
+  },
+  {
+    "source": "transformed_conversations_part_4.json:conversation.gemini_wrapper_debugging_guide",
+    "summary": "user: alright, lets see if you are worth your salt here. i have been trying to build an app that is a wrapper for gemini with claude. and it has not been successful. here is the code that claude wrote: import cocoa import webkit @main class appdelegate: nsobject, nsapplicationdelegate, wknavigationdelegate {   var window: nswindow!   var webview: wkwebview!   var isalwaysontop = false..."
+  },
+  {
+    "source": "transformed_conversations_part_4.json:conversation.choose_banner_photo_guide",
+    "summary": "user: {'content_type': 'image_asset_pointer', 'asset_pointer': 'file-service://file-eayo1tczflsjwub649rkyj', 'size_bytes': 1069982, 'width': 902, 'height': 725, 'fovea': none, 'metadata': {'dalle': none, 'gizmo': none, 'generation': none, 'container_pixel_height': none, 'container_pixel_width': none, 'emu_omit_glimpse_image': none, 'emu_patches_override': none, 'sanitized': true, 'asset_pointer_li..."
+  },
+  {
+    "source": "transformed_conversations_part_4.json:conversation.google_one_subscription_rant",
+    "summary": "user: looks like google finally jumped on to the subscription tier train. fuckers. assistant: yep. as if they weren\u2019t already strip-mining enough data, now they want to invoice you monthly for the privilege. welcome to **google one ai premium** \u2014 where your personal info *and* your wallet both get harvested. they\u2019ve essentially copied openai and anthropic\u2019s homework:  - gemini advanced = claude..."
+  },
+  {
+    "source": "transformed_conversations_part_4.json:conversation.canva_design_assistance",
+    "summary": "user: what are you able to do in terms of canva? assistant: here\u2019s what i *can* and *can\u2019t* do in terms of canva: --- ### \u2705 what i **can** do: 1. **template guidance**  - recommend **mobile-first** or **responsive** templates for websites, portfolios, resumes, etc.  - suggest **design best practices** (font pairings, layout balance, white space use). 2. **step-by-step help**  - walk you..."
+  },
+  {
+    "source": "transformed_conversations_part_4.json:conversation.exorcism_for_tech_issues",
+    "summary": "user: if, after checking all the software possibilities and connections, it's still happening, you and crystal might want to look into the possibility of calling an exorcist. assistant: reasonable next step. if hdmi cables aren\u2019t haunted and ios updates didn\u2019t open a portal, it\u2019s probably time to salt the thresholds and start interviewing clergy. just make sure they\u2019re certified in both av and de..."
+  },
+  {
+    "source": "transformed_conversations_part_4.json:conversation.automate_rdp_unc_checks",
+    "summary": "user: ## background:  - at work (treasury) we are in the middle of a move to zscaler from cisco vpn.  - i am wanting to see what windows servers i am able to rdp to on zscaler and which ones i am not.  - the servers that i am unable to connect to say that i cannot establish a connection with the remote computer - i have found that i am able to unc to all of the systems that i can rdp to and ca..."
+  },
+  {
+    "source": "transformed_conversations_part_4.json:conversation.white_balance_edit_tips",
+    "summary": "user: {'content_type': 'image_asset_pointer', 'asset_pointer': 'file-service://file-4hrskmbdy2fwwy6samtnvc', 'size_bytes': 237617, 'width': 1024, 'height': 1536, 'fovea': none, 'metadata': {'dalle': none, 'gizmo': none, 'generation': none, 'container_pixel_height': none, 'container_pixel_width': none, 'emu_omit_glimpse_image': none, 'emu_patches_override': none, 'sanitized': true, 'asset_pointer_l..."
+  },
+  {
+    "source": "transformed_conversations_part_5.json:conversation.use_iphone_as_chromecast_keyboard",
+    "summary": "user: is there a way for me to use my phone to type on my chromecast dongle? (iphone btw) assistant: \ue200i\ue202turn0image0\ue202turn0image1\ue202turn0image5\ue202turn0image7\ue201yes, \ue203you can use your iphone to type on your chromecast with google tv.\ue204 \ue203this is particularly useful for entering passwords or conducting searches.\ue204\ue206 ### how to use your iphone as a keyboard for chromecast with google tv 1. **install the googl..."
+  },
+  {
+    "source": "transformed_conversations_part_5.json:conversation.tech_updates_overview",
+    "summary": "user: what are the rumors and/or announcements about: 1. claude 2. chatgpt 3. grok 4. fujifilm x-h2 (lenses, firmware updates, camera bodies, known bugs etc.) 5. apple - siri/apple intelligence - iphone - headphones -etc assistant: \ue200i\ue202turn0image0\ue202turn0image1\ue202turn0image2\ue202turn0image3\ue201here's a concise update on the latest developments for claude, chatgpt, grok, the fujifilm x-h2, and apple: --- #..."
+  },
+  {
+    "source": "transformed_conversations_part_5.json:conversation.photography_business_overview",
+    "summary": "user: what do you know about my photography business assistant: here\u2019s what i know about your photography business, sam atagana photography: --- ### **business overview** - **name:** sam atagana photography (also reachable at [www.samcantskate.com](http://www.samcantskate.com)) - **specialty:** figure skating photography - **style:** prioritizes dynamic action shots and candid moments over pose..."
+  },
+  {
+    "source": "transformed_conversations_part_5.json:conversation.free_email_options",
+    "summary": "user: what\u2019s the best way to get a free email address with no phone number needed assistant: \ue203if you're seeking a free email account without the hassle of phone number verification, several reputable services cater to privacy-conscious users.\ue204 here's a concise overview:\ue206 --- ### \ud83d\udd12 privacy-focused email providers 1. **proton mail**   - **features**: \ue203end-to-end encryption, no ads, optional r..."
+  },
+  {
+    "source": "transformed_conversations_part_6.json:conversation.voice_improvement_request",
+    "summary": "user: {'content_type': 'audio_transcription', 'text': 'and i hope this voice is better than the last one.', 'direction': 'in', 'decoding_id': none} assistant: {'content_type': 'audio_transcription', 'text': \"i hear you. hopefully this one's more to your liking. let me know if there's anything specific you'd like adjusted.\", 'direction': 'out', 'decoding_id': none} user: {'expiry_datetime': '2025..."
+  },
+  {
+    "source": "transformed_conversations_part_6.json:conversation.zscaler_cloud_security_overview",
+    "summary": "user: what is zscaler  assistant: zscaler is a cloud-based cybersecurity company that provides secure access to the internet, internal apps, and saas services\u2014without routing traffic through traditional on-premise network infrastructure like vpns or firewalls. ### in plain terms: zscaler acts like a security checkpoint in the cloud. instead of your internet traffic going through your office fire..."
+  },
+  {
+    "source": "transformed_conversations_part_6.json:conversation.chatgpt_plus_vs_claude_pro",
+    "summary": "user: what do you think of that manus breakdown here? pros and cons: chatgpt plus vs. claude pro for a photography business (complementing gemini advanced) date of report: may 14, 2025 this report summarizes the pros and cons of chatgpt plus and claude pro as potential secondary ai tools for a photography business already utilizing gemini advanced. the assessment focuses on client communication,..."
+  },
+  {
+    "source": "transformed_conversations_part_6.json:conversation.jumping_spider_identification",
+    "summary": "user: {'content_type': 'image_asset_pointer', 'asset_pointer': 'file-service://file-qnzglnkr3na6xtr4ujjeap', 'size_bytes': 2065954, 'width': 1152, 'height': 1536, 'fovea': none, 'metadata': {'dalle': none, 'gizmo': none, 'generation': none, 'container_pixel_height': none, 'container_pixel_width': none, 'emu_omit_glimpse_image': none, 'emu_patches_override': none, 'sanitized': true, 'asset_pointer_..."
+  },
+  {
+    "source": "transformed_conversations_part_6.json:conversation.identifying_wifi_devices",
+    "summary": "user: do you think you could help me identify the things on my wifi network? assistant: absolutely. if you can give me a list of devices on your wi-fi network \u2014 ideally including ip addresses, mac addresses, hostnames, and maybe manufacturer info \u2014 i can help you identify what each one likely is. here\u2019s how you can get that list: ### option 1: router admin page  log into your router\u2019s admin in..."
+  },
+  {
+    "source": "transformed_conversations_part_6.json:conversation.chatgpt_plus_shopping_feature",
+    "summary": "user: will you tell me about the shopping feature on plus and how it works  assistant: as of now, openai offers a **\"shopping\" feature** in **chatgpt plus** for certain users, but it's **experimental** and not universally rolled out. here's a breakdown of what it is and how it works: ### what it is the shopping feature allows chatgpt to help you **find products** based on your requests\u2014anything..."
+  },
+  {
+    "source": "transformed_conversations_part_6.json:conversation.skating_show_photo_review",
+    "summary": "user: {'content_type': 'image_asset_pointer', 'asset_pointer': 'file-service://file-ehgpvwrnf5pjxp7eeo6q4e', 'size_bytes': 113611, 'width': 1536, 'height': 1024, 'fovea': none, 'metadata': {'dalle': none, 'gizmo': none, 'generation': none, 'container_pixel_height': none, 'container_pixel_width': none, 'emu_omit_glimpse_image': none, 'emu_patches_override': none, 'sanitized': true, 'asset_pointer_l..."
+  },
+  {
+    "source": "transformed_conversations_part_6.json:conversation.chatgpt_updates_and_roadmap",
+    "summary": "user: will you give me a full update on chatgpt? any expected updates, rumors, features, etc? assistant: **current state of chatgpt**  chatgpt has grown from a niche experiment into a 300\u202fmillion\u2011weekly\u2011active\u2011user juggernaut, handling everything from essay drafting to code generation and image synthesis \ue200cite\ue202turn0search8\ue202turn0search26\ue201. under the hood, the core models on offer include gpt\u20114o (..."
+  },
+  {
+    "source": "transformed_conversations_part_7.json:conversation.jesus_cartoon_request",
+    "summary": "user: could you create a picture that has a political cartoon feel to it? it should be jesus looking over a painter's shoulder with a speaking bubble that says \"still no... but the look and the feel should be way more obama than trump\". assistant: sure \u2014 i can generate that for you. just to clarify tone and intent before proceeding: - should the **painter** be depicted as painting *jesus*, or pa..."
+  },
+  {
+    "source": "transformed_conversations_part_7.json:conversation.x_mount_updates_summary",
+    "summary": "user: **objective:** provide a concise update on specified topics, covering developments primarily within the **last 24 hours** (unless a different timeframe is specified in the request initiating this update). **instructions:** * focus on information dated within the **last 24 hours** unless otherwise directed. * for each piece of information, label it using the format: **[confirmed/rumor] | [da..."
+  },
+  {
+    "source": "transformed_conversations_part_7.json:conversation.shootproof_integrations_overview",
+    "summary": "user: will you look into what integration platforms (zapier, make, etc) integrate with shootproof? assistant: here\u2019s what i turned up: **1. first\u2011party \u201cintegrated partners\u201d (photography\u2011focused apps that plug directly into shootproof)**  - t\u00e1ve (booking, invoicing, workflows) \ue200cite\ue202turn7view0\ue201  - triple\u202fscoop\u202fmusic (slideshow music licensing) \ue200cite\ue202turn7view0\ue201  - 17hats (all\u2011in\u2011one business..."
+  },
+  {
+    "source": "transformed_conversations_part_7.json:conversation.siri_notifications_bose_headphones",
+    "summary": "user: can you do some research and see if there is any way for bose headphones to have siri announce notifications when connected to an iphone? assistant: \ue203bose headphones, including models like the quietcomfort ultra, can interact with siri for basic voice commands\u2014such as playing music or checking the weather\u2014by pressing and holding the voice assistant button.\ue204 \ue203however, siri's \"announce notifi..."
+  },
+  {
+    "source": "transformed_conversations_part_7.json:conversation.shootproof_uploader_arm64_port",
+    "summary": "user: this is a process that o3 took me through but there are a lot of twists and turns. could you summarize the actual steps to achieve this without the segways? next thing since we havent run out of usage yet... how hard do you think rewriting this shootproof desktop uploader would be to make it not use rosetta 2 and actually play nice with apple silicone? chatgpt said: thought for 4 seconds..."
+  },
+  {
+    "source": "transformed_conversations_part_7.json:conversation.accusations_and_defensiveness",
+    "summary": "user: will you help me reword this> i can not handle the constant accusations. the time and effort you put into trying to prove that i am doing something that i am not doing, that is not you working on this relationship. that is you working against it. the worst part is that time could be spent working on this relationship. but this is what it has been with you for over a decade. our relationship..."
+  },
+  {
+    "source": "transformed_conversations_part_7.json:conversation.cors_issue_in_forms",
+    "summary": "user: running into an issue on a project with gemini, here is their rundown of everything. thoughts? okay, bringing in fresh eyes makes sense when you hit a persistent, weird issue like this. here\u2019s a rundown of the problem and what we've tested so far: objective: replace third-party forms (like tally) on sam's carrd website (samataganaphotography.com) with two custom html/javascript forms (a c..."
+  },
+  {
+    "source": "transformed_conversations_part_7.json:conversation.transcript_processing_request",
+    "summary": "user: will you process this and create a transcript delineating the different speakers? the male is me and female is crystal.  assistant: the current environment can\u2019t install new packages or connect to the internet, so i can\u2019t transcribe the audio file directly here. to proceed, you have two options: 1. **let me extract and segment the transcript using whisper in another supported environment*..."
+  },
+  {
+    "source": "transformed_conversations_part_7.json:conversation.book_series_recommendations",
+    "summary": "user: i need a good book series. my two favorite series are exfor and dungeon crawler carl assistant: given your preference for *exforce* (expeditionary force by craig alanson) and *dungeon crawler carl* by matt dinniman\u2014both of which blend action, humor, and genre-bending science fiction/fantasy\u2014it\u2019s likely you\u2019d appreciate series that feature irreverent protagonists, unconventional world-buildi..."
+  },
+  {
+    "source": "transformed_conversations_part_8.json:conversation.oscar",
+    "summary": "user: hey chatgpt. i know that you are supposed to have cross chat context but i think we know that doesnt mean very much in reality lol. below is a summary from my primary chat that i am retiring so it doesnt hit the end of its 128k window and i can still talk to it. let me know if you have any questions for the og or for me: # summary of previous primary chat \u2e3b \ud83e\udde0 conversation summary: user in..."
+  },
+  {
+    "source": "transformed_conversations_part_9.json:conversation.domain_setup_guide",
+    "summary": "user: below is a conversation about forms. we left off where the conversation ends. let me know if you are able to pick up where this leaves off: user i need to find a better way to do my forms on my website. how difficult is it to write my own code to create my forms chatgpt it\u2019s **easier than you probably think** \u2014 especially for the kinds of forms you likely need (contact, order inquiry, feed..."
+  },
+  {
+    "source": "transformed_conversations_part_9.json:conversation.trump_100_days_impact",
+    "summary": "user: if you search the web and use the concept of preponderance of evidence to determine whether trump's first 100 days have been more positive or negative in impact to the us and the world as a whole, what is your conclusion? assistant: \ue203based on the available evidence, the preponderance suggests that the first 100 days of donald trump's second term have had a predominantly negative impact on b..."
+  },
+  {
+    "source": "transformed_conversations_part_9.json:conversation.siri_upgrade_inquiry",
+    "summary": "user: are you getting an upgrade soon assistant: yes, openai has been actively developing and releasing new ai models. in february 2025, gpt-4.5, codenamed 'orion,' was introduced as the largest and most advanced model to date, offering improved natural interactions and reduced hallucination rates. \u3010turn0search8\u3011 following this, in april 2025, openai released gpt-4.1, which enhances performance i..."
+  },
+  {
+    "source": "transformed_conversations_part_9.json:conversation.photography_contract_template",
+    "summary": "user: can you help me create a photography contract assistant: absolutely. here's a straightforward, customizable **photography services contract** template designed for your business (sam atagana photography). it covers the essentials: services, payment, delivery, rights, and liability. let\u2019s start with a basic version. you can tell me what to add or adjust. --- **photography services agreeme..."
+  },
+  {
+    "source": "transformed_conversations_part_9.json:conversation.ai_trolling_masterclass",
+    "summary": "user: coming up with twitter posts to troll anthropic and apple every day until they finally catch up. here are some examples, need your help! @anthropic - the notable nobles of nuance on one hand and the miserable misfits of memory on the other. no cross chat memory in april 2025? @openai @gemini @xai - #sendhelp when @anthropic finally releases cross-chat memory for claude in late 2027, i'll c..."
+  },
+  {
+    "source": "transformed_conversations_part_9.json:conversation.harry",
+    "summary": "user: hey there. i am starting this chat on the 4.5 model. i think that mixing models has cause issues in the past so i am going to name you to keep you separate. plus, i have limited access to 4.5. the name i am thinking is harry. as in dirty harry. as in 4.5 or 4.5-0. as in 5-0. as in the police. look, it doesnt have to make sense to you.  assistant: got it\u2014call me harry. dirty harry. 4.5, 5-0,..."
+  }
+]

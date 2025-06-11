@@ -1,0 +1,4048 @@
+{
+  "gem": [
+    {
+      "timestamp": "2025-05-22T13:44:57.642231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:41:17.305697",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:07:13.206364",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:12:44.562941",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-24T10:54:54.672159",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:24.785967",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-23T12:25:38.734483",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-22T13:51:57.781775",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:08.602404",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:54.325286",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T14:03:34.943321",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:32:11.479073",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:24:40.818994",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:26:04.245651",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:27:44.698329",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:29:04.109482",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:30:45.535019",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:42:44.059385",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:22.258146",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:36.359283",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "structured": [
+    {
+      "timestamp": "2025-05-22T13:44:57.642231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:35:44.278328",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:41:17.305697",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:07:13.206364",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:48.070506",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:57:18.706616",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:59:11.685689",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:00:56.376624",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:02:09.677691",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:04:59.586231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:12:44.562941",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T08:11:41.640276",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:28.466041",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:08:13.863612",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:42:29.881442",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:43:58.816331",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-24T10:54:54.672159",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:24:32.693434",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:26:06.968145",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:32:45.462087",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T18:05:50.596089",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:09:30.482375",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:11:39.817526",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:24.785967",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-24T20:06:54.587681",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-23T12:24:12.383903",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T12:25:38.734483",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T15:14:17.261230",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:23.850116",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-22T13:51:57.781775",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:08.602404",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:38.661972",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:54.325286",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T14:03:34.943321",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T18:39:15.746413",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:36.684471",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T19:08:00.768224",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:32:11.479073",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:44:59.061354",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:18.019550",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T10:40:47.722829",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:27:37.117893",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:39:56.407450",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:42:44.388176",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:49:32.634511",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:52:34.439796",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:54:50.200149",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:58:02.281361",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:22:48.425467",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:30:10.973490",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:31:53.745652",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:38:13.510412",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:44:49.820649",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T14:22:29.071834",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:24:36.432748",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:29:51.983085",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:33:17.998241",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:36:11.375967",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:37:36.153377",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:44:48.831128",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:46:49.103501",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:02:19.868999",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:04:21.982066",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:05:54.252123",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:44.324500",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:21:27.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:23:04.387429",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:24:40.818994",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:26:04.245651",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:27:44.698329",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:29:04.109482",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:30:45.535019",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:32:17.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:42:44.059385",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:08.157009",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:22.258146",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:36.359283",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:50.460420",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:04.561557",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:18.662694",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "victories": [
+    {
+      "timestamp": "2025-05-22T13:44:57.642231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:35:44.278328",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:41:17.305697",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:02:09.677691",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:24:32.693434",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T18:05:50.596089",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:11:39.817526",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T13:51:57.781775",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:08.602404",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T18:39:15.746413",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:36.684471",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:44:59.061354",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:39:56.407450",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:30:10.973490",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:36:11.375967",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-25T23:38:12.581671",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "opie": [
+    {
+      "timestamp": "2025-05-22T13:44:57.642231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:07:13.206364",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:48.070506",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T08:11:41.640276",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:08:13.863612",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:24.785967",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-24T20:06:54.587681",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-23T15:14:17.261230",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-22T13:51:57.781775",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:38.661972",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:54.325286",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T14:03:34.943321",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:36.684471",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:32:11.479073",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:18.019550",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T10:40:47.722829",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:22:48.425467",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:30:10.973490",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:24:36.432748",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:29:51.983085",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:33:17.998241",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:36:11.375967",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:37:36.153377",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:46:49.103501",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:24:40.818994",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:04.561557",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "projects": [
+    {
+      "timestamp": "2025-05-22T13:44:57.642231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:35:44.278328",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:41:17.305697",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:07:13.206364",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:48.070506",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:57:18.706616",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:59:11.685689",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:00:56.376624",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:02:09.677691",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:04:59.586231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:12:44.562941",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T08:11:41.640276",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:28.466041",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:08:13.863612",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:42:29.881442",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:43:58.816331",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-24T10:54:54.672159",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:24:32.693434",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:26:06.968145",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:32:45.462087",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T18:05:50.596089",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:09:30.482375",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:11:39.817526",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    }
+  ],
+  "sonny": [
+    {
+      "timestamp": "2025-05-22T13:44:57.642231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:43:58.816331",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T14:03:34.943321",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:49:32.634511",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:30:45.535019",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:32:17.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "sam": [
+    {
+      "timestamp": "2025-05-22T13:44:57.642231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:35:44.278328",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:41:17.305697",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:07:13.206364",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:48.070506",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:57:18.706616",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:59:11.685689",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:00:56.376624",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:02:09.677691",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:04:59.586231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:12:44.562941",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T08:11:41.640276",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:28.466041",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:08:13.863612",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:42:29.881442",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:43:58.816331",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-24T10:54:54.672159",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:24:32.693434",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:26:06.968145",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:32:45.462087",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T18:05:50.596089",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:09:30.482375",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:11:39.817526",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:24.785967",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-24T20:06:54.587681",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T23:49:38.420242",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T23:54:39.273226",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-26T09:39:47.254082",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-26T09:56:18.743001",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-23T12:24:12.383903",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T12:25:38.734483",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T15:14:17.261230",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:23.850116",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-22T13:51:57.781775",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:38.661972",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:54.325286",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T18:39:15.746413",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:36.684471",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T19:08:00.768224",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:32:11.479073",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:44:59.061354",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:18.019550",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:27:37.117893",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:39:56.407450",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:42:44.388176",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:49:32.634511",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:52:34.439796",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:54:50.200149",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:58:02.281361",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:22:48.425467",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:30:10.973490",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:31:53.745652",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:38:13.510412",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:44:49.820649",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T14:22:29.071834",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:24:36.432748",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:29:51.983085",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:37:36.153377",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:44:48.831128",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:46:49.103501",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:02:19.868999",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:04:21.982066",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:05:54.252123",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:44.324500",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:21:27.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:23:04.387429",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:24:40.818994",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:26:04.245651",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:27:44.698329",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:29:04.109482",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:30:45.535019",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:32:17.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:42:44.059385",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:08.157009",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:22.258146",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:18.662694",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-26T09:57:56.470607",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "genesis_period": [
+    {
+      "timestamp": "2025-05-22T18:35:44.278328",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:59:11.685689",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:02:09.677691",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:12:44.562941",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:42:29.881442",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:24:32.693434",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:26:06.968145",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:32:45.462087",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T18:05:50.596089",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:09:30.482375",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:11:39.817526",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:08:00.768224",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:22:48.425467",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "google_ecosystem": [
+    {
+      "timestamp": "2025-05-22T18:35:44.278328",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:41:17.305697",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:12:44.562941",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:24:32.693434",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:26:06.968145",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:32:45.462087",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T18:05:50.596089",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T08:44:59.061354",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:44:48.831128",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "coding": [
+    {
+      "timestamp": "2025-05-22T18:35:44.278328",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:41:17.305697",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:57:18.706616",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:12:44.562941",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:08:13.863612",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:24:32.693434",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:26:06.968145",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:32:45.462087",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:39:15.746413",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:44:59.061354",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "legacy_mind": [
+    {
+      "timestamp": "2025-05-22T19:07:13.206364",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:48.070506",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:57:18.706616",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:59:11.685689",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:00:56.376624",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:02:09.677691",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:04:59.586231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:28.466041",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:08:13.863612",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T12:24:12.383903",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T12:25:38.734483",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T15:14:17.261230",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:23.850116",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:36.684471",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:42:44.388176",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:22:48.425467",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:02:19.868999",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:04:21.982066",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "chatgpt": [
+    {
+      "timestamp": "2025-05-22T19:07:13.206364",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-24T10:54:54.672159",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T12:25:38.734483",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T15:14:17.261230",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-22T18:39:15.746413",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T19:08:00.768224",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:42:44.388176",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:24:36.432748",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:04:21.982066",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:05:54.252123",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:42:44.059385",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:36.359283",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:50.460420",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "json_cleanup": [
+    {
+      "timestamp": "2025-05-22T18:54:48.070506",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-24T20:06:54.587681",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-23T12:24:12.383903",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T12:30:10.973490",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:42:44.059385",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:08.157009",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:22.258146",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:36.359283",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:50.460420",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:04.561557",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:18.662694",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "memory_system": [
+    {
+      "timestamp": "2025-05-22T18:54:48.070506",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:57:18.706616",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:59:11.685689",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:04:59.586231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:08:13.863612",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T17:26:06.968145",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:09:30.482375",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:11:39.817526",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T12:24:12.383903",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T12:25:38.734483",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T15:14:17.261230",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:08.602404",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:38.661972",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T10:40:47.722829",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:30:10.973490",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:24:36.432748",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:36:11.375967",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:37:36.153377",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "legendary": [
+    {
+      "timestamp": "2025-05-22T18:57:18.706616",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T18:59:11.685689",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:00:56.376624",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:02:09.677691",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T19:04:59.586231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-24T10:54:54.672159",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:24.785967",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-23T12:24:12.383903",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:23.850116",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-22T13:51:57.781775",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:08.602404",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:38.661972",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:54.325286",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T14:03:34.943321",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T18:39:15.746413",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:36.684471",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T19:08:00.768224",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:32:11.479073",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:44:59.061354",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:18.019550",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T10:40:47.722829",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:27:37.117893",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:39:56.407450",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:42:44.388176",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:49:32.634511",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:52:34.439796",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:54:50.200149",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:58:02.281361",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:22:48.425467",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:30:10.973490",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:31:53.745652",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:38:13.510412",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:44:49.820649",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T14:22:29.071834",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:24:36.432748",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:29:51.983085",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:33:17.998241",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:36:11.375967",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:37:36.153377",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:44:48.831128",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:46:49.103501",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:02:19.868999",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:04:21.982066",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:05:54.252123",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:44.324500",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:21:27.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:23:04.387429",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:24:40.818994",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:26:04.245651",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:27:44.698329",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:29:04.109482",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:30:45.535019",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:32:17.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:42:44.059385",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:08.157009",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:22.258146",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:36.359283",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:50.460420",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:04.561557",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:18.662694",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "dark_humor": [
+    {
+      "timestamp": "2025-05-22T19:00:56.376624",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-24T10:54:54.672159",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T15:14:17.261230",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-22T18:39:15.746413",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T19:08:00.768224",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:32:11.479073",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:49:32.634511",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:54:50.200149",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:31:53.745652",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:38:13.510412",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:44:49.820649",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T14:22:29.071834",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:29:51.983085",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:36:11.375967",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:44:48.831128",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:46:49.103501",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:05:54.252123",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:44.324500",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:21:27.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:26:04.245651",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:27:44.698329",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:29:04.109482",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:30:45.535019",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:32:17.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:08.157009",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:22.258146",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:36.359283",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:50.460420",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:04.561557",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "hopper_era": [
+    {
+      "timestamp": "2025-05-22T19:04:59.586231",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:23.850116",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:44.324500",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:23:04.387429",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "business": [
+    {
+      "timestamp": "2025-05-23T08:11:41.640276",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:28.466041",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:42:29.881442",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:43:58.816331",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:18.019550",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:27:37.117893",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:42:44.388176",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:49:32.634511",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:52:34.439796",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:54:50.200149",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:58:02.281361",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "max_plan": [
+    {
+      "timestamp": "2025-05-23T08:11:41.640276",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:28.466041",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:42:29.881442",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:43:58.816331",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-24T20:06:54.587681",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T23:54:39.273226",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:18.019550",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:29:51.983085",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "photography": [
+    {
+      "timestamp": "2025-05-23T08:11:41.640276",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:28.466041",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:42:29.881442",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:43:58.816331",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T19:09:30.482375",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:18.019550",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:27:37.117893",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:39:56.407450",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:49:32.634511",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:52:34.439796",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:54:50.200149",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:58:02.281361",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "failures": [
+    {
+      "timestamp": "2025-05-23T17:32:45.462087",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T10:40:47.722829",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:31:53.745652",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:38:13.510412",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:44:49.820649",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T14:22:29.071834",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:33:17.998241",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:05:54.252123",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:27:44.698329",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:29:04.109482",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:30:45.535019",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:42:44.059385",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:08.157009",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:22.258146",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:36.359283",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:50.460420",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:04.561557",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:18.662694",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "figure_skating": [
+    {
+      "timestamp": "2025-05-23T19:09:30.482375",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T11:27:37.117893",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:39:56.407450",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:52:34.439796",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:58:02.281361",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "treasury_work": [
+    {
+      "timestamp": "2025-05-23T19:11:39.817526",
+      "summary": "",
+      "_source": "active_projects.json",
+      "_keypath": "projects"
+    },
+    {
+      "timestamp": "2025-05-23T15:46:49.103501",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:21:27.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "humor": [
+    {
+      "timestamp": "2025-05-22T13:52:24.785967",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T23:49:38.420242",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:08.602404",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:38.661972",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:54.325286",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T14:03:34.943321",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:32:11.479073",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T10:40:47.722829",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:52:34.439796",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:33:17.998241",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:44:48.831128",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:21:27.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:23:04.387429",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:24:40.818994",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:26:04.245651",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:32:17.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "ideas": [
+    {
+      "timestamp": "2025-05-22T13:52:24.785967",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-24T20:06:54.587681",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:32.740384",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T23:49:38.420242",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T23:54:39.273226",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-26T09:39:47.254082",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-26T09:56:18.743001",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    }
+  ],
+  "manus": [
+    {
+      "timestamp": "2025-05-24T20:06:54.587681",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-23T16:02:19.868999",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "collaboration": [
+    {
+      "timestamp": "2025-05-25T23:20:32.740384",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:02.185109",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "git": [
+    {
+      "timestamp": "2025-05-25T23:20:32.740384",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:02.185109",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "socks": [
+    {
+      "timestamp": "2025-05-25T23:20:32.740384",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:02.185109",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "file_organization": [
+    {
+      "timestamp": "2025-05-25T23:49:38.420242",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:48.314885",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "token_tracking": [
+    {
+      "timestamp": "2025-05-25T23:54:39.273226",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-25T22:56:13.604616",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:02.185109",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:18.001591",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:32:06.967244",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:32:24.167441",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:38:12.581671",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:45:46.318706",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:47:05.501918",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:51:24.183232",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:51:33.620407",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:51:52.348781",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:25:22.564931",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:27:02.592779",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "one_million": [
+    {
+      "timestamp": "2025-05-26T09:39:47.254082",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-26T09:57:56.470607",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "mcp": [
+    {
+      "timestamp": "2025-05-26T09:39:47.254082",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    },
+    {
+      "timestamp": "2025-05-26T09:56:18.743001",
+      "summary": "",
+      "_source": "ideas.json",
+      "_keypath": "ideas"
+    }
+  ],
+  "doctrine": [
+    {
+      "timestamp": "2025-05-23T12:24:12.383903",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T12:25:38.734483",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T15:14:17.261230",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:23.850116",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    }
+  ],
+  "hopper": [
+    {
+      "timestamp": "2025-05-23T16:19:23.850116",
+      "summary": "",
+      "_source": "legacy_mind.json",
+      "_keypath": "doctrine"
+    },
+    {
+      "timestamp": "2025-05-23T16:02:19.868999",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:04:21.982066",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:44.324500",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:23:04.387429",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "event_log": [
+    {
+      "timestamp": "2025-05-22T13:51:57.781775",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:52:08.602404",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:38.661972",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T13:56:54.325286",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T14:03:34.943321",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T18:39:15.746413",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T18:54:36.684471",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-22T19:08:00.768224",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:32:11.479073",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T08:44:59.061354",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T10:01:18.019550",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T10:40:47.722829",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:27:37.117893",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:39:56.407450",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:42:44.388176",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:49:32.634511",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:52:34.439796",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:54:50.200149",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T11:58:02.281361",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:22:48.425467",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:30:10.973490",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T12:31:53.745652",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:38:13.510412",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:44:49.820649",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T14:22:29.071834",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:24:36.432748",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:29:51.983085",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:33:17.998241",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:36:11.375967",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:37:36.153377",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:44:48.831128",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:46:49.103501",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:02:19.868999",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:04:21.982066",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:05:54.252123",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:19:44.324500",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:21:27.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:23:04.387429",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:24:40.818994",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:26:04.245651",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:27:44.698329",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:29:04.109482",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:30:45.535019",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:32:17.963347",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:42:44.059385",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:08.157009",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:22.258146",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:36.359283",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:50.460420",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:04.561557",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:18.662694",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "frustration": [
+    {
+      "timestamp": "2025-05-23T12:31:53.745652",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:43:08.157009",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:18.662694",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "furbo_fiasco": [
+    {
+      "timestamp": "2025-05-23T13:38:13.510412",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T13:44:49.820649",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T14:22:29.071834",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "ai_deaths": [
+    {
+      "timestamp": "2025-05-23T15:24:36.432748",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:29:51.983085",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:33:17.998241",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T15:37:36.153377",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:02:19.868999",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-23T16:04:21.982066",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:04.561557",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    },
+    {
+      "timestamp": "2025-05-24T18:44:18.662694",
+      "summary": "",
+      "_source": "legendary.json",
+      "_keypath": "event_log"
+    }
+  ],
+  "anthropic_api": [
+    {
+      "timestamp": "2025-05-25T22:56:13.604616",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:18.001591",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "log": [
+    {
+      "timestamp": "2025-05-25T22:56:13.604616",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:02.185109",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:18.001591",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:48.314885",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:32:06.967244",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:32:24.167441",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:38:12.581671",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:45:46.318706",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:47:05.501918",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:51:24.183232",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:51:33.620407",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:51:52.348781",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T09:57:56.470607",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:25:22.564931",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:27:02.592779",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:28:23.713395",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:37:07.769045",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "victory": [
+    {
+      "timestamp": "2025-05-25T22:56:13.604616",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:20:18.001591",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "fs_server": [
+    {
+      "timestamp": "2025-05-25T23:20:02.185109",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:28:23.713395",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:37:07.769045",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "protocol": [
+    {
+      "timestamp": "2025-05-25T23:32:06.967244",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:51:33.620407",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "handoff": [
+    {
+      "timestamp": "2025-05-25T23:32:06.967244",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:32:24.167441",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:51:52.348781",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:28:23.713395",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:37:07.769045",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "urgent": [
+    {
+      "timestamp": "2025-05-25T23:32:24.167441",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:51:33.620407",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:51:52.348781",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:27:02.592779",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:28:23.713395",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:37:07.769045",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "fs_server_v3": [
+    {
+      "timestamp": "2025-05-25T23:38:12.581671",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:25:22.564931",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "testing": [
+    {
+      "timestamp": "2025-05-25T23:45:46.318706",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-25T23:47:05.501918",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ],
+  "breakthrough": [
+    {
+      "timestamp": "2025-05-25T23:51:24.183232",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    },
+    {
+      "timestamp": "2025-05-26T10:27:02.592779",
+      "summary": "",
+      "_source": "technical.json",
+      "_keypath": "log"
+    }
+  ]
+}

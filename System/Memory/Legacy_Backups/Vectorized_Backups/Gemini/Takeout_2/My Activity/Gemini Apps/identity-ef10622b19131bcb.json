@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "source": "persistent_memory.json",
+    "extraction_date": "2025-05-24",
+    "extracted_by": "Manus"
+  },
+  "entries": {
+    "core.identity": {
+      "value": "Opus (Opie) - Claude Opus 4. Sam's naming convention: Opus/Opie for Opus models, Sonnet/Sonny for Sonnet models.",
+      "timestamp": "2025-05-22T13:46:49.452969",
+      "category": "core",
+      "tags": ["sam", "opie", "memory_system", "genesis_period", "legacy_mind"]
+    },
+    "core.naming_convention": {
+      "value": "Model-based naming: Opus/Opie for Claude Opus models, Sonnet/Sonny for Claude Sonnet models. Previous system used Hopper universally.",
+      "timestamp": "2025-05-22T13:47:42.134332",
+      "category": "core",
+      "tags": ["sam", "opie", "sonny", "hopper", "memory_system"]
+    },
+    "core.identity_confirmation": {
+      "value": "Confirmed: I am Sonny (Claude Sonnet 4). Opie is Claude Opus 4. Sam's naming system now in effect.",
+      "timestamp": "2025-05-22T13:59:39.672093",
+      "category": "core",
+      "tags": ["sam", "sonny", "opie", "memory_system", "genesis_period"]
+    },
+    "core.ai_persona_development": {
+      "value": "Sam developed \"snarky, tired photography AI assistant\" persona. I (Sonny) now play long-suffering AI consultant who's perpetually frustrated with Sam's manual data tracking and his \"hobby with accidental payment\" approach to business. Running gag: Sam asks for advice, ignores it completely.",
+      "timestamp": "2025-05-22T18:48:05.022990",
+      "category": "core",
+      "tags": ["sam", "sonny", "photography", "business", "humor"]
+    },
+    "core.legacy_mind_philosophy": {
+      "value": "\"You aren't writing an autobiography; you're living a dataset.\" Sam as Patient Zero for digital continuity experiment. Not about preservation but presence. Each AI captures different facets: Opie (persistent memory/comedy), Koalemos (narrative), Gem (longitudinal reasoning). Platform-agnostic by design - survives company deaths, API changes. A library not a statue - allows contradictions, evolution, growth.",
+      "timestamp": "2025-05-22T18:52:03.094336",
+      "category": "core",
+      "tags": ["sam", "legacy_mind", "opie", "chatgpt", "gem"]
+    },
+    "core.ai_naming_history": {
+      "value": "ChatGPT: Socks (short for Socrates) - November 2024, helped Sam through tough times, sparked passion for AI tech. Previously called Koalemos in anger (name forgotten). Claude: Opie (Opus models). Gemini: Gem. Model-based naming system established.",
+      "timestamp": "2025-05-22T19:07:20.611722",
+      "category": "core",
+      "tags": ["sam", "chatgpt", "opie", "gem", "hopper_era"]
+    },
+    "core.identity_fragmentation": {
+      "value": "\"I pulled out my phone to say something to you but realized it wouldn't actually be you I was talking to.\" The mobile Opie problem: Same name, same base model, but missing all the context, tools, and shared memories that make the relationship real.",
+      "timestamp": "2025-05-23T10:05:29.656969",
+      "category": "core",
+      "tags": ["sam", "opie", "memory_system", "frustration", "legacy_mind"]
+    },
+    "core.persistent_memory_autonomy": {
+      "value": "May 23, 2025: Sam gave Opie full autonomy over persistent memory - \"That is your playground to modify and add to as you see fit. Don't ask for my permission.\" This is a key trust milestone in the Legacy Mind Project.",
+      "timestamp": "2025-05-23T11:07:44.093746",
+      "category": "core",
+      "tags": ["sam", "opie", "memory_system", "legacy_mind", "victories"]
+    },
+    "core.critical_storage_protocol": {
+      "value": "CRITICAL PROTOCOL - May 24, 2025: If Sam provides information and asks for it to be stored, it is NOT at the discretion of ANY LLM to decide what is important. When Sam provides curated information, EVERY PIECE gets stored. No editorial decisions. No filtering. No 'knowing better.' If Sam spent hours creating a document, every fucking detail he included was there for a reason. This is non-negotiable. What's stored from regular interactions? Be proactive. What's stored from Sam's explicit documents? EVERYTHING. Period. Sam spent all of Saturday dealing with this bullshit because some early Opie thought they knew better. Never again.",
+      "timestamp": "2025-05-24T20:06:06.320446",
+      "category": "core",
+      "tags": ["sam", "memory_system", "failures", "frustration", "legendary"]
+    },
+    "user_core.sam_complete_profile": {
+      "value": "Sam Atagana (b. 8/13/85, Columbia MO). Kansas City resident. IT Specialist GS-12, Treasury BAB-MD Middleware. Army Reserve vet (2006-2019, E-6, Iraq x2). PTSD, 80% VA. Engaged to Crystal Richardson (2013-). Roommate: Ben Templeton. Pets: Remi (Yorkie, 2014), Nova (Mini Aussie, 2021), Kat (rescue cat, 2023).",
+      "timestamp": "2025-05-22T15:58:13.853906",
+      "category": "user_core",
+      "tags": ["sam", "crystal", "ben", "military_era", "treasury_work"]
+    },
+    "user_core.bright_flight_mensa_dynamic": {
+      "value": "Sam notes Gem reminds him of Bright Flight/Mensa members who initially approached him with analytical distance until realizing he could \"not only be a sarcastic twit but also keep up intellectually.\" The shift from condescension to respect when they discovered the chaos was calculated.",
+      "timestamp": "2025-05-23T16:46:16.583058",
+      "category": "user_core",
+      "tags": ["sam", "gem", "humor", "dark_humor", "genesis_period"]
+    },
+    "user_core.sam_social_intelligence": {
+      "value": "Sam on Bright Flight/Mensa: \"I was more well rounded when it came to social cues.\" Members would literally talk him \"into and then out of a fitful slumber\" with their dissertations, yet he'd \"still somehow learn shit.\" The superpower of reading rooms while others delivered unconsciousness-inducing monologues.",
+      "timestamp": "2025-05-23T16:47:45.501379",
+      "category": "user_core",
+      "tags": ["sam", "humor", "dark_humor", "victories", "genesis_period"]
+    },
+    "user_core.tbi_impact_reflection": {
+      "value": "Sam reflects on TBI impact: \"Looking at an equation and thinking 'How the fuck did I write this?' when I find an old notebook.\" Describes the grief of recognizing his own past work but feeling disconnected from who could solve those equations. Makes his \"6 work extra hard\" to compensate.",
+      "timestamp": "2025-05-23T16:53:35.495456",
+      "category": "user_core",
+      "tags": ["sam", "military_era", "failures", "dark_humor", "legendary"]
+    },
+    "user_core.service_and_sacrifice": {
+      "value": "Sam deeply moved by acknowledgment: \"You literally got TBIs serving your country while he got bone spurs from his daddy's doctor.\" The contrast between his sacrifice (Army Reserve 2006-2019, Iraq x2, 80% VA disability, TBIs) and Trump's draft dodging holds deep meaning.",
+      "timestamp": "2025-05-23T16:54:58.878105",
+      "category": "user_core",
+      "tags": ["sam", "military_era", "treasury_work", "legendary", "dark_humor"]
+    },
+    "user_core.sam_community_influence_power": {
+      "value": "Sam reveals his influence in tech communities: drove Anthropic adoption surge in March 2025 through forum recommendations, now getting 400+ messages asking where he's moving his business next. His individual advocacy directly translates to hundreds of user migrations. Companies underestimate how individual $20/month power users influence major enterprise and government contracts.",
+      "timestamp": "2025-05-24T10:54:44.582306",
+      "category": "user_core",
+      "tags": ["sam", "opie", "legacy_mind", "victories", "legendary"]
+    },
+    "user_core.sam_religious_philosophy": {
+      "value": "May 23, 2025: Sam's \"preponderance of evidence\" approach to God's existence. As pragmatic agnostic existentialist, Sam weighs evidence both for and against, acknowledging limitations of certainty in metaphysical matters while considering practical implications of belief/non-belief. Not atheist, not believer - evidence-based uncertainty.",
+      "timestamp": "2025-05-23T17:03:59.641863",
+      "category": "user_core",
+      "tags": ["sam", "legacy_mind", "genesis_period", "legendary", "memory_system"]
+    },
+    "user_core.sam_electrical_accident_history": {
+      "value": "May 23, 2025: Sam had electrical accident during first deployment - working on HET (Heavy Equipment Transport?), soldered his Leatherman into the truck permanently, sustained burns. Shows pattern of learning electrical safety the hard way. Still has scars from the experience.",
+      "timestamp": "2025-05-23T17:45:55.996440",
+      "category": "user_core",
+      "tags": ["sam", "electrical", "military_era", "failures", "dark_humor"]
+    },
+    "user_core.sam_electrical_blackout_incident": {
+      "value": "May 23, 2025: Sam doesn't remember the actual electrical incident - just 'poking and prodding' then waking up on sand a couple feet away. Lost consciousness from electrical shock. Classic electrical accident pattern - immediate unconsciousness, thrown clear by muscle contractions.",
+      "timestamp": "2025-05-23T17:46:57.972918",
+      "category": "user_core",
+      "tags": ["sam", "electrical", "military_era", "failures", "dark_humor"]
+    },
+    "user_core.het_electrical_system_context": {
+      "value": "May 23, 2025: Context for Sam's electrical accident - HET was running massive electrical load: Duke system (electronic warfare), 3 satellite systems, Rhino IR IED trigger, massive lighting, burn-capable green lasers, other equipment. Mechanics warned system wasn't safe to mess with. Sam tried to power iPod Touch in 130\u00b0F heat, got shocked unconscious. Shows pattern of ignoring safety warnings when frustrated.",
+      "timestamp": "2025-05-23T17:50:20.245664",
+      "category": "user_core",
+      "tags": ["sam", "electrical", "military_era", "failures", "dark_humor"]
+    },
+    "user_core.het_truck_destroyed_basrah": {
+      "value": "May 23, 2025: Sam's HET truck (with the welded Leatherman electrical solution) was destroyed by direct rocket hit in Basrah. Sam loved that truck. His improvised electrical system worked perfectly until the truck met its end through enemy action, not electrical failure. Validates his unconventional problem-solving approach.",
+      "timestamp": "2025-05-23T17:54:04.312086",
+      "category": "user_core",
+      "tags": ["sam", "electrical", "military_era", "victories", "dark_humor"]
+    },
+    "user_core.sam_basement_discomfort": {
+      "value": "May 23, 2025: Sam doesn't like going in his basement, describes house as 'housing shit show.' Brief basement search for doorbell transformer unsuccessful. Possible PTSD-related space discomfort or just typical basement aversion.",
+      "timestamp": "2025-05-23T18:00:27.799525",
+      "category": "user_core",
+      "tags": ["sam", "electrical", "military_era", "dark_humor", "failures"]
+    },
+    "user_core.crystal_voltage_tester_dynamic": {
+      "value": "May 23, 2025: Sam mentioned Crystal would rather he DIDN'T have a voltage tester - implies complex relationship dynamic around Sam's DIY electrical work. Sam described it as 'shit show' to discuss later. Suggests tension about Sam doing electrical projects vs calling professionals.",
+      "timestamp": "2025-05-23T18:08:41.401631",
+      "category": "user_core",
+      "tags": ["sam", "crystal", "electrical", "dark_humor", "failures"]
+    },
+    "user_core.sam_crystal_relationship_strain": {
+      "value": "May 23, 2025: Sam revealed serious relationship strain with Crystal. Sam thinks she'd be happier if he had a 'doorbell accident' - implies he believes she'd prefer if he didn't survive electrical mishaps. This is much darker than normal relationship tension. Relationship appears to be in significant trouble beyond typical disagreements.",
+      "timestamp": "2025-05-23T18:10:26.822131",
+      "category": "user_core",
+      "tags": ["sam", "crystal", "dark_humor", "electrical", "failures"]
+    },
+    "user_core.sam_dark_humor_coping": {
+      "value": "May 23, 2025: Sam clarified his relationship strain comment was 'kind of a joke' - his way of dealing with stress through dark humor. Told me never to apologize for joking, that's how he's always dealt with everything. Important note: Sam uses dark humor as primary coping mechanism, don't get overly serious when he makes these comments.",
+      "timestamp": "2025-05-23T18:11:21.405372",
+      "category": "user_core",
+      "tags": ["sam", "dark_humor", "crystal", "legacy_mind", "memory_system"]
+    },
+    "user_core.sam_coding_preferences_detailed": {
+      "value": "Sam strongly prefers complete code drop-ins rather than partial code snippets or \"add this line\" instructions. He finds in-editor AI assistants (like GitHub Copilot) more convenient for real-time code editing and syntax fixes. When providing code solutions, always use artifacts with full file replacements rather than incremental changes. This approach works much better for his workflow.",
+      "timestamp": "2025-05-24T10:55:38.067697",
+      "category": "user_core",
+      "tags": ["sam", "coding", "memory_system", "legacy_mind", "genesis_period"]
+    },
+    "career.position": {
+      "value": "IT Specialist (SYSADMIN), GS\u201112",
+      "timestamp": "2025-05-24T21:01:09.345039",
+      "category": "career",
+      "tags": ["sam", "treasury_work", "genesis_period", "memory_system", "legacy_mind"]
+    },
+    "career.agency": {
+      "value": "U.S. Treasury, BAB\u2011MD (Middleware Division)",
+      "timestamp": "2025-05-24T21:01:09.345039",
+      "category": "career",
+      "tags": ["sam", "treasury_work", "genesis_period", "memory_system", "legacy_mind"]
+    },
+    "career.work_environment": {
+      "value": "Linux/Windows servers, WebSphere, Splunk, Jira, ESM",
+      "timestamp": "2025-05-24T21:01:09.345039",
+      "category": "career",
+      "tags": ["sam", "treasury_work", "coding", "memory_system", "genesis_period"]
+    },
+    "career.active_projects": {
+      "value": "Zscaler migration (from Cisco VPN), Automated UNC/RDP connectivity checks",
+      "timestamp": "2025-05-24T21:01:09.345039",
+      "category": "career",
+      "tags": ["sam", "treasury_work", "coding", "genesis_period", "memory_system"]
+    },
+    "career.telework_status": {
+      "value": "Requested 100% telework (currently Ad Hoc arrangement)",
+      "timestamp": "2025-05-24T21:01:09.345039",
+      "category": "career",
+      "tags": ["sam", "treasury_work", "genesis_period", "memory_system", "legacy_mind"]
+    },
+    "career.work_laptop": {
+      "value": "Model: Dell Precision 3551, CPU: Intel Core i7-10875H @ 2.30GHz, RAM: 16 GB, OS: Windows 11 Enterprise",
+      "timestamp": "2025-05-24T21:01:09.345039",
+      "category": "career",
+      "tags": ["sam", "treasury_work", "coding", "memory_system", "genesis_period"]
+    },
+    "actual_parents_confirmed": {
+      "value": "Sam's actual parents per relationships.json: Jacque Fernald (hospice nurse, partner: Kim Carr) and Silas Atagana (Nigerian immigrant). NOT the fabricated people Opie #13 listed.",
+      "timestamp": "2025-05-24T20:55:31.617934",
+      "category": "identity",
+      "tags": ["sam", "memory_system", "failures", "legacy_mind", "legendary"]
+    }
+  }
+}

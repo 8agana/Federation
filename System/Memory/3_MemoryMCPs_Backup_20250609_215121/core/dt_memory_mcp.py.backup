@@ -1,0 +1,669 @@
+#!/usr/bin/env python3
+"""
+DT Federation Memory MCP Server
+Exposes DT's federation memory operations as MCP tools
+
+This is a thin wrapper around the federation bridge layer.
+All business logic remains in Layer 2 (bridge scripts).
+"""
+
+import asyncio
+import sys
+from pathlib import Path
+from typing import Dict, List, Optional, Any, Union
+import json
+import logging
+
+# Add bridge scripts to Python path
+sys.path.append(str(Path(__file__).parent.parent.parent.parent / "2_BridgeScripts"))
+from federation.dt_federation_bridge import DTFederationBridge
+from federation.shared_federation_bridge import SharedFederationBridge
+
+# Add knowledge graph to Python path
+sys.path.append("/Users/samuelatagana/Documents/Federation/Memory/KnowledgeGraph")
+from storage import JSONGraphStorage
+from extractor import AutoExtractor
+from models import EntityType
+
+# Import MCP SDK
+try:
+    from mcp.server import Server, NotificationOptions
+    from mcp.server.models import InitializationOptions
+    import mcp.server.stdio
+    import mcp.types as types
+except ImportError:
+    print("ERROR: MCP SDK not installed. Install with: pip install mcp", file=sys.stderr)
+    sys.exit(1)
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[logging.StreamHandler(sys.stderr)]
+)
+logger = logging.getLogger("dt_federation_mcp")
+
+# Initialize MCP server
+server = Server("dt-federation-memory")
+
+# Initialize bridges (will be done on first use)
+bridge: Optional[DTFederationBridge] = None
+shared_bridge: Optional[SharedFederationBridge] = None
+
+# Initialize knowledge graph components
+kg_storage: Optional[JSONGraphStorage] = None
+kg_extractor: Optional[AutoExtractor] = None
+
+
+def get_bridge() -> DTFederationBridge:
+    """Get or initialize the DT federation bridge"""
+    global bridge
+    if bridge is None:
+        try:
+            bridge = DTFederationBridge()
+            logger.info("DT Federation Bridge initialized successfully")
+        except Exception as e:
+            logger.error(f"Failed to initialize bridge: {e}")
+            raise
+    return bridge
+
+
+def get_shared_bridge() -> SharedFederationBridge:
+    """Get or initialize the shared federation bridge"""
+    global shared_bridge
+    if shared_bridge is None:
+        try:
+            shared_bridge = SharedFederationBridge()
+            logger.info("Shared Federation Bridge initialized successfully")
+        except Exception as e:
+            logger.error(f"Failed to initialize shared bridge: {e}")
+            raise
+    return shared_bridge
+
+
+def get_kg_storage() -> JSONGraphStorage:
+    """Get or initialize the knowledge graph storage"""
+    global kg_storage
+    if kg_storage is None:
+        try:
+            kg_storage = JSONGraphStorage()
+            logger.info("Knowledge Graph Storage initialized successfully")
+        except Exception as e:
+            logger.error(f"Failed to initialize KG storage: {e}")
+            raise
+    return kg_storage
+
+
+def get_kg_extractor() -> AutoExtractor:
+    """Get or initialize the knowledge graph extractor"""
+    global kg_extractor
+    if kg_extractor is None:
+        try:
+            kg_extractor = AutoExtractor(get_kg_storage())
+            logger.info("Knowledge Graph Extractor initialized successfully")
+        except Exception as e:
+            logger.error(f"Failed to initialize KG extractor: {e}")
+            raise
+    return kg_extractor
+
+
+# Tool definitions
+@server.list_tools()
+async def handle_list_tools() -> list[types.Tool]:
+    """List available DT federation memory tools"""
+    return [
+        types.Tool(
+            name="dt_remember",
+            description="Store a memory in DT's federation database",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "content": {"type": "string", "description": "The memory content to store"},
+                    "title": {"type": "string", "description": "Optional title for the memory"},
+                    "tags": {
+                        "oneOf": [
+                            {"type": "string", "description": "Comma-separated tags"},
+                            {"type": "array", "items": {"type": "string"}, "description": "Array of tags"}
+                        ]
+                    },
+                    "metadata": {"type": "object", "description": "Optional metadata dict"}
+                },
+                "required": ["content"]
+            }
+        ),
+        types.Tool(
+            name="dt_recall",
+            description="Search DT's memories with natural language time parsing",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "Search query (may include time expressions)"},
+                    "n_results": {"type": "integer", "description": "Maximum number of results (default: 5)"}
+                },
+                "required": ["query"]
+            }
+        ),
+        types.Tool(
+            name="dt_update_memory",
+            description="Update an existing memory (living documents)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "memory_id": {"type": "string", "description": "ID of memory to update"},
+                    "content": {"type": "string", "description": "New content (optional)"},
+                    "metadata": {"type": "object", "description": "Metadata updates (optional)"},
+                    "version_comment": {"type": "string", "description": "Comment about the update"}
+                },
+                "required": ["memory_id"]
+            }
+        ),
+        types.Tool(
+            name="dt_search_by_tags",
+            description="Search memories by tags (OR logic)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "tags": {
+                        "oneOf": [
+                            {"type": "string", "description": "Tag to search for"},
+                            {"type": "array", "items": {"type": "string"}, "description": "Tags to search for"}
+                        ]
+                    },
+                    "n_results": {"type": "integer", "description": "Maximum results (default: 10)"}
+                },
+                "required": ["tags"]
+            }
+        ),
+        types.Tool(
+            name="dt_health_check",
+            description="Check DT federation memory system health",
+            inputSchema={
+                "type": "object",
+                "properties": {}
+            }
+        ),
+        types.Tool(
+            name="dt_memory_stats",
+            description="Get DT memory system statistics",
+            inputSchema={
+                "type": "object",
+                "properties": {}
+            }
+        ),
+        types.Tool(
+            name="dt_search_cc",
+            description="Search ONLY CC's memories (respecting privacy)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "Search query"},
+                    "n_results": {"type": "integer", "description": "Maximum results (default: 10)"}
+                },
+                "required": ["query"]
+            }
+        ),
+        types.Tool(
+            name="dt_federation_search",
+            description="Search across BOTH DT and CC memories",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "Search query"},
+                    "n_results": {"type": "integer", "description": "Maximum results per instance (default: 10)"}
+                },
+                "required": ["query"]
+            }
+        ),
+        
+        # Knowledge Graph Tools for Instant Token Death Recovery
+        types.Tool(
+            name="dt_kg_auto_extract",
+            description="Auto-extract entities and relations from text for zero-touch knowledge graph building",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "text": {"type": "string", "description": "Text to extract entities and relations from"},
+                    "source": {"type": "string", "description": "Source of the text (conversation, task, memory, etc.)", "default": "conversation"},
+                    "session_id": {"type": "string", "description": "Optional session ID for temporal context"}
+                },
+                "required": ["text"]
+            }
+        ),
+        types.Tool(
+            name="dt_kg_instant_briefing",
+            description="Generate instant context briefing for token death recovery - THE MAIN TOOL",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "hours_back": {"type": "number", "description": "How many hours back to look for context", "default": 24}
+                }
+            }
+        ),
+        types.Tool(
+            name="dt_kg_semantic_search",
+            description="Search entities using semantic similarity",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "Search query"},
+                    "n_results": {"type": "integer", "description": "Number of results to return", "default": 10},
+                    "entity_types": {"type": "array", "items": {"type": "string"}, "description": "Filter by entity types (task, file, problem, solution, etc.)"}
+                },
+                "required": ["query"]
+            }
+        ),
+        types.Tool(
+            name="dt_kg_find_related",
+            description="Find entities related to a given entity via graph traversal",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "entity_id": {"type": "string", "description": "ID of the entity to find relations for"},
+                    "max_depth": {"type": "integer", "description": "Maximum depth for relation traversal", "default": 2}
+                },
+                "required": ["entity_id"]
+            }
+        ),
+        types.Tool(
+            name="dt_kg_get_active_context",
+            description="Get current active context (tasks, files, blockers, solutions) for instant recovery",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "hours_back": {"type": "number", "description": "How many hours back to look", "default": 24}
+                }
+            }
+        ),
+        types.Tool(
+            name="dt_kg_stats",
+            description="Get knowledge graph statistics and health",
+            inputSchema={
+                "type": "object",
+                "properties": {}
+            }
+        ),
+
+    ]
+
+
+@server.call_tool()
+async def handle_call_tool(
+    name: str, arguments: dict
+) -> list[types.TextContent]:
+    """Handle tool calls"""
+    
+    try:
+        if name == "dt_remember":
+            bridge = get_bridge()
+            result = bridge.remember(
+                content=arguments["content"],
+                title=arguments.get("title"),
+                tags=arguments.get("tags"),
+                metadata=arguments.get("metadata")
+            )
+            
+            # Check for duplicate
+            if result.startswith("DUPLICATE:"):
+                return [types.TextContent(
+                    type="text",
+                    text=f"Duplicate content detected. Existing ID: {result.replace('DUPLICATE:', '')}"
+                )]
+            
+            return [types.TextContent(
+                type="text",
+                text=f"Memory stored successfully: {result}"
+            )]
+            
+        elif name == "dt_recall":
+            bridge = get_bridge()
+            memories = bridge.recall(
+                query=arguments["query"],
+                n_results=arguments.get("n_results", 5)
+            )
+            
+            if not memories:
+                return [types.TextContent(
+                    type="text",
+                    text="No memories found matching your query."
+                )]
+            
+            # Format results
+            results = []
+            for i, memory in enumerate(memories):
+                metadata = memory.get('metadata', {})
+                results.append(f"{i+1}. [{memory['id']}]")
+                if metadata.get('title'):
+                    results.append(f"   Title: {metadata['title']}")
+                results.append(f"   Content: {memory['content'][:200]}...")
+                if metadata.get('tags'):
+                    results.append(f"   Tags: {metadata['tags']}")
+                results.append(f"   Relevance: {memory.get('relevance_score', 0):.2f}")
+                results.append("")
+            
+            return [types.TextContent(
+                type="text",
+                text=f"Found {len(memories)} memories:\n\n" + "\n".join(results)
+            )]
+            
+        elif name == "dt_update_memory":
+            bridge = get_bridge()
+            success = bridge.update_memory(
+                memory_id=arguments["memory_id"],
+                content=arguments.get("content"),
+                metadata=arguments.get("metadata"),
+                version_comment=arguments.get("version_comment")
+            )
+            
+            if success:
+                return [types.TextContent(
+                    type="text",
+                    text=f"Memory {arguments['memory_id']} updated successfully"
+                )]
+            else:
+                return [types.TextContent(
+                    type="text",
+                    text=f"Failed to update memory {arguments['memory_id']} - not found"
+                )]
+                
+        elif name == "dt_search_by_tags":
+            bridge = get_bridge()
+            memories = bridge.search_by_tags(
+                tags=arguments["tags"],
+                n_results=arguments.get("n_results", 10)
+            )
+            
+            if not memories:
+                return [types.TextContent(
+                    type="text",
+                    text="No memories found with those tags."
+                )]
+            
+            # Format results
+            results = []
+            for i, memory in enumerate(memories):
+                results.append(f"{i+1}. [{memory['id']}]")
+                results.append(f"   Content: {memory['content'][:200]}...")
+                results.append(f"   Tags: {', '.join(memory.get('tags', []))}")
+                results.append("")
+            
+            return [types.TextContent(
+                type="text",
+                text=f"Found {len(memories)} memories with tags:\n\n" + "\n".join(results)
+            )]
+            
+        elif name == "dt_health_check":
+            bridge = get_bridge()
+            health = bridge.health_check()
+            
+            return [types.TextContent(
+                type="text",
+                text=f"DT Federation Memory Health:\n"
+                     f"Status: {health['status']}\n"
+                     f"Total Memories: {health['total_memories']}\n"
+                     f"Recent (24h): {health['recent_24h']}\n"
+                     f"Health Score: {health['health_score']:.2f}\n"
+                     f"Duplicates: {health['duplicates_found']}"
+            )]
+            
+        elif name == "dt_memory_stats":
+            bridge = get_bridge()
+            stats = bridge.get_memory_stats()
+            
+            return [types.TextContent(
+                type="text",
+                text=f"DT Memory Statistics:\n"
+                     f"Total: {stats['total_memories']}\n"
+                     f"Recent: {stats['recent_24h']}\n"
+                     f"Health: {stats['health_status']}\n"
+                     f"Domains: {json.dumps(stats.get('domain_stats', {}), indent=2)}"
+            )]
+            
+        elif name == "dt_search_cc":
+            shared = get_shared_bridge()
+            memories = shared.search_other_instance(
+                query=arguments["query"],
+                from_instance='dt',
+                n_results=arguments.get("n_results", 10)
+            )
+            
+            if not memories:
+                return [types.TextContent(
+                    type="text",
+                    text="No memories found in CC's database."
+                )]
+            
+            # Format results
+            results = []
+            for i, memory in enumerate(memories):
+                metadata = memory.get('metadata', {})
+                results.append(f"{i+1}. [CC: {memory['id']}]")
+                if metadata.get('title'):
+                    results.append(f"   Title: {metadata['title']}")
+                results.append(f"   Content: {memory['content'][:200]}...")
+                results.append("")
+            
+            return [types.TextContent(
+                type="text",
+                text=f"Found {len(memories)} memories from CC:\n\n" + "\n".join(results)
+            )]
+            
+        elif name == "dt_federation_search":
+            shared = get_shared_bridge()
+            results = shared.federation_search(
+                query=arguments["query"],
+                instances=['cc', 'dt'],
+                n_results=arguments.get("n_results", 10)
+            )
+            
+            total = results['total_found']
+            if total == 0:
+                return [types.TextContent(
+                    type="text",
+                    text="No memories found across the federation."
+                )]
+            
+            # Format results by instance
+            output = [f"Found {total} total memories across federation:\n"]
+            
+            for instance, data in results['results'].items():
+                if data['status'] == 'success' and data['count'] > 0:
+                    output.append(f"\n{instance.upper()} ({data['count']} memories):")
+                    for i, memory in enumerate(data['memories'][:5]):  # Show first 5
+                        metadata = memory.get('metadata', {})
+                        output.append(f"  {i+1}. [{memory['id']}]")
+                        if metadata.get('title'):
+                            output.append(f"     Title: {metadata['title']}")
+                        output.append(f"     Content: {memory['content'][:150]}...")
+            
+            return [types.TextContent(
+                type="text",
+                text="\n".join(output)
+            )]
+        
+        # Knowledge Graph Tools
+        elif name == "dt_kg_auto_extract":
+            extractor = get_kg_extractor()
+            result = extractor.auto_process_and_store(
+                arguments["text"],
+                arguments.get("source", "conversation"),
+                arguments.get("session_id")
+            )
+            
+            output = [
+                "🤖 Auto-Extraction Complete",
+                "=" * 30,
+                f"Source: {arguments.get('source', 'conversation')}",
+                f"Session: {arguments.get('session_id', 'unknown')}",
+                "",
+                f"📊 Extraction Results:",
+                f"  - Entities stored: {result['stored_entities']}",
+                f"  - Relations stored: {result['stored_relations']}",
+                f"  - Files found: {result['files_found']}",
+                f"  - Tasks found: {result['tasks_found']}",
+                f"  - Problems found: {result['problems_found']}",
+                f"  - Solutions found: {result['solutions_found']}",
+                "",
+                f"⏰ Timestamp: {result['extraction_timestamp']}"
+            ]
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+        
+        elif name == "dt_kg_instant_briefing":
+            storage = get_kg_storage()
+            briefing = storage.generate_instant_briefing(arguments.get("hours_back", 24))
+            
+            output = [
+                "🚀 INSTANT CONTEXT BRIEFING",
+                "=" * 40,
+                f"📅 Looking back {arguments.get('hours_back', 24)} hours",
+                "",
+                briefing,
+                "",
+                "💡 This briefing provides immediate context for continuing work",
+                "   without needing to explain what happened previously."
+            ]
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+        
+        elif name == "dt_kg_semantic_search":
+            storage = get_kg_storage()
+            results = storage.search_entities_by_name(arguments["query"])
+            
+            # Filter by type if specified
+            if entity_types := arguments.get("entity_types"):
+                filtered = []
+                for entity in results:
+                    if entity.entity_type.value in entity_types:
+                        filtered.append(entity)
+                results = filtered
+            
+            # Limit results
+            results = results[:arguments.get("n_results", 10)]
+            
+            output = [
+                f"🔍 Search Results for '{arguments['query']}'",
+                "=" * 50,
+                f"Found {len(results)} entities:"
+            ]
+            
+            for entity in results:
+                output.append("")
+                output.append(f"🎯 {entity.name} ({entity.entity_type.value})")
+                output.append(f"   ID: {entity.id}")
+                if entity.observations:
+                    output.append(f"   📝 {entity.observations[0]}")
+                output.append(f"   🕐 {entity.updated_at.strftime('%Y-%m-%d %H:%M')}")
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+        
+        elif name == "dt_kg_find_related":
+            storage = get_kg_storage()
+            entity = storage.get_entity(arguments["entity_id"])
+            
+            if not entity:
+                return [types.TextContent(type="text", text=f"❌ Entity {arguments['entity_id']} not found")]
+            
+            relations = storage.get_relations_for_entity(arguments["entity_id"])
+            
+            output = [
+                f"🔗 Related Entities for {entity.name}",
+                "=" * 50,
+                f"Entity Type: {entity.entity_type.value}",
+                ""
+            ]
+            
+            if relations:
+                output.append("📍 Direct Relations:")
+                for rel in relations[:10]:
+                    if rel.source_entity_id == arguments["entity_id"]:
+                        target = storage.get_entity(rel.target_entity_id)
+                        if target:
+                            output.append(f"  - {rel.relation_type.value} → {target.name} ({target.entity_type.value})")
+                    else:
+                        source = storage.get_entity(rel.source_entity_id)
+                        if source:
+                            output.append(f"  - {source.name} {rel.relation_type.value} → this")
+            else:
+                output.append("No direct relations found")
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+        
+        elif name == "dt_kg_get_active_context":
+            storage = get_kg_storage()
+            context = storage.get_active_context(arguments.get("hours_back", 24))
+            
+            output = [
+                f"⚡ Active Context (last {arguments.get('hours_back', 24)} hours)",
+                "=" * 40
+            ]
+            
+            for context_type, entity_ids in context.items():
+                if entity_ids:
+                    output.append(f"\n🎯 {context_type.replace('_', ' ').title()}:")
+                    for entity_id in entity_ids[:5]:
+                        entity = storage.get_entity(entity_id)
+                        if entity:
+                            output.append(f"  - {entity.name}")
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+        
+        elif name == "dt_kg_stats":
+            storage = get_kg_storage()
+            stats = storage.get_stats()
+            
+            output = [
+                "📊 Knowledge Graph Statistics", 
+                "=" * 35,
+                f"📚 Total Entities: {stats['total_entities']}",
+                f"🔗 Total Relations: {stats['total_relations']}",
+                f"💾 Storage Path: {stats['storage_path']}",
+                "",
+                "🏷️  Entity Type Distribution:"
+            ]
+            
+            for entity_type, count in stats['entity_types'].items():
+                output.append(f"  - {entity_type}: {count}")
+            
+            return [types.TextContent(type="text", text="\n".join(output))]
+            
+        else:
+            return [types.TextContent(
+                type="text",
+                text=f"Unknown tool: {name}"
+            )]
+            
+    except Exception as e:
+        logger.error(f"Tool {name} error: {e}", exc_info=True)
+        return [types.TextContent(
+            type="text",
+            text=f"Error in {name}: {str(e)}"
+        )]
+
+
+# Main entry point
+async def main():
+    """Run the DT Federation Memory MCP server"""
+    logger.info("Starting DT Federation Memory MCP Server")
+    
+    try:
+        # Run the server
+        async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):
+            await server.run(
+                read_stream,
+                write_stream,
+                InitializationOptions(
+                    server_name="dt-federation-memory",
+                    server_version="1.0.0",
+                    capabilities=server.get_capabilities(
+                        notification_options=NotificationOptions(),
+                        experimental_capabilities={},
+                    )
+                )
+            )
+    except Exception as e:
+        logger.error(f"Server error: {e}")
+        raise
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

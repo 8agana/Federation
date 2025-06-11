@@ -1,0 +1,40 @@
+import SwiftUI
+
+// Define a Notification name for reloading the WebView
+extension Notification.Name {
+    static let reloadWebViewNotification = Notification.Name("reloadWebViewNotification")
+}
+
+@main
+struct Sam_and_GemApp: App {
+    // State for the "Always on Top" toggle
+    @State private var isFloating: Bool = false
+
+    var body: some Scene {
+        WindowGroup {
+            // Pass the binding to your ContentView
+            ContentView(isFloating: $isFloating)
+                // Setting minWidth and minHeight to 0 allows the window to shrink
+                // as much as possible, limited by the system or the content itself.
+                // You can set a small practical minimum if 0 is too extreme, e.g., 100x100.
+                .frame(minWidth: 0, minHeight: 0)
+        }
+        // This modifier allows the user to resize the window.
+        // .contentMinSize means the window's minimum size will be determined by its content's minimum size.
+        .windowResizability(.contentMinSize)
+        .commands {
+            // CommandGroup for custom menu items
+            CommandGroup(after: .newItem) { // Or .windowArrangement, .help, etc.
+                Button("Reload Page") {
+                    NotificationCenter.default.post(name: .reloadWebViewNotification, object: nil)
+                }
+                .keyboardShortcut("r", modifiers: .command) // Cmd+R
+
+                Divider() // Optional separator
+
+                Toggle("Always on Top", isOn: $isFloating)
+                    .keyboardShortcut("t", modifiers: .command) // Cmd+T
+            }
+        }
+    }
+}

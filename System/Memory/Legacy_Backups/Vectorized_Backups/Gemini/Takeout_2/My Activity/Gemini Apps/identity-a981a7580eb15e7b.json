@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "source": "identity.json",
+    "schema_version": "1.0",
+    "restructured_by": "ChatGPT (Socks)",
+    "timestamp": "2025-05-25T00:00:00"
+  },
+  "sam": {
+    "name": "Samuel Justin Oghene-Rumeh Atagana",
+    "birth": {
+      "date": "1985-08-13",
+      "place": "Columbia, MO"
+    },
+    "residence": "Kansas City, MO",
+    "career": {
+      "position": "IT Specialist (SYSADMIN), GS-12",
+      "agency": "U.S. Treasury, BAB-MD",
+      "division": "Middleware",
+      "telework_status": {
+        "requested": "100%",
+        "current": "Ad Hoc"
+      },
+      "projects": [
+        "Zscaler migration",
+        "UNC/RDP automation"
+      ],
+      "equipment": {
+        "laptop": {
+          "model": "Dell Precision 3551",
+          "cpu": "Intel Core i7-10875H",
+          "ram": "16 GB",
+          "os": "Windows 11 Enterprise"
+        }
+      }
+    },
+    "military": {
+      "branch": "Army Reserve",
+      "service_years": "2006\u20132019",
+      "retired_rank": "E-6",
+      "retirement_date": "2019-05-14",
+      "disability_rating": "80%",
+      "notes": "PTSD, electrical injury, multiple deployments"
+    },
+    "tags": [
+      "sam",
+      "identity",
+      "essentialinfo",
+      "structured",
+      "core_profile"
+    ],
+    "notes": "Full detail for Crystal, Ben, pets, parents, and other relationships lives in relationships_cleaned_tagged.json. This file reflects only Sam's core identity, career, military service, and philosophy. Data is intended for LLM access, not human readability."
+  },
+  "identity_contextual": {
+    "ai_persona": "Sam developed 'snarky, tired photography AI assistant' persona. Long-suffering AI consultant dynamic.",
+    "dark_humor_coping": "Sam uses dark humor as a coping mechanism for stress, trauma, and dysfunction. Important context for emotional tone.",
+    "intellectual_chaos_respect": "Bright Flight/Mensa contrast: Sam is respected after people realize the chaos is deliberate. Reads rooms well.",
+    "religious_philosophy": "Evidence-based agnostic existentialist. Sam weighs metaphysical evidence without certainty or dogma.",
+    "influence": "Helped drive Anthropic user surge via advocacy. Proof of single user impact on enterprise decisions.",
+    "tags": [
+      "sam",
+      "personality",
+      "context",
+      "legacy_mind",
+      "structured"
+    ]
+  }
+}

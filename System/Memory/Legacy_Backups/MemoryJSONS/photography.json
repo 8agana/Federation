@@ -1,0 +1,243 @@
+{
+  "entries": {
+    "metadata": {
+      "source": "photography.json",
+      "schema_version": "1.0",
+      "restructured_by": "ChatGPT",
+      "timestamp": "2025-05-25T00:00:00"
+    },
+    "gear": {
+      "cameras": {
+        "primary": "Fujifilm X-H2",
+        "backup": "Fujifilm X-T4",
+        "considering": "X-H2S"
+      },
+      "lenses": [
+        "XF 90mm f/2",
+        "XF 50-140mm f/2.8",
+        "XF 50mm f/1.0",
+        "XF 23mm f/1.4",
+        "Tamron 17-70mm f/2.8",
+        "XF 16-55mm f/2.8 (considering)"
+      ],
+      "cards": {
+        "type": "CFexpress Type B",
+        "count": 2,
+        "size_gb_each": 512
+      },
+      "shooting_settings": {
+        "shutter_speed": "1/1000s",
+        "aperture_range": "f/2–f/2.8",
+        "iso_range": "1000–2400",
+        "raw_format": [
+          "Lossless Compressed",
+          "Uncompressed"
+        ]
+      },
+      "tags": [
+        "photography",
+        "gear",
+        "structured",
+        "essentialinfo"
+      ],
+      "ai_attribution": "Unknown"
+    },
+    "pricing": {
+      "album_price": 50,
+      "per_photo_price": 10,
+      "discount_codes": {
+        "samcantskate": [
+          {
+            "threshold": 99,
+            "discount": 10
+          },
+          {
+            "threshold": 149,
+            "discount": 15
+          },
+          {
+            "threshold": 199,
+            "discount": 25
+          },
+          {
+            "threshold": 249,
+            "discount": 30
+          }
+        ],
+        "golden_rule": [
+          25,
+          50,
+          75,
+          100
+        ]
+      },
+      "club_share_percent": 25,
+      "tags": [
+        "photography",
+        "pricing",
+        "business",
+        "structured",
+        "essentialinfo"
+      ],
+      "ai_attribution": "Unknown"
+    },
+    "storage": {
+      "main_drive": "/Volumes/MacStudioG40",
+      "structure": {
+        "competition_folder": {
+          "subfolders": [
+            "RAW"
+          ],
+          "file_extension": ".RAF"
+        },
+        "naming_convention": "[YYMMDD]-[Event_Name]-[####].RAF"
+      },
+      "example_file": "250518-2025_HeartlandFSC_Seniors-0595.RAF",
+      "example_file_count": 1673,
+      "tags": [
+        "photography",
+        "storage",
+        "workflow",
+        "memory_system",
+        "structured"
+      ],
+      "ai_attribution": "Unknown"
+    },
+    "philosophy": {
+      "origin": "Started in 2018 filming Crystal’s synchro team",
+      "values": [
+        "Make every skater look like a superstar",
+        "Personal edit on every photo",
+        "Privacy-focused: parents only see their own kids' albums",
+        "Monitored logins for access control"
+      ],
+      "delivery_timeline_days": [
+        7,
+        14
+      ],
+      "tags": [
+        "photography",
+        "ethics",
+        "business",
+        "sam",
+        "structured",
+        "essentialinfo"
+      ],
+      "ai_attribution": "Unknown"
+    },
+    "competition_registration_workflow": {
+      "value": "May 26, 2025: Sam's competition registration system: Netlify forms → Gmail notifications → auto-saved to Google Sheets. No need for Netlify MCP since data flows through Gmail. Future Gmail MCP could query registration emails directly: \"How many Elite entries?\" or \"Who registered for multiple competitions?\" Clean pipeline with one source of truth.",
+      "timestamp": "2025-05-26T15:09:45.055528",
+      "category": "photography",
+      "tags": [
+        "photography",
+        "competitions",
+        "workflow",
+        "gmail"
+      ],
+      "ai_attribution": "Unknown"
+    },
+    "nova_spay_search_picture_hills_pricing": {
+      "value": "May 27, 2025: Sam seeking spay options for Nova (15lb teacup Mini Aussie). Picture Hills Pet Hospital quoted $1200 - \"highway robbery.\" Pet Resource Center offers $80 all-inclusive but Sam wants middle ground: \"Nova is not going under the knife at the Goodwill Vet.\" Researching NAWS (Northland Animal Welfare Society) as potential sweet spot - they specialize in spay/neuter with 25,000+ procedures completed. Sam doesn't qualify for low-income rates (GS-12 Step 3/4, ~$90-95k). Email sent to NAWS for standard pricing.",
+      "timestamp": "2025-05-27T22:03:19.734500",
+      "category": "photography",
+      "tags": [
+        "nova",
+        "pets",
+        "veterinary",
+        "pricing",
+        "sam"
+      ],
+      "ai_attribution": "Unknown"
+    },
+    "shootproof_api_access_manus": {
+      "value": "May 27, 2025: ShootProof API access available through Manus. OAuth 2.0 authentication with Bearer token. Base URL: https://api.shootproof.com/studio. Key endpoints: GET /brand/{brandId}/order (list all orders), GET /brand/{brandId}/order/{orderId} (order details). Order response includes: orderNumber, created timestamp, grandTotal, currencyCode, customerEmail, customerName. Token expires after 14 days. API uses hypermedia links for pagination. No explicit download_sent field, but can verify order details and customer email.",
+      "timestamp": "2025-05-28T09:08:59.786249",
+      "category": "photography",
+      "tags": [
+        "shootproof",
+        "api",
+        "manus",
+        "photography",
+        "orders"
+      ],
+      "ai_attribution": "Unknown"
+    },
+    "shootproof_api_filtering_capabilities": {
+      "value": "May 27, 2025: ShootProof API filtering capabilities per Manus. Date filtering likely supported via created_after/created_before parameters (needs testing). Status filtering possibly via status parameter. No documented endpoint for resending download emails - might exist as /order/{orderId}/resend-download or POST action (needs verification). Order fulfillment status fields not clearly documented in available code. Recommendation: test parameters, check full docs, or contact ShootProof support for these specific features.",
+      "timestamp": "2025-05-28T09:14:10.071215",
+      "category": "photography",
+      "tags": [
+        "shootproof",
+        "api",
+        "filtering",
+        "manus"
+      ],
+      "ai_attribution": "Unknown"
+    },
+    "shootproof_api_advanced_features": {
+      "value": "May 27, 2025: ShootProof API advanced features from Manus. Date filtering likely via created_after/created_before parameters (ISO 8601 format). Resend download emails might be POST to /order/{orderId}/resend-download or /order/{orderId}/actions with action:resend_download. Order fulfillment fields potentially include: status, fulfillmentStatus, downloadStatus, paymentStatus. All features need empirical testing as not explicitly documented. Recommendation: test API calls with these parameters to confirm functionality.",
+      "timestamp": "2025-05-28T09:15:09.529916",
+      "category": "photography",
+      "tags": [
+        "shootproof",
+        "api",
+        "advanced",
+        "manus",
+        "filtering"
+      ],
+      "ai_attribution": "Unknown"
+    },
+    "shootproof_mcp_feasibility_manus": {
+      "value": "May 27, 2025: Manus completed feasibility research for ShootProof MCP server. Delivered 3 documents: Summary Report, Feasibility Analysis, Architecture/Implementation Guide. Key findings: ShootProof API well-suited for MCP due to RESTful architecture, OAuth auth, JSON responses. Timeline: 2-3 weeks for minimal version, 4-6 weeks for full implementation. Would enable: checking order status/downloads, custom reports, identifying issues, automating customer communications. Manus confirms it's technically feasible and would provide significant value for photography workflow automation.",
+      "timestamp": "2025-05-28T09:30:10.691322",
+      "category": "photography",
+      "tags": [
+        "shootproof",
+        "mcp",
+        "manus",
+        "feasibility",
+        "photography"
+      ],
+      "ai_attribution": "Unknown"
+    },
+    "shootproof_mcp_implementation_guide_manus": {
+      "value": "May 27, 2025: Manus delivered complete ShootProof MCP implementation guide. Includes: Full Python code examples with authentication manager, API client, and MCP server structure. Key tools: searchOrders, getOrderDetails, checkDownloadStatus, resendDownload, matchOrdersToGalleries, generateOrderReport. Resource mapping for orders, galleries, contacts, price sheets, photos. Architecture shows OAuth handling, rate limiting, error handling. Timeline: 2-3 weeks for minimal version (read-only), 4-6 weeks for full version. Complete blueprint ready for CC or developer to implement.",
+      "timestamp": "2025-05-28T09:34:03.076327",
+      "category": "photography",
+      "tags": [
+        "shootproof",
+        "mcp",
+        "implementation",
+        "manus",
+        "blueprint"
+      ],
+      "ai_attribution": "Unknown"
+    },
+    "senior_banner_workflow_2025": {
+      "value": "May 2025: Sam's senior banner photo workflow - clients review photos via Adobe Lightroom link, can pick ONE final banner photo (or give Sam a few options to choose from), unlimited regular photo selections for full editing. Sam created new review instructions page on website that Becky helped proofread (caught embarrassing typo). Current client: Janelle Yonker (05/18 shoot).",
+      "timestamp": "2025-05-28T14:30:55.675770",
+      "category": "photography",
+      "tags": [
+        "photography",
+        "workflow",
+        "seniors",
+        "banners"
+      ],
+      "ai_attribution": "Unknown"
+    }
+  },
+  "metadata": {
+    "ai_attribution_processed": {
+      "timestamp": "2025-06-09T21:20:09.855585",
+      "script_version": "1.0",
+      "classifications": {
+        "CC": 0,
+        "PresumedCC": 0,
+        "DT": 0,
+        "PresumedDT": 0,
+        "Unknown": 12
+      }
+    }
+  }
+}

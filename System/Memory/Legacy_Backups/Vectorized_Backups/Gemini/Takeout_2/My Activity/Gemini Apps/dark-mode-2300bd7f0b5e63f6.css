@@ -1,0 +1,610 @@
+/* dark-mode.css - Updated based on user feedback (dark gray theme) */
+body.dark-mode {
+  background-color: #202124; /* Dark gray background */
+  color: #e8eaed; /* Light gray text */
+  overflow: hidden; /* Keep original overflow setting */
+}
+
+body.dark-mode h1, body.dark-mode .h1,
+body.dark-mode h2, body.dark-mode .h2,
+body.dark-mode h3, body.dark-mode .h3,
+body.dark-mode h4, body.dark-mode .h4,
+body.dark-mode h5, body.dark-mode .h5 {
+  color: #f1f3f4; /* Lighter heading color */
+}
+
+body.dark-mode p {
+  color: #e8eaed; /* Light gray text for paragraphs */
+}
+
+body.dark-mode a, body.dark-mode .link {
+  color: #8ab4f8; /* Adjusted light blue for links */
+}
+
+body.dark-mode a:hover, body.dark-mode .link:hover {
+  color: #a1c2fa; /* Lighter hover color */
+}
+
+body.dark-mode button, body.dark-mode .button {
+  color: #e8eaed; /* Light text */
+  background-color: #3c4043; /* Medium dark gray button background */
+  border: solid 1px #5f6368; /* Gray border */
+}
+
+body.dark-mode button:hover, body.dark-mode .button:hover {
+  color: #ffffff;
+  background-color: #515558; /* Slightly lighter hover background */
+}
+
+body.dark-mode button:disabled, body.dark-mode .button:disabled {
+  opacity: .5; /* Adjust opacity if needed */
+}
+
+body.dark-mode .button--primary {
+  color: #202124; /* Dark text for contrast */
+  background-color: #8ab4f8; /* Primary blue */
+  border-color: transparent;
+}
+
+body.dark-mode .button--primary:hover {
+  background-color: #a1c2fa; /* Lighter hover for primary */
+}
+
+body.dark-mode .button--destructive {
+  color: #ffffff; /* Keep white text */
+  background-color: #f28b82; /* Destructive color */
+  border-color: transparent;
+}
+
+body.dark-mode .button--destructive:hover {
+  background-color: #f6a9a2; /* Lighter hover for destructive */
+}
+
+body.dark-mode .button--transparent {
+  background-color: transparent;
+  border-color: solid 1px #5f6368; /* Gray border */
+}
+
+/* App specific overrides */
+body.dark-mode .sp-app__container {
+  background-color: #202124; /* Dark gray background */
+}
+
+body.dark-mode .sp-app__header {
+  background-color: #292a2d; /* Slightly lighter dark gray for header */
+  border-bottom: 1px solid #3c4043; /* Darker gray border */
+}
+
+body.dark-mode .sp-header__logo svg {
+  fill: #8ab4f8; /* Adjusted logo color */
+}
+
+body.dark-mode .sp-header__subtitle {
+  color: #bdc1c6; /* Lighter gray for subtitle */
+}
+
+body.dark-mode .sp-header__settings {
+  color: #bdc1c6; /* Lighter gray for settings */
+}
+
+body.dark-mode .panel {
+   box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.1), 0 1px 2px 0 rgba(255, 255, 255, 0.06); /* Lighter shadow */
+}
+
+/* Form elements */
+body.dark-mode .form-group label {
+   color: #f1f3f4; /* Lighter label color */
+}
+
+body.dark-mode .form-group input[type=number],
+body.dark-mode .form-group input[type=text],
+body.dark-mode .form-group input[type=date] {
+  background-color: #3c4043; /* Medium dark gray input background */
+  border: solid 1px #5f6368; /* Gray border */
+  color: #e8eaed; /* Light text */
+}
+
+body.dark-mode .form-group input[type=number].ng-invalid,
+body.dark-mode .form-group input[type=text].ng-invalid,
+body.dark-mode .form-group input[type=date].ng-invalid {
+  border-color: #f28b82; /* Keep error color */
+}
+
+body.dark-mode .form-group__error {
+  color: #f28b82; /* Keep error color */
+}
+
+body.dark-mode .form-group .select2-container a {
+  border: 1px solid #5f6368; /* Gray border */
+  background-color: #3c4043; /* Dark background */
+  color: #e8eaed; /* Light text */
+}
+body.dark-mode .form-group .select2-container .select2-choice .select2-arrow {
+  background-color: #9aa0a6; /* Adjusted arrow color */
+}
+body.dark-mode .form-group .select2-container .select2-drop-active {
+  border: 1px solid #9aa0a6; /* Adjusted border */
+  background-color: #292a2d; /* Dark dropdown background */
+}
+body.dark-mode .form-group .select2-container .select2-results {
+  color: #e8eaed; /* Light text */
+  background-color: #292a2d; /* Dark results background */
+}
+body.dark-mode .form-group .select2-container .select2-results .select2-highlighted {
+  background-color: #515558; /* Darker highlight */
+  color: #ffffff; /* White highlighted text */
+}
+body.dark-mode .form-group .select2-container .ui-select-header__search input[type=text] {
+  background-color: #515558; /* Dark search input */
+  color: #e8eaed;
+  border: 1px solid #5f6368;
+}
+body.dark-mode .form-group .select2-container .ui-select-header__heading {
+  color: #bdc1c6; /* Lighter gray heading */
+}
+body.dark-mode .form-group .select2-container-active a {
+  border: 1px solid #9aa0a6; /* Adjusted active border */
+}
+body.dark-mode .form-group .select2-container-active.select2-dropdown-open .select2-arrow {
+  background-color: #bdc1c6; /* Lighter arrow when open */
+}
+
+body.dark-mode .form-group ::-webkit-calendar-picker-indicator {
+  background-color: #515558; /* Darker calendar button */
+  border-left: 1px solid #5f6368; /* Gray border */
+  filter: invert(100%) brightness(80%);
+}
+
+body.dark-mode .form-group input[type=checkbox].toggle:checked+label #background {
+  fill: #8ab4f8; /* Keep primary color */
+}
+body.dark-mode .form-group input[type=checkbox].toggle+label #background {
+  fill: #5f6368; /* Dark background for toggle off */
+}
+body.dark-mode .form-group input[type=checkbox].toggle+label #indicator {
+  fill: #bdc1c6; /* Indicator color */
+}
+body.dark-mode .form-group input[type=checkbox].toggle+label:after {
+  color: #bdc1c6; /* Lighter 'No'/'Yes' text */
+}
+
+/* Modal */
+body.dark-mode .modal .sp-app__body {
+  background-color: #292a2d; /* Dark modal body */
+}
+
+/* Accordion */
+body.dark-mode .sp-accordion-group-heading {
+  border-bottom: 1px solid rgba(60, 64, 67, 0.7); /* Darker gray border */
+}
+body.dark-mode .sp-accordion-group-heading__cab__outline svg {
+  fill: rgba(138, 180, 248, 0.6); /* Adjusted outline color */
+}
+body.dark-mode .sp-accordion-group-heading__cab__plus svg {
+  fill: #8ab4f8; /* Adjusted plus color */
+}
+body.dark-mode .sp-accordion-group-heading__subtitle {
+  color: #bdc1c6; /* Lighter subtitle */
+}
+
+/* Banner */
+body.dark-mode .sp-banner__alert {
+  color: #f6a9a2; /* Lighter alert text */
+  background-color: rgba(242, 139, 130, 0.15); /* Darker alert background */
+}
+
+/* File List */
+body.dark-mode sp-file-list-item {
+  border-bottom: 1px solid #3c4043; /* Darker gray border */
+  color: #e8eaed; /* Light text */
+}
+body.dark-mode sp-file-list-item__size {
+  color: #bdc1c6; /* Lighter size text */
+}
+
+/* Loader */
+body.dark-mode .sp-loader {
+  background-color: rgba(32, 33, 36, 0.93); /* Dark gray loader background */
+}
+body.dark-mode .sp-loader svg path {
+   filter: invert(90%) hue-rotate(180deg) brightness(1.2);
+}
+
+
+/* Progress */
+body.dark-mode .sp-progress__arc {
+  fill: rgba(138, 180, 248, 0.4); /* Adjusted progress arc */
+}
+body.dark-mode .sp-progress__cover {
+  border: 2px solid #8ab4f8; /* Adjusted cover border */
+}
+body.dark-mode .sp-progress--completed .sp-progress__cover {
+  border-color: #81c995; /* Adjusted green for completed */
+}
+body.dark-mode .sp-progress--pending .sp-progress__cover {
+  border-color: #5f6368; /* Gray pending border */
+}
+body.dark-mode .sp-progress__check__circle {
+  fill: rgba(129, 201, 149, 0.6); /* Adjusted check circle */
+}
+body.dark-mode .sp-progress__check__checkmark {
+  stroke: #202124; /* Dark checkmark for contrast */
+}
+
+/* Job */
+body.dark-mode sp-job {
+  /* No background color change needed? */
+}
+body.dark-mode .sp-job--in-queue .sp-job__indicator {
+  background-color: #5f6368; /* Gray indicator */
+}
+body.dark-mode .sp-job--completed .sp-job__indicator {
+  background-color: #81c995; /* Adjusted green */
+}
+body.dark-mode .sp-job__indicator {
+  background-color: #8ab4f8; /* Adjusted indicator color */
+}
+body.dark-mode .sp-job__heading__title {
+  color: #f1f3f4; /* Lighter title */
+}
+body.dark-mode .sp-job__heading__subtitle {
+   color: #bdc1c6; /* Lighter subtitle */
+}
+body.dark-mode .sp-job--canceled .sp-progress__cover {
+  border-color: #5f6368; /* Gray canceled border */
+}
+
+/* Separator */
+body.dark-mode .sp-separator__heading {
+  color: #bdc1c6; /* Lighter heading */
+}
+body.dark-mode .sp-separator__line {
+  border-top: 1px solid #3c4043; /* Darker gray line */
+}
+
+/* Auth Check */
+body.dark-mode .sp-auth-check__logo svg {
+  fill: #f1f3f4; /* Lighter logo */
+}
+body.dark-mode .sp-auth-check__message {
+  color: #e8eaed; /* Light message text */
+}
+
+/* Auth New */
+body.dark-mode .sp-auth-new__logo svg {
+  fill: #f1f3f4; /* Lighter logo */
+}
+body.dark-mode .sp-auth-new__webview {
+  background-color: #292a2d; /* Dark webview background */
+}
+body.dark-mode .sp-auth-new__legal {
+  color: #bdc1c6; /* Lighter legal text */
+}
+
+/* Upload New */
+body.dark-mode .sp-upload-new__container {
+  /* Background is already body */
+}
+body.dark-mode .sp-upload-new__error {
+  color: #f6a9a2; /* Lighter error text */
+  background-color: rgba(242, 139, 130, 0.15); /* Darker error background */
+  border: 1px solid #f28b82;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+body.dark-mode .sp-upload-new__error__link {
+  color: #f8c8c3; /* Even lighter link in error */
+}
+body.dark-mode .sp-upload-new__dropzone {
+  background-color: #292a2d; /* Dark dropzone */
+}
+body.dark-mode .sp-upload-new__dropzone-help {
+  color: #bdc1c6; /* Lighter help text */
+}
+body.dark-mode .sp-upload-new__dropzone__image-left,
+body.dark-mode .sp-upload-new__dropzone__image-right {
+   opacity: 0.05; /* Adjust opacity for dark */
+   filter: invert(1); /* Invert background images */
+}
+body.dark-mode .sp-upload-new__dropzone__icon--outline {
+  fill: #8ab4f8; /* Adjusted icon color */
+}
+body.dark-mode .sp-upload-new__dropzone__icon--arrow-up,
+body.dark-mode .sp-upload-new__dropzone__icon--plus {
+  fill: #8ab4f8; /* Adjusted icon color */
+}
+body.dark-mode .sp-upload-new__footer__progress {
+  color: #8ab4f8; /* Adjusted progress link color */
+}
+
+/* Upload Errors */
+body.dark-mode .sp-upload-errors__scroll {
+  color: #bdc1c6; /* Lighter scroll text */
+  background-color: #3c4043; /* Dark scroll background */
+}
+body.dark-mode .sp-upload-errors__list {
+  background-color: #292a2d; /* Dark list background */
+}
+
+/* Upload Gallery */
+body.dark-mode .sp-upload-gallery__container {
+  background-color: #292a2d; /* Dark gallery background */
+}
+body.dark-mode .sp-upload-gallery__list {
+  /* Uses sp-file-list-item, already styled */
+}
+
+/* Upload Options */
+body.dark-mode .sp-upload-options__container {
+  background-color: #292a2d; /* Dark options background */
+}
+body.dark-mode .sp-upload-options__section {
+  border-bottom: 1px solid #3c4043; /* Darker gray border */
+}
+body.dark-mode .sp-upload-options__section-heading {
+  color: #f1f3f4; /* Lighter heading */
+}
+
+/* Queue */
+body.dark-mode .sp-queue-root__container {
+  /* Uses sp-app__container */
+}
+body.dark-mode .sp-queue-root__sidebar {
+  background-color: #292a2d; /* Dark sidebar */
+  border-right: 1px solid #3c4043; /* Darker gray border */
+}
+body.dark-mode .sp-queue-root__detail {
+  background-color: #202124; /* Dark detail area */
+}
+body.dark-mode .sp-queue-header__actions .button {
+  /* Already styled */
+}
+body.dark-mode .sp-queue-jobs__container {
+  /* No background needed */
+}
+body.dark-mode .sp-queue-job-detail__container {
+  /* No background needed */
+}
+body.dark-mode .sp-queue-job-detail__heading {
+  color: #f1f3f4; /* Lighter heading */
+}
+body.dark-mode .sp-queue-job-detail__subheading {
+  color: #bdc1c6; /* Lighter subheading */
+}
+body.dark-mode .sp-queue-job-detail-group__heading {
+  color: #bdc1c6; /* Lighter group heading */
+}
+body.dark-mode .sp-queue-confirm__container,
+body.dark-mode .sp-queue-pause__container {
+  background-color: rgba(32, 33, 36, 0.9); /* Dark gray overlay */
+}
+body.dark-mode .sp-queue-confirm__dialog,
+body.dark-mode .sp-queue-pause__dialog {
+  background-color: #292a2d; /* Dark dialog */
+  color: #e8eaed; /* Light text */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* Lighter shadow */
+}
+
+/* Settings */
+body.dark-mode .sp-settings__container {
+  /* Uses sp-app__container */
+}
+body.dark-mode .sp-settings-body__container {
+  background-color: #292a2d; /* Dark settings body */
+}
+body.dark-mode .sp-settings-body__section {
+  border-bottom: 1px solid #3c4043; /* Darker gray border */
+}
+body.dark-mode .sp-settings-body__section-heading {
+  color: #f1f3f4; /* Lighter heading */
+}
+
+/* Offline */
+body.dark-mode .sp-offline__container {
+  background-color: #202124; /* Dark gray background */
+}
+body.dark-mode .sp-offline__message {
+  color: #e8eaed; /* Light text */
+}
+
+/* Limit Reached */
+body.dark-mode .sp-limit-reached__container,
+body.dark-mode .sp-confirm-cancel-all__container {
+  background-color: rgba(32, 33, 36, 0.9); /* Dark gray overlay */
+}
+body.dark-mode .sp-limit-reached__dialog,
+body.dark-mode .sp-confirm-cancel-all__dialog {
+  background-color: #292a2d; /* Dark dialog */
+  color: #e8eaed; /* Light text */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* Lighter shadow */
+}
+
+/* SVG Icons that might need color changes */
+body.dark-mode svg {
+  /* General rule - might need specifics */
+  /* fill: #bdc1c6; /* Default light gray fill? */
+}
+/* Specific SVGs might need fill adjustments based on context */
+body.dark-mode .sp-header__logo svg { fill: #8ab4f8; }
+body.dark-mode .sp-accordion-group-heading__cab__outline svg { fill: rgba(138, 180, 248, 0.6); }
+body.dark-mode .sp-accordion-group-heading__cab__plus svg { fill: #8ab4f8; }
+body.dark-mode .sp-upload-new__dropzone__icon--outline { fill: #8ab4f8; }
+body.dark-mode .sp-upload-new__dropzone__icon--arrow-up,
+body.dark-mode .sp-upload-new__dropzone__icon--plus { fill: #8ab4f8; }
+body.dark-mode .sp-auth-check__logo svg,
+body.dark-mode .sp-auth-new__logo svg { fill: #f1f3f4; }
+body.dark-mode .sp-file-list-item__progress__icon svg { fill: #bdc1c6; } /* Example */
+body.dark-mode .sp-progress__check__checkmark { stroke: #202124; }
+
+/* Scrollbars (Webkit specific) */
+body.dark-mode ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+body.dark-mode ::-webkit-scrollbar-track {
+  background: #292a2d;
+}
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: #5f6368;
+  border-radius: 4px;
+}
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #9aa0a6;
+}
+
+
+
+/* Styling for the fieldset in settings */
+body.dark-mode fieldset {
+  background-color: #292a2d; /* Slightly lighter dark gray panel */
+  border: 1px solid #3c4043; /* Darker gray border */
+  padding: 15px;
+  margin-top: 10px; /* Add some space above */
+  border-radius: 4px;
+}
+
+body.dark-mode fieldset .form-group label,
+body.dark-mode fieldset .form-group .control-label {
+  color: #e8eaed; /* Light gray text for labels inside fieldset */
+}
+
+body.dark-mode fieldset .form-group input[type=checkbox]+label,
+body.dark-mode fieldset .form-group input[type=radio]+span {
+  color: #bdc1c6; /* Slightly dimmer text for radio/checkbox labels */
+}
+
+
+
+/* Styling for upload progress list */
+body.dark-mode .sp-queue-job-detail__list.panel {
+  background-color: #202124; /* Main dark background */
+  border: 1px solid #3c4043; /* Darker gray border */
+  color: #e8eaed; /* Light gray text */
+}
+
+body.dark-mode .sp-queue-job-detail__list__heading {
+  border-bottom: 1px solid #3c4043; /* Separator line */
+}
+
+body.dark-mode .sp-queue-job-detail__list__heading__title,
+body.dark-mode .sp-queue-job-detail__list__heading__folder {
+  color: #e8eaed; /* Light gray text */
+}
+
+body.dark-mode .sp-queue-job-detail__list__heading__folder:hover {
+  color: #8ab4f8; /* Lighter blue on hover */
+}
+
+body.dark-mode .sp-queue-job-detail__list__heading__progress,
+body.dark-mode .sp-queue-job-detail__list__heading__count {
+  color: #bdc1c6; /* Slightly dimmer text */
+}
+
+/* Styling for the accordion groups within the list */
+body.dark-mode .sp-queue-job-detail-group .panel-heading {
+  background-color: #292a2d; /* Slightly lighter panel header */
+  border-bottom: 1px solid #3c4043;
+}
+
+body.dark-mode .sp-queue-job-detail-group .panel-title a {
+  color: #e8eaed;
+}
+
+body.dark-mode .sp-queue-job-detail-group .panel-body {
+  background-color: #202124; /* Match main dark background */
+  border-top: none;
+}
+
+/* Styling for individual file list items (assuming sp-file-list-item class) */
+body.dark-mode .sp-file-list-item {
+  border-bottom: 1px solid #3c4043;
+  color: #bdc1c6;
+}
+
+body.dark-mode .sp-file-list-item:last-child {
+  border-bottom: none;
+}
+
+body.dark-mode .sp-file-list-item__name {
+  color: #e8eaed;
+}
+
+body.dark-mode .sp-file-list-item__size {
+  color: #bdc1c6;
+}
+
+/* Progress bar styling */
+body.dark-mode .progress {
+    background-color: #3c4043; /* Darker background for the track */
+}
+
+body.dark-mode .progress-bar {
+    background-color: #4CAF50; /* Keep green for progress, or choose another color */
+}
+
+/* Footer actions */
+body.dark-mode .sp-queue-job-detail__list__footer {
+  border-top: 1px solid #3c4043;
+}
+
+body.dark-mode .sp-queue-job-detail__list__footer__action {
+  color: #8ab4f8; /* Action link color */
+}
+
+body.dark-mode .sp-queue-job-detail__list__footer__action:hover {
+  color: #aecbfa; /* Lighter blue on hover */
+}
+
+
+
+/* Styling for ui-select dropdown hover */
+body.dark-mode .ui-select-bootstrap .ui-select-choices-row:hover > a,
+body.dark-mode .ui-select-bootstrap .ui-select-choices-row.active > a {
+  background-color: #3c4043; /* Darker gray for hover/active */
+  color: #e8eaed; /* Light gray text */
+}
+
+/* Specific overrides for select2 theme if needed */
+body.dark-mode .select2-results .ui-select-choices-row > a:hover,
+body.dark-mode .select2-results .ui-select-choices-row.active > a {
+  background-color: #3c4043; /* Darker gray for hover/active */
+  color: #e8eaed; /* Light gray text */
+}
+
+/* Style the dropdown container itself */
+body.dark-mode .ui-select-choices {
+    background-color: #292a2d; /* Slightly lighter dark gray panel */
+    border: 1px solid #3c4043;
+    color: #e8eaed;
+}
+
+/* Style the search input within dropdown */
+body.dark-mode .ui-select-search input {
+    background-color: #202124;
+    border: 1px solid #3c4043;
+    color: #e8eaed;
+}
+
+body.dark-mode .ui-select-header {
+    background-color: #292a2d;
+    border-bottom: 1px solid #3c4043;
+    color: #bdc1c6;
+}
+
+
+
+/* Styling for the footer action link (e.g., Start Upload) */
+body.dark-mode .sp-app__footer a,
+body.dark-mode .sp-app__footer .link,
+body.dark-mode .sp-app__footer button,
+body.dark-mode .sp-app__footer div[ng-click] /* Add rule for clickable divs */ {
+  color: #8ab4f8; /* Match Add New Gallery link color */
+}
+
+body.dark-mode .sp-app__footer a:hover,
+body.dark-mode .sp-app__footer .link:hover,
+body.dark-mode .sp-app__footer button:hover,
+body.dark-mode .sp-app__footer div[ng-click]:hover {
+  color: #aecbfa; /* Lighter blue on hover */
+}
+

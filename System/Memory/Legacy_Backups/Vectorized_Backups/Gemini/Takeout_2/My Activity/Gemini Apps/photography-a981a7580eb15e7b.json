@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "source": "photography.json",
+    "schema_version": "1.0",
+    "restructured_by": "ChatGPT",
+    "timestamp": "2025-05-25T00:00:00"
+  },
+  "gear": {
+    "cameras": {
+      "primary": "Fujifilm X-H2",
+      "backup": "Fujifilm X-T4",
+      "considering": "X-H2S"
+    },
+    "lenses": [
+      "XF 90mm f/2",
+      "XF 50-140mm f/2.8",
+      "XF 50mm f/1.0",
+      "XF 23mm f/1.4",
+      "Tamron 17-70mm f/2.8"
+    ],
+    "cards": {
+      "type": "CFexpress Type B",
+      "count": 2,
+      "size_gb_each": 512
+    },
+    "shooting_settings": {
+      "shutter_speed": "1/1000s",
+      "aperture_range": "f/2\u2013f/2.8",
+      "iso_range": "1000\u20132400",
+      "raw_format": [
+        "Lossless Compressed",
+        "Uncompressed"
+      ]
+    },
+    "tags": [
+      "photography",
+      "gear",
+      "structured",
+      "essentialinfo"
+    ]
+  },
+  "pricing": {
+    "album_price": 50,
+    "per_photo_price": 10,
+    "discount_codes": {
+      "samcantskate": [
+        {
+          "threshold": 99,
+          "discount": 10
+        },
+        {
+          "threshold": 149,
+          "discount": 15
+        },
+        {
+          "threshold": 199,
+          "discount": 25
+        },
+        {
+          "threshold": 249,
+          "discount": 30
+        }
+      ],
+      "golden_rule": [
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    "club_share_percent": 25,
+    "tags": [
+      "photography",
+      "pricing",
+      "business",
+      "structured",
+      "essentialinfo"
+    ]
+  },
+  "storage": {
+    "main_drive": "/Volumes/MacStudioG40",
+    "structure": {
+      "competition_folder": {
+        "subfolders": [
+          "RAW"
+        ],
+        "file_extension": ".RAF"
+      },
+      "naming_convention": "[YYMMDD]-[Event_Name]-[####].RAF"
+    },
+    "example_file": "250518-2025_HeartlandFSC_Seniors-0595.RAF",
+    "example_file_count": 1673,
+    "tags": [
+      "photography",
+      "storage",
+      "workflow",
+      "memory_system",
+      "structured"
+    ]
+  },
+  "philosophy": {
+    "origin": "Started in 2018 filming Crystal\u2019s synchro team",
+    "values": [
+      "Make every skater look like a superstar",
+      "Personal edit on every photo",
+      "Privacy-focused: parents only see their own kids' albums",
+      "Monitored logins for access control"
+    ],
+    "delivery_timeline_days": [
+      7,
+      14
+    ],
+    "tags": [
+      "photography",
+      "ethics",
+      "business",
+      "sam",
+      "structured",
+      "essentialinfo"
+    ]
+  }
+}

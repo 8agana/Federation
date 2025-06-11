@@ -1,0 +1,920 @@
+import json
+import os
+import re
+import fcntl
+import shutil
+from datetime import datetime
+from typing import Any, Dict, List, Optional, Union, Tuple
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
+from pydantic import BaseModel, Field
+from enum import Enum
+from pathlib import Path
+import asyncio
+from contextlib import asynccontextmanager
+
+app = FastAPI()
+
+# Configuration
+BASE_MEMORY_PATH = "/Users/samuelatagana/Documents/mcp-servers/memory"
+RECENT_ENTRIES_PATH = "/Users/samuelatagana/Documents/mcp-servers/memory/_recententries"
+BACKUP_PATH = "/Users/samuelatagana/Documents/mcp-servers/memory/_backups"
+
+# Ensure backup directory exists
+Path(BACKUP_PATH).mkdir(exist_ok=True)
+
+CATEGORY_FILE_MAP = {
+    "identity": "identity.json",
+    "relationships": "relationships.json", 
+    "photography": "photography.json",
+    "technical": "technical.json",
+    "legacy_mind": "legacy_mind.json",
+    "projects": "active_projects.json",
+    "ideas": "ideas.json",
+    "legendary": "legendary.json",
+    "system": "persistent_memory.json"
+}
+
+WRAPPER_KEY_MAP = {
+    "identity": "entries",
+    "relationships": "entries", 
+    "photography": "entries",
+    "technical": "log",
+    "legacy_mind": "doctrine",
+    "projects": "projects",
+    "ideas": "ideas", 
+    "legendary": "event_log",
+    "system": "entries"
+}
+
+# Query operators
+class QueryOperator(str, Enum):
+    EQ = "eq"      # equals
+    NE = "ne"      # not equals
+    GT = "gt"      # greater than
+    GTE = "gte"    # greater than or equal
+    LT = "lt"      # less than
+    LTE = "lte"    # less than or equal
+    IN = "in"      # in list
+    NIN = "nin"    # not in list
+    REGEX = "regex" # regex match
+    EXISTS = "exists" # field exists
+
+# Pydantic Models
+class MemoryItem(BaseModel):
+    key: str
+    value: Any
+    tags: List[str] = []
+    category: str
+    metadata: Dict[str, Any] = {}
+
+class FieldQuery(BaseModel):
+    path: str
+    category: Optional[str] = None
+    default: Optional[Any] = None
+
+class FieldUpdate(BaseModel):
+    path: str
+    value: Any
+    category: Optional[str] = None
+    create_path: bool = True
+
+class BulkFieldUpdate(BaseModel):
+    updates: List[FieldUpdate]
+    atomic: bool = True
+
+class AdvancedFilter(BaseModel):
+    field: str
+    operator: QueryOperator = QueryOperator.EQ
+    value: Any
+
+class StructuredQuery(BaseModel):
+    category: str
+    filters: Union[Dict[str, Any], List[AdvancedFilter]] = []
+    limit: Optional[int] = None
+    offset: Optional[int] = 0
+    sort_by: Optional[str] = None
+    sort_order: str = "asc"
+    fields: Optional[List[str]] = None  # Projection
+
+class RecentEntriesQuery(BaseModel):
+    count: int = Field(50, description="25, 50, 75, or 100")
+
+class AggregateQuery(BaseModel):
+    category: str
+    operation: str = Field("count", description="count, sum, avg, min, max")
+    field: Optional[str] = None
+    filters: Union[Dict[str, Any], List[AdvancedFilter]] = []
+
+# File locking for transaction safety
+class FileLock:
+    def __init__(self, filepath: str):
+        self.filepath = filepath
+        self.lockfile = f"{filepath}.lock"
+        self.lock_fd = None
+    
+    def acquire(self):
+        self.lock_fd = open(self.lockfile, 'w')
+        fcntl.flock(self.lock_fd, fcntl.LOCK_EX)
+    
+    def release(self):
+        if self.lock_fd:
+            fcntl.flock(self.lock_fd, fcntl.LOCK_UN)
+            self.lock_fd.close()
+            try:
+                os.remove(self.lockfile)
+            except:
+                pass
+
+@asynccontextmanager
+async def file_transaction(filepath: str):
+    """Context manager for safe file operations with locking and backup."""
+    lock = FileLock(filepath)
+    backup_file = None
+    
+    try:
+        # Acquire lock
+        lock.acquire()
+        
+        # Create backup if file exists
+        if os.path.exists(filepath):
+            timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+            backup_file = os.path.join(BACKUP_PATH, f"{os.path.basename(filepath)}.{timestamp}")
+            shutil.copy2(filepath, backup_file)
+        
+        yield filepath
+        
+        # Clean up old backups (keep last 10)
+        cleanup_old_backups(os.path.basename(filepath))
+        
+    except Exception as e:
+        # Restore from backup on error
+        if backup_file and os.path.exists(backup_file):
+            shutil.copy2(backup_file, filepath)
+        raise e
+    finally:
+        lock.release()
+
+def cleanup_old_backups(filename: str, keep: int = 10):
+    """Keep only the most recent backups."""
+    pattern = f"{filename}.*"
+    backups = sorted([f for f in os.listdir(BACKUP_PATH) if f.startswith(f"{filename}.")])
+    
+    if len(backups) > keep:
+        for old_backup in backups[:-keep]:
+            try:
+                os.remove(os.path.join(BACKUP_PATH, old_backup))
+            except:
+                pass
+
+# Utility Functions
+async def load_category_file(category: str) -> Dict[str, Any]:
+    """Load and return the JSON file for a category."""
+    if category not in CATEGORY_FILE_MAP:
+        raise HTTPException(status_code=400, detail=f"Invalid category: {category}")
+    
+    file_path = os.path.join(BASE_MEMORY_PATH, CATEGORY_FILE_MAP[category])
+    
+    try:
+        async with file_transaction(file_path) as fp:
+            with open(fp, "r") as f:
+                return json.load(f)
+    except FileNotFoundError:
+        # Return empty structure based on wrapper type
+        wrapper_key = WRAPPER_KEY_MAP.get(category, "entries")
+        return {
+            "metadata": {
+                "source": f"{category}.json",
+                "schema_version": "2.0", 
+                "last_updated": datetime.utcnow().isoformat(),
+                "tags": [category, "structured"],
+                "item_count": 0
+            },
+            wrapper_key: [] if wrapper_key in ["log", "projects", "ideas", "event_log", "doctrine"] else {}
+        }
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=500, detail=f"Invalid JSON in {category}.json")
+
+async def save_category_file(category: str, data: Dict[str, Any]) -> None:
+    """Save data to the category file."""
+    file_path = os.path.join(BASE_MEMORY_PATH, CATEGORY_FILE_MAP[category])
+    
+    # Update metadata
+    if "metadata" in data:
+        data["metadata"]["last_updated"] = datetime.utcnow().isoformat()
+        wrapper_key = WRAPPER_KEY_MAP.get(category, "entries")
+        if wrapper_key in data:
+            if isinstance(data[wrapper_key], list):
+                data["metadata"]["item_count"] = len(data[wrapper_key])
+            else:
+                data["metadata"]["item_count"] = len(data[wrapper_key].keys())
+    
+    async with file_transaction(file_path) as fp:
+        with open(fp, "w") as f:
+            json.dump(data, f, indent=2, default=str)
+
+def parse_path(path: str) -> List[str]:
+    """Parse a dot-notation path into components, handling array indices."""
+    # Clean up the path
+    path = path.strip()
+    if not path:
+        return []
+    
+    # Check for invalid patterns
+    if '..' in path or path.startswith('.') or path.endswith('.'):
+        raise HTTPException(status_code=400, detail=f"Invalid path format: {path}")
+    
+    components = []
+    current = ""
+    i = 0
+    
+    while i < len(path):
+        if path[i] == '.':
+            if current:
+                components.append(current)
+                current = ""
+        elif path[i] == '[':
+            # Find the closing bracket
+            bracket_end = path.find(']', i)
+            if bracket_end == -1:
+                raise HTTPException(status_code=400, detail=f"Unclosed bracket in path: {path}")
+            
+            if current:
+                components.append(current)
+                current = ""
+            
+            # Add the bracket expression as a component
+            components.append(path[i:bracket_end+1])
+            i = bracket_end
+        else:
+            current += path[i]
+        i += 1
+    
+    if current:
+        components.append(current)
+    
+    return components
+
+def get_nested_value(data: Any, path_components: List[str], default: Any = None) -> Any:
+    """Navigate through nested data structure using path components."""
+    current = data
+    
+    for component in path_components:
+        if component.startswith('[') and component.endswith(']'):
+            # Handle array access or filtering
+            bracket_content = component[1:-1]
+            
+            if not isinstance(current, list):
+                return default
+            
+            if '=' in bracket_content:
+                # Filter syntax: [key=value]
+                key, value = bracket_content.split('=', 1)
+                # Find first matching item
+                for item in current:
+                    if isinstance(item, dict) and str(item.get(key)) == value:
+                        current = item
+                        break
+                else:
+                    return default
+            else:
+                # Index syntax: [0]
+                try:
+                    index = int(bracket_content)
+                    if -len(current) <= index < len(current):
+                        current = current[index]
+                    else:
+                        return default
+                except (ValueError, IndexError):
+                    return default
+        else:
+            # Regular key access
+            if isinstance(current, dict):
+                current = current.get(component, default)
+            else:
+                return default
+        
+        if current is None:
+            return default
+    
+    return current
+
+def set_nested_value(data: Any, path_components: List[str], value: Any, create_path: bool = True) -> None:
+    """Set a value in nested data structure using path components."""
+    if not path_components:
+        raise HTTPException(status_code=400, detail="Empty path")
+    
+    current = data
+    
+    # Navigate to parent of target
+    for i, component in enumerate(path_components[:-1]):
+        if component.startswith('[') and component.endswith(']'):
+            bracket_content = component[1:-1]
+            
+            if not isinstance(current, list):
+                raise HTTPException(status_code=400, detail=f"Cannot index non-list with {component}")
+            
+            if '=' in bracket_content:
+                # Filter syntax
+                key, filter_value = bracket_content.split('=', 1)
+                found = False
+                for item in current:
+                    if isinstance(item, dict) and str(item.get(key)) == filter_value:
+                        current = item
+                        found = True
+                        break
+                if not found:
+                    if create_path:
+                        # Create new item matching filter
+                        new_item = {key: filter_value}
+                        current.append(new_item)
+                        current = new_item
+                    else:
+                        raise HTTPException(status_code=404, detail=f"No item found matching {component}")
+            else:
+                # Index syntax
+                try:
+                    index = int(bracket_content)
+                    if -len(current) <= index < len(current):
+                        current = current[index]
+                    else:
+                        raise HTTPException(status_code=404, detail=f"Index out of range: {component}")
+                except ValueError:
+                    raise HTTPException(status_code=400, detail=f"Invalid index: {component}")
+        else:
+            if isinstance(current, dict):
+                if component not in current:
+                    if create_path:
+                        # Determine type for next component
+                        if i + 1 < len(path_components) - 1:
+                            next_comp = path_components[i + 1]
+                            if next_comp.startswith('['):
+                                current[component] = []
+                            else:
+                                current[component] = {}
+                        else:
+                            current[component] = {}
+                    else:
+                        raise HTTPException(status_code=404, detail=f"Path not found: {component}")
+                current = current[component]
+            else:
+                raise HTTPException(status_code=400, detail=f"Cannot access {component} on non-dict")
+    
+    # Set the final value
+    final_component = path_components[-1]
+    if final_component.startswith('[') and final_component.endswith(']'):
+        # Setting array element
+        bracket_content = final_component[1:-1]
+        if not isinstance(current, list):
+            raise HTTPException(status_code=400, detail=f"Cannot index non-list with {final_component}")
+        
+        if '=' in bracket_content:
+            # Find and update matching item
+            key, filter_value = bracket_content.split('=', 1)
+            found = False
+            for item in current:
+                if isinstance(item, dict) and str(item.get(key)) == filter_value:
+                    if isinstance(value, dict):
+                        item.update(value)
+                    else:
+                        # Replace entire item
+                        current[current.index(item)] = value
+                    found = True
+                    break
+            if not found and create_path:
+                # Create new item
+                if isinstance(value, dict):
+                    new_item = {key: filter_value, **value}
+                else:
+                    new_item = value
+                current.append(new_item)
+            elif not found:
+                raise HTTPException(status_code=404, detail=f"No item found matching {final_component}")
+        else:
+            # Index-based update
+            try:
+                index = int(bracket_content)
+                if -len(current) <= index < len(current):
+                    current[index] = value
+                elif index == len(current) and create_path:
+                    current.append(value)
+                else:
+                    raise HTTPException(status_code=404, detail=f"Index out of range: {final_component}")
+            except ValueError:
+                raise HTTPException(status_code=400, detail=f"Invalid index: {final_component}")
+    else:
+        # Regular key assignment
+        if isinstance(current, dict):
+            current[final_component] = value
+        else:
+            raise HTTPException(status_code=400, detail=f"Cannot set {final_component} on non-dict")
+
+def evaluate_condition(item_value: Any, operator: QueryOperator, filter_value: Any) -> bool:
+    """Evaluate a single filter condition."""
+    try:
+        if operator == QueryOperator.EXISTS:
+            return (item_value is not None) == bool(filter_value)
+        
+        if item_value is None:
+            return False
+        
+        if operator == QueryOperator.EQ:
+            return item_value == filter_value
+        elif operator == QueryOperator.NE:
+            return item_value != filter_value
+        elif operator == QueryOperator.GT:
+            return item_value > filter_value
+        elif operator == QueryOperator.GTE:
+            return item_value >= filter_value
+        elif operator == QueryOperator.LT:
+            return item_value < filter_value
+        elif operator == QueryOperator.LTE:
+            return item_value <= filter_value
+        elif operator == QueryOperator.IN:
+            return item_value in filter_value
+        elif operator == QueryOperator.NIN:
+            return item_value not in filter_value
+        elif operator == QueryOperator.REGEX:
+            return bool(re.search(filter_value, str(item_value)))
+        else:
+            return False
+    except:
+        return False
+
+def filter_data(data: List[Dict], filters: Union[Dict[str, Any], List[AdvancedFilter]]) -> List[Dict]:
+    """Filter list of dictionaries based on filter criteria."""
+    if not filters:
+        return data
+    
+    filtered = []
+    
+    # Convert simple dict filters to advanced filters
+    if isinstance(filters, dict):
+        filters = [AdvancedFilter(field=k, operator=QueryOperator.EQ, value=v) 
+                  for k, v in filters.items()]
+    
+    for item in data:
+        if not isinstance(item, dict):
+            continue
+        
+        match = True
+        for filter_spec in filters:
+            # Handle nested field paths
+            field_parts = parse_path(filter_spec.field)
+            item_value = get_nested_value(item, field_parts)
+            
+            if not evaluate_condition(item_value, filter_spec.operator, filter_spec.value):
+                match = False
+                break
+        
+        if match:
+            filtered.append(item)
+    
+    return filtered
+
+def sort_data(data: List[Dict], sort_by: str, sort_order: str = "asc") -> List[Dict]:
+    """Sort list of dictionaries by a field."""
+    if not sort_by:
+        return data
+    
+    field_parts = parse_path(sort_by)
+    reverse = sort_order.lower() == "desc"
+    
+    def get_sort_key(item):
+        value = get_nested_value(item, field_parts, default="")
+        # Handle None values
+        if value is None:
+            return "" if not reverse else "zzzzz"
+        return value
+    
+    return sorted(data, key=get_sort_key, reverse=reverse)
+
+def project_fields(item: Dict, fields: List[str]) -> Dict:
+    """Extract only specified fields from an item."""
+    if not fields:
+        return item
+    
+    result = {}
+    for field in fields:
+        field_parts = parse_path(field)
+        value = get_nested_value(item, field_parts)
+        if value is not None:
+            # Reconstruct nested structure
+            current = result
+            for part in field_parts[:-1]:
+                if part not in current:
+                    current[part] = {}
+                current = current[part]
+            current[field_parts[-1]] = value
+    
+    return result
+
+# API Endpoints
+@app.post("/store_memory/")
+async def store_memory(item: MemoryItem):
+    """Store a memory item in the appropriate category file."""
+    memory = await load_category_file(item.category)
+    wrapper_key = WRAPPER_KEY_MAP.get(item.category, "entries")
+    
+    timestamp = datetime.utcnow().isoformat()
+    entry = {
+        "key": item.key,
+        "value": item.value,
+        "tags": sorted(set(item.tags + ["structured"])),
+        "timestamp": timestamp,
+        "metadata": item.metadata
+    }
+    
+    # Add to appropriate structure
+    if isinstance(memory.get(wrapper_key), list):
+        memory[wrapper_key].append(entry)
+    else:
+        memory[wrapper_key][item.key] = entry
+    
+    await save_category_file(item.category, memory)
+    
+    return JSONResponse(content={
+        "message": "Memory stored successfully", 
+        "category": item.category, 
+        "key": item.key,
+        "timestamp": timestamp
+    })
+
+@app.post("/get_field/")
+async def get_field(query: FieldQuery):
+    """Get a specific field value using dot notation path."""
+    # Determine category from path if not provided
+    if not query.category:
+        # Try to infer from path prefix
+        for cat in CATEGORY_FILE_MAP.keys():
+            if query.path.startswith(f"{cat}."):
+                query.category = cat
+                query.path = query.path[len(cat)+1:]  # Remove category prefix
+                break
+        
+        if not query.category:
+            raise HTTPException(status_code=400, detail="Category must be specified or inferable from path")
+    
+    memory = await load_category_file(query.category)
+    wrapper_key = WRAPPER_KEY_MAP.get(query.category, "entries")
+    
+    # Start navigation from the wrapper key level
+    data = memory.get(wrapper_key, {})
+    path_components = parse_path(query.path)
+    
+    result = get_nested_value(data, path_components, default=query.default)
+    
+    return JSONResponse(content={
+        "path": query.path,
+        "category": query.category, 
+        "value": result,
+        "found": result != query.default
+    })
+
+@app.post("/set_field/")
+async def set_field(update: FieldUpdate):
+    """Set a specific field value using dot notation path."""
+    # Determine category from path if not provided
+    if not update.category:
+        for cat in CATEGORY_FILE_MAP.keys():
+            if update.path.startswith(f"{cat}."):
+                update.category = cat
+                update.path = update.path[len(cat)+1:]
+                break
+        
+        if not update.category:
+            raise HTTPException(status_code=400, detail="Category must be specified or inferable from path")
+    
+    memory = await load_category_file(update.category)
+    wrapper_key = WRAPPER_KEY_MAP.get(update.category, "entries")
+    
+    # Ensure wrapper key exists
+    if wrapper_key not in memory:
+        memory[wrapper_key] = [] if wrapper_key in ["log", "projects", "ideas", "event_log", "doctrine"] else {}
+    
+    data = memory[wrapper_key]
+    path_components = parse_path(update.path)
+    
+    set_nested_value(data, path_components, update.value, create_path=update.create_path)
+    await save_category_file(update.category, memory)
+    
+    return JSONResponse(content={
+        "message": "Field updated successfully",
+        "path": update.path,
+        "category": update.category,
+        "value": update.value
+    })
+
+@app.post("/bulk_update/")
+async def bulk_update_fields(bulk: BulkFieldUpdate):
+    """Update multiple fields in one atomic operation."""
+    if bulk.atomic:
+        # Load all affected categories
+        categories_data = {}
+        for update in bulk.updates:
+            if not update.category:
+                # Infer category
+                for cat in CATEGORY_FILE_MAP.keys():
+                    if update.path.startswith(f"{cat}."):
+                        update.category = cat
+                        update.path = update.path[len(cat)+1:]
+                        break
+            
+            if update.category not in categories_data:
+                categories_data[update.category] = await load_category_file(update.category)
+        
+        # Apply all updates
+        results = []
+        for update in bulk.updates:
+            try:
+                memory = categories_data[update.category]
+                wrapper_key = WRAPPER_KEY_MAP.get(update.category, "entries")
+                
+                if wrapper_key not in memory:
+                    memory[wrapper_key] = [] if wrapper_key in ["log", "projects", "ideas", "event_log", "doctrine"] else {}
+                
+                data = memory[wrapper_key]
+                path_components = parse_path(update.path)
+                set_nested_value(data, path_components, update.value, create_path=update.create_path)
+                
+                results.append({
+                    "path": update.path,
+                    "category": update.category,
+                    "status": "success"
+                })
+            except Exception as e:
+                if bulk.atomic:
+                    raise HTTPException(status_code=400, detail=f"Atomic update failed on {update.path}: {str(e)}")
+                results.append({
+                    "path": update.path,
+                    "category": update.category,
+                    "status": "failed",
+                    "error": str(e)
+                })
+        
+        # Save all categories
+        for category, data in categories_data.items():
+            await save_category_file(category, data)
+        
+        return JSONResponse(content={
+            "message": "Bulk update completed",
+            "atomic": bulk.atomic,
+            "results": results
+        })
+    else:
+        # Non-atomic: update each field independently
+        results = []
+        for update in bulk.updates:
+            try:
+                await set_field(update)
+                results.append({
+                    "path": update.path,
+                    "category": update.category,
+                    "status": "success"
+                })
+            except Exception as e:
+                results.append({
+                    "path": update.path,
+                    "category": update.category,
+                    "status": "failed",
+                    "error": str(e)
+                })
+        
+        return JSONResponse(content={
+            "message": "Bulk update completed",
+            "atomic": bulk.atomic,
+            "results": results
+        })
+
+@app.post("/query_structured/")
+async def query_structured(query: StructuredQuery):
+    """Query structured data with advanced filters, sorting, and projection."""
+    memory = await load_category_file(query.category)
+    wrapper_key = WRAPPER_KEY_MAP.get(query.category, "entries")
+    
+    data = memory.get(wrapper_key, [])
+    
+    # Handle both list and dict structures
+    if isinstance(data, dict):
+        # Convert dict to list of entries with keys
+        data = [{"_key": k, **v} if isinstance(v, dict) else {"_key": k, "value": v} 
+                for k, v in data.items()]
+    
+    if not isinstance(data, list):
+        raise HTTPException(status_code=400, detail=f"Cannot query non-list data in {query.category}")
+    
+    # Apply filters
+    filtered_data = filter_data(data, query.filters)
+    
+    # Apply sorting
+    if query.sort_by:
+        filtered_data = sort_data(filtered_data, query.sort_by, query.sort_order)
+    
+    # Apply offset and limit
+    start = query.offset
+    end = start + query.limit if query.limit else None
+    paginated_data = filtered_data[start:end]
+    
+    # Apply field projection
+    if query.fields:
+        paginated_data = [project_fields(item, query.fields) for item in paginated_data]
+    
+    return JSONResponse(content={
+        "category": query.category,
+        "filters": query.filters,
+        "total_count": len(filtered_data),
+        "returned_count": len(paginated_data),
+        "offset": query.offset,
+        "results": paginated_data
+    })
+
+@app.post("/aggregate/")
+async def aggregate_data(query: AggregateQuery):
+    """Perform aggregation operations on data."""
+    memory = await load_category_file(query.category)
+    wrapper_key = WRAPPER_KEY_MAP.get(query.category, "entries")
+    
+    data = memory.get(wrapper_key, [])
+    
+    # Handle both list and dict structures
+    if isinstance(data, dict):
+        data = list(data.values())
+    
+    if not isinstance(data, list):
+        raise HTTPException(status_code=400, detail=f"Cannot aggregate non-list data in {query.category}")
+    
+    # Apply filters
+    filtered_data = filter_data(data, query.filters)
+    
+    # Perform aggregation
+    if query.operation == "count":
+        result = len(filtered_data)
+    elif query.operation in ["sum", "avg", "min", "max"] and query.field:
+        field_parts = parse_path(query.field)
+        values = []
+        for item in filtered_data:
+            value = get_nested_value(item, field_parts)
+            if value is not None and isinstance(value, (int, float)):
+                values.append(value)
+        
+        if not values:
+            result = None
+        elif query.operation == "sum":
+            result = sum(values)
+        elif query.operation == "avg":
+            result = sum(values) / len(values)
+        elif query.operation == "min":
+            result = min(values)
+        elif query.operation == "max":
+            result = max(values)
+    else:
+        raise HTTPException(status_code=400, detail=f"Invalid aggregation operation: {query.operation}")
+    
+    return JSONResponse(content={
+        "category": query.category,
+        "operation": query.operation,
+        "field": query.field,
+        "filters": query.filters,
+        "result": result
+    })
+
+@app.get("/categories/")
+async def list_categories():
+    """List all available categories and their file status."""
+    status = {}
+    for category, filename in CATEGORY_FILE_MAP.items():
+        file_path = os.path.join(BASE_MEMORY_PATH, filename)
+        status[category] = {
+            "filename": filename,
+            "exists": os.path.exists(file_path),
+            "wrapper_key": WRAPPER_KEY_MAP.get(category, "entries")
+        }
+        
+        # Add file size and last modified if exists
+        if os.path.exists(file_path):
+            stat = os.stat(file_path)
+            status[category]["size_kb"] = round(stat.st_size / 1024, 2)
+            status[category]["last_modified"] = datetime.fromtimestamp(stat.st_mtime).isoformat()
+    
+    return JSONResponse(content=status)
+
+@app.get("/schema/{category}")
+async def get_category_schema(category: str):
+    """Get the structure/schema of a category by analyzing its data."""
+    memory = await load_category_file(category)
+    wrapper_key = WRAPPER_KEY_MAP.get(category, "entries")
+    
+    data = memory.get(wrapper_key, [])
+    
+    # Analyze structure
+    schema = {
+        "category": category,
+        "wrapper_key": wrapper_key,
+        "type": type(data).__name__,
+        "metadata": memory.get("metadata", {})
+    }
+    
+    if isinstance(data, list) and data:
+        # Sample first few items to determine schema
+        sample_size = min(5, len(data))
+        samples = data[:sample_size]
+        
+        # Find common fields
+        all_fields = set()
+        for item in samples:
+            if isinstance(item, dict):
+                all_fields.update(item.keys())
+        
+        schema["fields"] = sorted(list(all_fields))
+        schema["sample_count"] = sample_size
+        
+    elif isinstance(data, dict) and data:
+        schema["fields"] = sorted(list(data.keys()))
+        schema["entry_count"] = len(data)
+    
+    return JSONResponse(content=schema)
+
+@app.get("/health/")
+async def health_check():
+    """Enhanced health check with system status."""
+    try:
+        # Check if all category files are accessible
+        accessible_files = 0
+        total_size_kb = 0
+        
+        for category, filename in CATEGORY_FILE_MAP.items():
+            file_path = os.path.join(BASE_MEMORY_PATH, filename)
+            if os.path.exists(file_path):
+                accessible_files += 1
+                total_size_kb += os.stat(file_path).st_size / 1024
+        
+        # Check backup directory
+        backup_count = len([f for f in os.listdir(BACKUP_PATH) if f.endswith('.json')])
+        
+        return JSONResponse(content={
+            "status": "healthy",
+            "timestamp": datetime.utcnow().isoformat(),
+            "accessible_files": f"{accessible_files}/{len(CATEGORY_FILE_MAP)}",
+            "total_size_kb": round(total_size_kb, 2),
+            "backup_count": backup_count,
+            "version": "3.0"
+        })
+    except Exception as e:
+        return JSONResponse(
+            status_code=500,
+            content={
+                "status": "unhealthy",
+                "error": str(e),
+                "timestamp": datetime.utcnow().isoformat()
+            }
+        )
+
+@app.post("/recent_entries/")
+async def get_recent_entries(query: RecentEntriesQuery):
+    """Get recent memory entries for context/handoffs."""
+    if query.count not in [25, 50, 75, 100]:
+        raise HTTPException(status_code=400, detail="Count must be 25, 50, 75, or 100")
+    
+    file_path = os.path.join(RECENT_ENTRIES_PATH, f"recent_entries_{query.count}.json")
+    
+    try:
+        with open(file_path, "r") as f:
+            entries = json.load(f)
+        return JSONResponse(content={
+            "count": query.count,
+            "entries": entries,
+            "total": len(entries) if isinstance(entries, list) else 0
+        })
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail=f"Recent entries file for {query.count} not found")
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=500, detail=f"Invalid JSON in recent_entries_{query.count}.json")
+
+@app.post("/backup/{category}")
+async def create_backup(category: str):
+    """Manually create a backup of a category file."""
+    if category not in CATEGORY_FILE_MAP:
+        raise HTTPException(status_code=400, detail=f"Invalid category: {category}")
+    
+    file_path = os.path.join(BASE_MEMORY_PATH, CATEGORY_FILE_MAP[category])
+    
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail=f"Category file not found: {category}")
+    
+    timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    backup_file = os.path.join(BACKUP_PATH, f"{CATEGORY_FILE_MAP[category]}.{timestamp}.manual")
+    
+    try:
+        shutil.copy2(file_path, backup_file)
+        return JSONResponse(content={
+            "message": "Backup created successfully",
+            "category": category,
+            "backup_file": os.path.basename(backup_file)
+        })
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Backup failed: {str(e)}")
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+                

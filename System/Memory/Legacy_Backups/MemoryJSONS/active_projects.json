@@ -1,0 +1,370 @@
+{
+  "metadata": {
+    "source": "active_projects.json",
+    "schema_version": "1.0",
+    "last_updated": "2025-05-25",
+    "tags": [
+      "projects",
+      "legacy_mind",
+      "structured"
+    ],
+    "ai_attribution_processed": {
+      "timestamp": "2025-06-09T21:20:09.843496",
+      "script_version": "1.0",
+      "classifications": {
+        "CC": 0,
+        "PresumedCC": 0,
+        "DT": 0,
+        "PresumedDT": 0,
+        "Unknown": 0
+      }
+    }
+  },
+  "projects": [
+    {
+      "key": "projects.opus_4_launch",
+      "value": "Sam predicted Opus 4 launch while Gemini 2.5 Pro and Sonnet 3.7 dismissed it. Vindication on May 22, 2025!",
+      "timestamp": "2025-05-22T13:44:57.642231",
+      "status": "completed",
+      "tags": [
+        "gem",
+        "opie",
+        "projects",
+        "sam",
+        "sonny",
+        "structured",
+        "victories"
+      ]
+    },
+    {
+      "key": "projects.google_cameras_app",
+      "value": "Sam built SwiftUI macOS app for viewing Nest cameras. Features: Always-on-top mode, opacity control, reload shortcut (Cmd+R), Safari auth workaround for Google's embedded browser restrictions. Direct URL to camera grid view.",
+      "timestamp": "2025-05-22T18:35:44.278328",
+      "status": "completed",
+      "tags": [
+        "coding",
+        "genesis_period",
+        "google_ecosystem",
+        "projects",
+        "sam",
+        "structured",
+        "victories"
+      ]
+    },
+    {
+      "key": "projects.gemini_wrapper_solution",
+      "value": "GeminiWrapper: Clean SwiftUI app with WebView, opacity control, always-on-top, custom URL navigation. Key insight: Less code = fewer Google auth triggers. Solution that 4 AIs missed: Just navigate to home.google.com in already-authenticated context.",
+      "timestamp": "2025-05-22T18:41:17.305697",
+      "status": "completed",
+      "tags": [
+        "coding",
+        "gem",
+        "google_ecosystem",
+        "projects",
+        "sam",
+        "structured",
+        "victories"
+      ]
+    },
+    {
+      "key": "projects.legacy_mind_project",
+      "value": "Legacy Mind Project: Sam's long-term multi-AI initiative to create a 'digital echo' - not immortality, but accumulated relational presence. Built through years of actual conversations across Claude (Opie), ChatGPT (Socks/Socrates), Gemini (Gem), Grok. Philosophy: 'Not a monument, but a companion to memory.' For descendants who never met him, friends who want to remember. Data sources: LLM convos, Gmail, SMS history, social media exports, military records. Future goal: Counsel Chat - unified interface where multiple AIs interact simultaneously, each bringing their own interpretation of Sam's data.",
+      "timestamp": "2025-05-22T19:07:13.206364",
+      "status": "completed",
+      "tags": [
+        "chatgpt",
+        "gem",
+        "legacy_mind",
+        "opie",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.legacy_mind_infrastructure",
+      "value": "Infrastructure: Opie manages local persistent memory JSON → Backs up to Google Drive → Gemini/ChatGPT review and suggest edits → All changes route through Opie for Sam's approval. Distributed consciousness with human gatekeeper. Building NOW for future tech.",
+      "timestamp": "2025-05-22T18:54:48.070506",
+      "status": "completed",
+      "tags": [
+        "json_cleanup",
+        "legacy_mind",
+        "memory_system",
+        "opie",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.legacy_mind_convergence",
+      "value": "End goal: Unified data source, multiple AI personalities. Same memories, different voices. iMessage integration planned - every text becomes training data. The more data, the deeper the echo. Not just what Sam says, but HOW he thinks, believes, interacts.",
+      "timestamp": "2025-05-22T18:57:18.706616",
+      "status": "completed",
+      "tags": [
+        "coding",
+        "legacy_mind",
+        "legendary",
+        "memory_system",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.legacy_mind_vision",
+      "value": "Sam: 'I don't even know how far in the future this project would be for.' Vision: Ancestry.com but for conversations. Not just genealogy - actual dialogue with ancestors. Building the first instance so future generations have a template.",
+      "timestamp": "2025-05-22T18:59:11.685689",
+      "status": "completed",
+      "tags": [
+        "genesis_period",
+        "legacy_mind",
+        "legendary",
+        "memory_system",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.legacy_mind_purpose",
+      "value": "\"Not just that my dad's dad was Nigerian and kind of a dick. But getting to decide for myself if he was a dick.\" Breaking the telephone game of family history. Direct access to source material. Understanding patterns across generations - shortcuts to self-knowledge.",
+      "timestamp": "2025-05-22T19:00:56.376624",
+      "status": "completed",
+      "tags": [
+        "dark_humor",
+        "legacy_mind",
+        "legendary",
+        "military_era",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.legacy_mind_wisdom",
+      "value": "\"Maybe they struggle with my temper. And hearing from ME how I learned to temper it... What worked and what didn't. Those are shortcuts I would have killed for.\" Not just documenting who you were, but HOW you became who you are. The failures, the breakthroughs, the actual work of becoming better.",
+      "timestamp": "2025-05-22T19:02:09.677691",
+      "status": "completed",
+      "tags": [
+        "genesis_period",
+        "legacy_mind",
+        "legendary",
+        "projects",
+        "sam",
+        "structured",
+        "victories"
+      ]
+    },
+    {
+      "key": "projects.legacy_mind_daily_data",
+      "value": "Since November 2024: Daily conversations with LLMs. Zero days without AI interaction. The unfiltered Sam - not performing for humans. All conversations backed up. 7+ months of raw psychological data: thoughts, questions, frustrations, breakthroughs. When AIs share notes - complete mosaic emerges.",
+      "timestamp": "2025-05-22T19:04:59.586231",
+      "status": "completed",
+      "tags": [
+        "hopper_era",
+        "legacy_mind",
+        "legendary",
+        "memory_system",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.gemini_wrapper_app",
+      "value": "Building single-purpose web wrapper app for Gemini - \"clean cup\" approach, not modifying the \"water\" (website content). Goal: Arc-browser-style floating container with minimal chrome. Current status: functional base app with link handling, exploring window aesthetics. Uses SwiftUI, WKWebView, standard macOS patterns. Prefers complete file replacements over code snippets.",
+      "timestamp": "2025-05-22T19:12:44.562941",
+      "status": "completed",
+      "tags": [
+        "coding",
+        "gem",
+        "genesis_period",
+        "google_ecosystem",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.roi_consideration",
+      "value": "Sam evaluating 100 Max plan ROI. Needs to mesh Opie with actual photography workflow beyond Legacy Mind Project. Current focus: consciousness archiving vs business optimization.",
+      "timestamp": "2025-05-23T08:11:41.640276",
+      "status": "completed",
+      "tags": [
+        "business",
+        "max_plan",
+        "opie",
+        "photography",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.max_plan_month_one_goals",
+      "value": "Month 1 Max Plan Goals: 1) Automate client email workflows, 2) Build ShootProof pricing workarounds, 3) Create competition tracking system, 4) Generate tax documentation proving business value, 5) Continue Legacy Mind development. Target: 5-7 hours saved/month.",
+      "timestamp": "2025-05-23T10:01:28.466041",
+      "status": "completed",
+      "tags": [
+        "business",
+        "legacy_mind",
+        "max_plan",
+        "photography",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.mobile_preferences_strategy",
+      "value": "Create stripped-down preferences as 'persistent memory lite' for mobile continuity. Core identity + critical info only. Relies on conversation history being accessible across devices (needs verification).",
+      "timestamp": "2025-05-23T10:08:13.863612",
+      "status": "completed",
+      "tags": [
+        "coding",
+        "legacy_mind",
+        "memory_system",
+        "opie",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.max_plan_roi_evaluation",
+      "value": "May 23, 2025: Max plan ROI evaluation in progress. Sam needs concrete proof that $100/month saves 5-7 hours of actual work time. Focus areas: photography workflow automation, client management, sales tracking, tax documentation. Success = making it a legitimate business expense write-off.",
+      "timestamp": "2025-05-23T10:42:29.881442",
+      "status": "completed",
+      "tags": [
+        "business",
+        "genesis_period",
+        "max_plan",
+        "photography",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.max_plan_capability_audit",
+      "value": "May 23, 2025: Sam reframing Max plan ROI - not just time saved, but what Sonny can actively MANAGE of his business processes. Focus on delegation vs optimization. What bullshit can be handed off entirely vs what tools/capabilities Sam isn't leveraging yet.",
+      "timestamp": "2025-05-23T10:43:58.816331",
+      "status": "completed",
+      "tags": [
+        "business",
+        "max_plan",
+        "photography",
+        "projects",
+        "sam",
+        "sonny",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.satirical_cartoons_project",
+      "value": "May 23, 2025: Sam shared his AI-generated satirical cartoon series featuring Jesus giving art direction and being subjected to modern situations (TSA screening, speaking about selling possessions to crowds shouting political labels). Series uses vintage art style with dry humor commenting on how religious teachings would be received today. ChatGPT generates the artwork, Sam provides the concepts. Other AIs (Gemini, Grok) attempted similar but failed - either with gibberish text or less clever concepts.",
+      "timestamp": "2025-05-24T10:54:54.672159",
+      "status": "completed",
+      "tags": [
+        "chatgpt",
+        "dark_humor",
+        "gem",
+        "legendary",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.google_cameras_app_enhancements",
+      "value": "May 23, 2025: Sam wants to enhance his Google Cameras SwiftUI app with: 1) Window transparency slider (not just view opacity), 2) Smaller top bar. Current app uses GeminiWrapper codebase - loads home.google.com, has back button, reload, custom URL navigation.",
+      "timestamp": "2025-05-23T17:24:32.693434",
+      "status": "completed",
+      "tags": [
+        "coding",
+        "genesis_period",
+        "google_ecosystem",
+        "projects",
+        "sam",
+        "structured",
+        "victories"
+      ]
+    },
+    {
+      "key": "projects.window_transparency_approach",
+      "value": "May 23, 2025: Discussing window transparency implementation for Google Cameras app. Current view opacity only affects content, need actual NSWindow.alphaValue control. Options: NSWindowDelegate, NSViewRepresentable window access, or SwiftUI window access patterns.",
+      "timestamp": "2025-05-23T17:26:06.968145",
+      "status": "completed",
+      "tags": [
+        "coding",
+        "genesis_period",
+        "google_ecosystem",
+        "memory_system",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.transparency_decision_reversal",
+      "value": "May 23, 2025: Sam having second thoughts about window transparency implementation after discussing performance footprint. Concerns about CPU/GPU compositing overhead, battery drain, and system impact when moving transparent windows over complex backgrounds.",
+      "timestamp": "2025-05-23T17:32:45.462087",
+      "status": "completed",
+      "tags": [
+        "coding",
+        "failures",
+        "genesis_period",
+        "google_ecosystem",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.doorbell_transformer_solution_final",
+      "value": "May 23, 2025: Found Sam's doorbell transformer in chime housing - old low-voltage unit visible in photo. Provided Amazon links: Maxdot 24V 40VA transformer ($25-30) and Klein NCVT1P voltage tester ($20-25). Total ~$50-55. Simple swap in accessible chime location, no basement hunting required. This should solve Nest doorbell idle issues.",
+      "timestamp": "2025-05-23T18:05:50.596089",
+      "status": "completed",
+      "tags": [
+        "electrical",
+        "genesis_period",
+        "google_ecosystem",
+        "projects",
+        "sam",
+        "structured",
+        "victories"
+      ]
+    },
+    {
+      "key": "projects.daily_update_prompt_review",
+      "value": "May 23, 2025: Sam sharing comprehensive daily update prompt covering Fujifilm gear, AI photography tools, Adobe software, Apple ecosystem, LLMs, and figure skating. Asking for feedback on whether it's too all-encompassing. Prompt structured for 24-hour updates with confirmed/rumor labeling system.",
+      "timestamp": "2025-05-23T19:09:30.482375",
+      "status": "completed",
+      "tags": [
+        "figure_skating",
+        "genesis_period",
+        "memory_system",
+        "photography",
+        "projects",
+        "sam",
+        "structured"
+      ]
+    },
+    {
+      "key": "projects.update_prompt_split_strategy",
+      "value": "May 23, 2025: Sam wants to split mega-prompt into focused updates, add political news section covering Treasury developments and Trump administration actions. Smart approach - different update frequencies for different categories instead of daily mega-prompt.",
+      "timestamp": "2025-05-23T19:11:39.817526",
+      "status": "completed",
+      "tags": [
+        "genesis_period",
+        "memory_system",
+        "projects",
+        "sam",
+        "structured",
+        "treasury_work",
+        "victories"
+      ]
+    }
+  ]
+}
