@@ -19,7 +19,7 @@ except ImportError:
     TaskRelationshipManager = None
 
 # Base paths
-TASKS_ROOT = Path("/Users/samuelatagana/Documents/Federation/Tasks")
+TASKS_ROOT = Path("/Users/samuelatagana/Library/MobileDocuments/iCloud~md~obsidian/Documents/SharedVault/📋 TaskTracker")
 MANIFEST_PATH = TASKS_ROOT / "manifest.json"
 
 class TaskOperations:
@@ -27,15 +27,13 @@ class TaskOperations:
     
     def __init__(self):
         """Initialize task operations"""
-        # Ensure tasks directory exists
-        TASKS_ROOT.mkdir(parents=True, exist_ok=True)
+        # Disabled auto-creation of task directories and files
+        # TASKS_ROOT.mkdir(parents=True, exist_ok=True)
+        # (TASKS_ROOT / "Complete").mkdir(exist_ok=True)
+        # (TASKS_ROOT / "Backburner").mkdir(exist_ok=True)
         
-        # Ensure Complete and Backburner folders exist
-        (TASKS_ROOT / "Complete").mkdir(exist_ok=True)
-        (TASKS_ROOT / "Backburner").mkdir(exist_ok=True)
-        
-        # Load or create manifest
-        self.manifest = self._load_manifest()
+        # Don't auto-create manifest - only load if exists
+        self.manifest = self._load_manifest() if MANIFEST_PATH.exists() else {"tasks": {}, "total_tasks": 0}
         
         # Initialize relationship manager if available
         self.relationships = TaskRelationshipManager() if TaskRelationshipManager else None
@@ -54,14 +52,13 @@ class TaskOperations:
             with open(MANIFEST_PATH, 'r') as f:
                 return json.load(f)
         else:
-            manifest = {
+            # Don't auto-create manifest file
+            return {
                 "version": "1.0",
                 "created": datetime.now().isoformat(),
                 "tasks": {},
                 "total_tasks": 0
             }
-            self._save_manifest(manifest)
-            return manifest
     
     def _save_manifest(self, manifest: Dict[str, Any]) -> None:
         """Save global task manifest"""

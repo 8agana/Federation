@@ -1,0 +1,44 @@
+[project]
+name = "federation-web"
+version = "0.1.0"
+description = "Federation Web Research and Exploration MCP"
+requires-python = ">=3.11"
+authors = [
+    { name = "Federation Team", email = "federation@example.com" }
+]
+dependencies = [
+    "mcp>=1.1.0",
+    "httpx>=0.25.0",
+    "beautifulsoup4>=4.12.0",
+    "html2text>=2020.1.16",
+    "aiohttp>=3.9.0",
+    "lxml>=5.0.0",
+    "readability-lxml>=0.8.1",
+    "markdownify>=0.11.6",
+    "python-dotenv>=1.0.0",
+    "asyncio>=3.4.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-mock>=3.11.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]

@@ -45,7 +45,8 @@ class TaskRelationshipManager:
                 "edges": [],  # relationship list
                 "trees": {}   # root_id -> tree structure
             }
-            self._save_relationships(relationships)
+            # Don't auto-create relationships file
+            # self._save_relationships(relationships)
             return relationships
     
     def _save_relationships(self, relationships: Dict[str, Any]) -> None:

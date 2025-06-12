@@ -1,0 +1,29 @@
+[project]
+name = "federation-thinking"
+version = "0.1.0"
+description = "Enhanced sequential thinking MCP for the Federation"
+requires-python = ">=3.11"
+authors = [
+    { name = "Federation Team", email = "federation@example.com" }
+]
+dependencies = [
+    "mcp>=1.1.0",
+    "networkx>=3.0",
+    "matplotlib>=3.7.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "chromadb>=0.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

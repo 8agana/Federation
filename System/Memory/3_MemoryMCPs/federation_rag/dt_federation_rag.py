@@ -26,8 +26,8 @@ from mcp.server.fastmcp import FastMCP
 
 # LangChain imports
 from langchain.chains import RetrievalQA
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 from langchain.schema import Document
 
@@ -413,7 +413,7 @@ class ObsidianRetriever:
                             title = content.split('\n')[0][2:].strip()
                         
                         # Determine vault type for context
-                        vault_name = "shared" if "SharedVault" in vault_path else "dt_nerve_center"
+                        vault_name = "shared" if "SharedVault" in vault_path else "nerve_center"
                         
                         self.notes[filepath] = {
                             'title': title,
