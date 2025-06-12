@@ -84,6 +84,30 @@ else
 fi
 echo ""
 
+# Pull latest changes first to avoid conflicts
+print_status "Syncing with GitHub (pulling latest changes)..."
+git pull origin "$BRANCH" --no-edit 2>&1 | grep -v "^Merge made" | sed 's/^/  /'
+
+if [ ${PIPESTATUS[0]} -eq 0 ]; then
+    print_success "Successfully synchronized with GitHub"
+else
+    print_warning "Pull had conflicts. Attempting automatic resolution..."
+    # Try to rebase instead
+    git rebase origin/"$BRANCH" 2>&1 | sed 's/^/  /'
+    if [ ${PIPESTATUS[0]} -ne 0 ]; then
+        print_error "Automatic conflict resolution failed."
+        print_warning "Your commit is saved locally. To fix:"
+        print_warning "1. Run: git rebase --abort"
+        print_warning "2. Run: git pull origin $BRANCH"
+        print_warning "3. Resolve any conflicts manually"
+        print_warning "4. Run this script again"
+        git rebase --abort > /dev/null 2>&1
+        exit 1
+    fi
+    print_success "Conflicts resolved automatically"
+fi
+echo ""
+
 # Push to remote
 print_status "Pushing to GitHub..."
 git push origin "$BRANCH" 2>&1 | grep -E "(up-to-date|->|Total|Writing|Counting)" | sed 's/^/  /'
@@ -97,7 +121,7 @@ if [ ${PIPESTATUS[0]} -eq 0 ]; then
     git log -1 --oneline --decorate
 else
     print_error "Failed to push to GitHub"
-    print_warning "You may need to pull changes first with: git pull origin $BRANCH"
+    print_warning "This is unusual after a successful pull. Try running the script again."
     exit 1
 fi
 
