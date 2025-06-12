@@ -84,9 +84,12 @@ else
 fi
 echo ""
 
+# Force SSH for all operations
+export GIT_SSH_COMMAND="ssh -o PasswordAuthentication=no"
+
 # Pull latest changes first to avoid conflicts
 print_status "Syncing with GitHub (pulling latest changes)..."
-git pull origin "$BRANCH" --no-edit 2>&1 | grep -v "^Merge made" | sed 's/^/  /'
+git -c url."git@github.com:".insteadOf="https://github.com/" pull origin "$BRANCH" --no-edit 2>&1 | grep -v "^Merge made" | sed 's/^/  /'
 
 if [ ${PIPESTATUS[0]} -eq 0 ]; then
     print_success "Successfully synchronized with GitHub"
@@ -110,7 +113,7 @@ echo ""
 
 # Push to remote
 print_status "Pushing to GitHub..."
-git push origin "$BRANCH" 2>&1 | grep -E "(up-to-date|->|Total|Writing|Counting)" | sed 's/^/  /'
+git -c url."git@github.com:".insteadOf="https://github.com/" push origin "$BRANCH" 2>&1 | grep -E "(up-to-date|->|Total|Writing|Counting)" | sed 's/^/  /'
 
 if [ ${PIPESTATUS[0]} -eq 0 ]; then
     print_success "Successfully pushed to GitHub!"
